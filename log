@@ -1,0 +1,1423 @@
+^^^^^^^^^^^^^^^^^^^^^^^
+TESTS WITH NORMAL FLAGS
+^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################
+MANUAL TESTS
+#######################
+
+16 - Fail -noe ) test_files/test_5_grep.txt
+20 - Fail -noe ing -e as -e the -e not -e is test_files/test_6_grep.txt
+23 - Fail -l for no_file.txt test_files/test_2_grep.txt
+26 - Fail -f test_files/test_3_grep.txt test_files/test_5_grep.txt
+
+#######################
+AUTOTESTS
+#######################
+
+=======================
+1 PARAMETER
+=======================
+
+28 - Fail for s21_grep.c s21_grep.h Makefile -v
+30 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v
+37 - Fail for s21_grep.c s21_grep.h Makefile -c
+39 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c
+46 - Fail for s21_grep.c s21_grep.h Makefile -l
+48 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l
+55 - Fail for s21_grep.c s21_grep.h Makefile -n
+57 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n
+64 - Fail for s21_grep.c s21_grep.h Makefile -h
+66 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h
+73 - Fail for s21_grep.c s21_grep.h Makefile -o
+75 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o
+
+=======================
+2 PARAMETERS
+=======================
+
+82 - Fail for s21_grep.c s21_grep.h Makefile -v -c
+84 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c
+91 - Fail for s21_grep.c s21_grep.h Makefile -v -l
+93 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l
+100 - Fail for s21_grep.c s21_grep.h Makefile -v -n
+102 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n
+109 - Fail for s21_grep.c s21_grep.h Makefile -v -h
+111 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h
+118 - Fail for s21_grep.c s21_grep.h Makefile -v -o
+120 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o
+127 - Fail for s21_grep.c s21_grep.h Makefile -c -v
+129 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v
+136 - Fail for s21_grep.c s21_grep.h Makefile -c -l
+138 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l
+145 - Fail for s21_grep.c s21_grep.h Makefile -c -n
+147 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n
+154 - Fail for s21_grep.c s21_grep.h Makefile -c -h
+156 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h
+163 - Fail for s21_grep.c s21_grep.h Makefile -c -o
+165 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o
+172 - Fail for s21_grep.c s21_grep.h Makefile -l -v
+174 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v
+181 - Fail for s21_grep.c s21_grep.h Makefile -l -c
+183 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c
+190 - Fail for s21_grep.c s21_grep.h Makefile -l -n
+192 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n
+199 - Fail for s21_grep.c s21_grep.h Makefile -l -h
+201 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h
+208 - Fail for s21_grep.c s21_grep.h Makefile -l -o
+210 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o
+217 - Fail for s21_grep.c s21_grep.h Makefile -n -v
+219 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v
+226 - Fail for s21_grep.c s21_grep.h Makefile -n -c
+228 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c
+235 - Fail for s21_grep.c s21_grep.h Makefile -n -l
+237 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l
+244 - Fail for s21_grep.c s21_grep.h Makefile -n -h
+246 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h
+252 - Fail s test_files/test_0_grep.txt -n -o
+253 - Fail for s21_grep.c s21_grep.h Makefile -n -o
+255 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o
+257 - Fail -e regex -e ^print s21_grep.c -n -o -f test_files/test_ptrn_grep.txt
+262 - Fail for s21_grep.c s21_grep.h Makefile -h -v
+264 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v
+271 - Fail for s21_grep.c s21_grep.h Makefile -h -c
+273 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c
+280 - Fail for s21_grep.c s21_grep.h Makefile -h -l
+282 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l
+289 - Fail for s21_grep.c s21_grep.h Makefile -h -n
+291 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n
+298 - Fail for s21_grep.c s21_grep.h Makefile -h -o
+300 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o
+307 - Fail for s21_grep.c s21_grep.h Makefile -o -v
+309 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v
+316 - Fail for s21_grep.c s21_grep.h Makefile -o -c
+318 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c
+325 - Fail for s21_grep.c s21_grep.h Makefile -o -l
+327 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l
+333 - Fail s test_files/test_0_grep.txt -o -n
+334 - Fail for s21_grep.c s21_grep.h Makefile -o -n
+336 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n
+338 - Fail -e regex -e ^print s21_grep.c -o -n -f test_files/test_ptrn_grep.txt
+343 - Fail for s21_grep.c s21_grep.h Makefile -o -h
+345 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h
+
+=======================
+3 PARAMETERS
+=======================
+
+352 - Fail for s21_grep.c s21_grep.h Makefile -v -c -l
+354 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -l
+361 - Fail for s21_grep.c s21_grep.h Makefile -v -c -n
+363 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -n
+370 - Fail for s21_grep.c s21_grep.h Makefile -v -c -h
+372 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -h
+379 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o
+381 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o
+388 - Fail for s21_grep.c s21_grep.h Makefile -v -l -c
+390 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -c
+397 - Fail for s21_grep.c s21_grep.h Makefile -v -l -n
+399 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -n
+406 - Fail for s21_grep.c s21_grep.h Makefile -v -l -h
+408 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -h
+415 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o
+417 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o
+424 - Fail for s21_grep.c s21_grep.h Makefile -v -n -c
+426 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -c
+433 - Fail for s21_grep.c s21_grep.h Makefile -v -n -l
+435 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -l
+442 - Fail for s21_grep.c s21_grep.h Makefile -v -n -h
+444 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -h
+451 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o
+453 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o
+460 - Fail for s21_grep.c s21_grep.h Makefile -v -h -c
+462 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -c
+469 - Fail for s21_grep.c s21_grep.h Makefile -v -h -l
+471 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -l
+478 - Fail for s21_grep.c s21_grep.h Makefile -v -h -n
+480 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -n
+487 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o
+489 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o
+496 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c
+498 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c
+505 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l
+507 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l
+514 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n
+516 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n
+523 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h
+525 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h
+532 - Fail for s21_grep.c s21_grep.h Makefile -c -v -l
+534 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -l
+541 - Fail for s21_grep.c s21_grep.h Makefile -c -v -n
+543 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -n
+550 - Fail for s21_grep.c s21_grep.h Makefile -c -v -h
+552 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -h
+559 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o
+561 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o
+568 - Fail for s21_grep.c s21_grep.h Makefile -c -l -v
+570 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -v
+577 - Fail for s21_grep.c s21_grep.h Makefile -c -l -n
+579 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -n
+586 - Fail for s21_grep.c s21_grep.h Makefile -c -l -h
+588 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -h
+595 - Fail for s21_grep.c s21_grep.h Makefile -c -l -o
+597 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -o
+604 - Fail for s21_grep.c s21_grep.h Makefile -c -n -v
+606 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -v
+613 - Fail for s21_grep.c s21_grep.h Makefile -c -n -l
+615 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -l
+622 - Fail for s21_grep.c s21_grep.h Makefile -c -n -h
+624 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -h
+631 - Fail for s21_grep.c s21_grep.h Makefile -c -n -o
+633 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -o
+640 - Fail for s21_grep.c s21_grep.h Makefile -c -h -v
+642 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -v
+649 - Fail for s21_grep.c s21_grep.h Makefile -c -h -l
+651 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -l
+658 - Fail for s21_grep.c s21_grep.h Makefile -c -h -n
+660 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -n
+667 - Fail for s21_grep.c s21_grep.h Makefile -c -h -o
+669 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -o
+676 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v
+678 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v
+685 - Fail for s21_grep.c s21_grep.h Makefile -c -o -l
+687 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -l
+694 - Fail for s21_grep.c s21_grep.h Makefile -c -o -n
+696 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -n
+703 - Fail for s21_grep.c s21_grep.h Makefile -c -o -h
+705 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -h
+712 - Fail for s21_grep.c s21_grep.h Makefile -l -v -c
+714 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -c
+721 - Fail for s21_grep.c s21_grep.h Makefile -l -v -n
+723 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -n
+730 - Fail for s21_grep.c s21_grep.h Makefile -l -v -h
+732 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -h
+739 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o
+741 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o
+748 - Fail for s21_grep.c s21_grep.h Makefile -l -c -v
+750 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -v
+757 - Fail for s21_grep.c s21_grep.h Makefile -l -c -n
+759 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -n
+766 - Fail for s21_grep.c s21_grep.h Makefile -l -c -h
+768 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -h
+775 - Fail for s21_grep.c s21_grep.h Makefile -l -c -o
+777 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -o
+784 - Fail for s21_grep.c s21_grep.h Makefile -l -n -v
+786 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -v
+793 - Fail for s21_grep.c s21_grep.h Makefile -l -n -c
+795 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -c
+802 - Fail for s21_grep.c s21_grep.h Makefile -l -n -h
+804 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -h
+811 - Fail for s21_grep.c s21_grep.h Makefile -l -n -o
+813 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -o
+820 - Fail for s21_grep.c s21_grep.h Makefile -l -h -v
+822 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -v
+829 - Fail for s21_grep.c s21_grep.h Makefile -l -h -c
+831 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -c
+838 - Fail for s21_grep.c s21_grep.h Makefile -l -h -n
+840 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -n
+847 - Fail for s21_grep.c s21_grep.h Makefile -l -h -o
+849 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -o
+856 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v
+858 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v
+865 - Fail for s21_grep.c s21_grep.h Makefile -l -o -c
+867 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -c
+874 - Fail for s21_grep.c s21_grep.h Makefile -l -o -n
+876 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -n
+883 - Fail for s21_grep.c s21_grep.h Makefile -l -o -h
+885 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -h
+892 - Fail for s21_grep.c s21_grep.h Makefile -n -v -c
+894 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -c
+901 - Fail for s21_grep.c s21_grep.h Makefile -n -v -l
+903 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -l
+910 - Fail for s21_grep.c s21_grep.h Makefile -n -v -h
+912 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -h
+919 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o
+921 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o
+928 - Fail for s21_grep.c s21_grep.h Makefile -n -c -v
+930 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -v
+937 - Fail for s21_grep.c s21_grep.h Makefile -n -c -l
+939 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -l
+946 - Fail for s21_grep.c s21_grep.h Makefile -n -c -h
+948 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -h
+955 - Fail for s21_grep.c s21_grep.h Makefile -n -c -o
+957 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -o
+964 - Fail for s21_grep.c s21_grep.h Makefile -n -l -v
+966 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -v
+973 - Fail for s21_grep.c s21_grep.h Makefile -n -l -c
+975 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -c
+982 - Fail for s21_grep.c s21_grep.h Makefile -n -l -h
+984 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -h
+991 - Fail for s21_grep.c s21_grep.h Makefile -n -l -o
+993 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -o
+1000 - Fail for s21_grep.c s21_grep.h Makefile -n -h -v
+1002 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -v
+1009 - Fail for s21_grep.c s21_grep.h Makefile -n -h -c
+1011 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -c
+1018 - Fail for s21_grep.c s21_grep.h Makefile -n -h -l
+1020 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -l
+1026 - Fail s test_files/test_0_grep.txt -n -h -o
+1027 - Fail for s21_grep.c s21_grep.h Makefile -n -h -o
+1029 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -o
+1031 - Fail -e regex -e ^print s21_grep.c -n -h -o -f test_files/test_ptrn_grep.txt
+1036 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v
+1038 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v
+1045 - Fail for s21_grep.c s21_grep.h Makefile -n -o -c
+1047 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -c
+1054 - Fail for s21_grep.c s21_grep.h Makefile -n -o -l
+1056 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -l
+1062 - Fail s test_files/test_0_grep.txt -n -o -h
+1063 - Fail for s21_grep.c s21_grep.h Makefile -n -o -h
+1065 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -h
+1067 - Fail -e regex -e ^print s21_grep.c -n -o -h -f test_files/test_ptrn_grep.txt
+1072 - Fail for s21_grep.c s21_grep.h Makefile -h -v -c
+1074 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -c
+1081 - Fail for s21_grep.c s21_grep.h Makefile -h -v -l
+1083 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -l
+1090 - Fail for s21_grep.c s21_grep.h Makefile -h -v -n
+1092 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -n
+1099 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o
+1101 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o
+1108 - Fail for s21_grep.c s21_grep.h Makefile -h -c -v
+1110 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -v
+1117 - Fail for s21_grep.c s21_grep.h Makefile -h -c -l
+1119 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -l
+1126 - Fail for s21_grep.c s21_grep.h Makefile -h -c -n
+1128 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -n
+1135 - Fail for s21_grep.c s21_grep.h Makefile -h -c -o
+1137 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -o
+1144 - Fail for s21_grep.c s21_grep.h Makefile -h -l -v
+1146 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -v
+1153 - Fail for s21_grep.c s21_grep.h Makefile -h -l -c
+1155 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -c
+1162 - Fail for s21_grep.c s21_grep.h Makefile -h -l -n
+1164 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -n
+1171 - Fail for s21_grep.c s21_grep.h Makefile -h -l -o
+1173 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -o
+1180 - Fail for s21_grep.c s21_grep.h Makefile -h -n -v
+1182 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -v
+1189 - Fail for s21_grep.c s21_grep.h Makefile -h -n -c
+1191 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -c
+1198 - Fail for s21_grep.c s21_grep.h Makefile -h -n -l
+1200 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -l
+1206 - Fail s test_files/test_0_grep.txt -h -n -o
+1207 - Fail for s21_grep.c s21_grep.h Makefile -h -n -o
+1209 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -o
+1211 - Fail -e regex -e ^print s21_grep.c -h -n -o -f test_files/test_ptrn_grep.txt
+1216 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v
+1218 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v
+1225 - Fail for s21_grep.c s21_grep.h Makefile -h -o -c
+1227 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -c
+1234 - Fail for s21_grep.c s21_grep.h Makefile -h -o -l
+1236 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -l
+1242 - Fail s test_files/test_0_grep.txt -h -o -n
+1243 - Fail for s21_grep.c s21_grep.h Makefile -h -o -n
+1245 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -n
+1247 - Fail -e regex -e ^print s21_grep.c -h -o -n -f test_files/test_ptrn_grep.txt
+1252 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c
+1254 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c
+1261 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l
+1263 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l
+1270 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n
+1272 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n
+1279 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h
+1281 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h
+1288 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v
+1290 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v
+1297 - Fail for s21_grep.c s21_grep.h Makefile -o -c -l
+1299 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -l
+1306 - Fail for s21_grep.c s21_grep.h Makefile -o -c -n
+1308 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -n
+1315 - Fail for s21_grep.c s21_grep.h Makefile -o -c -h
+1317 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -h
+1324 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v
+1326 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v
+1333 - Fail for s21_grep.c s21_grep.h Makefile -o -l -c
+1335 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -c
+1342 - Fail for s21_grep.c s21_grep.h Makefile -o -l -n
+1344 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -n
+1351 - Fail for s21_grep.c s21_grep.h Makefile -o -l -h
+1353 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -h
+1360 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v
+1362 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v
+1369 - Fail for s21_grep.c s21_grep.h Makefile -o -n -c
+1371 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -c
+1378 - Fail for s21_grep.c s21_grep.h Makefile -o -n -l
+1380 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -l
+1386 - Fail s test_files/test_0_grep.txt -o -n -h
+1387 - Fail for s21_grep.c s21_grep.h Makefile -o -n -h
+1389 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -h
+1391 - Fail -e regex -e ^print s21_grep.c -o -n -h -f test_files/test_ptrn_grep.txt
+1396 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v
+1398 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v
+1405 - Fail for s21_grep.c s21_grep.h Makefile -o -h -c
+1407 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -c
+1414 - Fail for s21_grep.c s21_grep.h Makefile -o -h -l
+1416 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -l
+1422 - Fail s test_files/test_0_grep.txt -o -h -n
+1423 - Fail for s21_grep.c s21_grep.h Makefile -o -h -n
+1425 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -n
+1427 - Fail -e regex -e ^print s21_grep.c -o -h -n -f test_files/test_ptrn_grep.txt
+
+=======================
+4 PARAMETERS
+=======================
+
+1432 - Fail for s21_grep.c s21_grep.h Makefile -v -c -l -n
+1434 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -l -n
+1441 - Fail for s21_grep.c s21_grep.h Makefile -v -c -l -h
+1443 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -l -h
+1450 - Fail for s21_grep.c s21_grep.h Makefile -v -c -l -o
+1452 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -l -o
+1459 - Fail for s21_grep.c s21_grep.h Makefile -v -c -n -l
+1461 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -n -l
+1468 - Fail for s21_grep.c s21_grep.h Makefile -v -c -n -h
+1470 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -n -h
+1477 - Fail for s21_grep.c s21_grep.h Makefile -v -c -n -o
+1479 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -n -o
+1486 - Fail for s21_grep.c s21_grep.h Makefile -v -c -h -l
+1488 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -h -l
+1495 - Fail for s21_grep.c s21_grep.h Makefile -v -c -h -n
+1497 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -h -n
+1504 - Fail for s21_grep.c s21_grep.h Makefile -v -c -h -o
+1506 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -h -o
+1513 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o -l
+1515 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o -l
+1522 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o -n
+1524 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o -n
+1531 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o -h
+1533 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o -h
+1540 - Fail for s21_grep.c s21_grep.h Makefile -v -l -c -n
+1542 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -c -n
+1549 - Fail for s21_grep.c s21_grep.h Makefile -v -l -c -h
+1551 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -c -h
+1558 - Fail for s21_grep.c s21_grep.h Makefile -v -l -c -o
+1560 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -c -o
+1567 - Fail for s21_grep.c s21_grep.h Makefile -v -l -n -c
+1569 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -n -c
+1576 - Fail for s21_grep.c s21_grep.h Makefile -v -l -n -h
+1578 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -n -h
+1585 - Fail for s21_grep.c s21_grep.h Makefile -v -l -n -o
+1587 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -n -o
+1594 - Fail for s21_grep.c s21_grep.h Makefile -v -l -h -c
+1596 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -h -c
+1603 - Fail for s21_grep.c s21_grep.h Makefile -v -l -h -n
+1605 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -h -n
+1612 - Fail for s21_grep.c s21_grep.h Makefile -v -l -h -o
+1614 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -h -o
+1621 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o -c
+1623 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o -c
+1630 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o -n
+1632 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o -n
+1639 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o -h
+1641 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o -h
+1648 - Fail for s21_grep.c s21_grep.h Makefile -v -n -c -l
+1650 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -c -l
+1657 - Fail for s21_grep.c s21_grep.h Makefile -v -n -c -h
+1659 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -c -h
+1666 - Fail for s21_grep.c s21_grep.h Makefile -v -n -c -o
+1668 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -c -o
+1675 - Fail for s21_grep.c s21_grep.h Makefile -v -n -l -c
+1677 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -l -c
+1684 - Fail for s21_grep.c s21_grep.h Makefile -v -n -l -h
+1686 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -l -h
+1693 - Fail for s21_grep.c s21_grep.h Makefile -v -n -l -o
+1695 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -l -o
+1702 - Fail for s21_grep.c s21_grep.h Makefile -v -n -h -c
+1704 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -h -c
+1711 - Fail for s21_grep.c s21_grep.h Makefile -v -n -h -l
+1713 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -h -l
+1720 - Fail for s21_grep.c s21_grep.h Makefile -v -n -h -o
+1722 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -h -o
+1729 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o -c
+1731 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o -c
+1738 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o -l
+1740 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o -l
+1747 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o -h
+1749 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o -h
+1756 - Fail for s21_grep.c s21_grep.h Makefile -v -h -c -l
+1758 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -c -l
+1765 - Fail for s21_grep.c s21_grep.h Makefile -v -h -c -n
+1767 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -c -n
+1774 - Fail for s21_grep.c s21_grep.h Makefile -v -h -c -o
+1776 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -c -o
+1783 - Fail for s21_grep.c s21_grep.h Makefile -v -h -l -c
+1785 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -l -c
+1792 - Fail for s21_grep.c s21_grep.h Makefile -v -h -l -n
+1794 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -l -n
+1801 - Fail for s21_grep.c s21_grep.h Makefile -v -h -l -o
+1803 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -l -o
+1810 - Fail for s21_grep.c s21_grep.h Makefile -v -h -n -c
+1812 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -n -c
+1819 - Fail for s21_grep.c s21_grep.h Makefile -v -h -n -l
+1821 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -n -l
+1828 - Fail for s21_grep.c s21_grep.h Makefile -v -h -n -o
+1830 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -n -o
+1837 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o -c
+1839 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o -c
+1846 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o -l
+1848 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o -l
+1855 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o -n
+1857 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o -n
+1864 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c -l
+1866 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c -l
+1873 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c -n
+1875 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c -n
+1882 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c -h
+1884 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c -h
+1891 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l -c
+1893 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l -c
+1900 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l -n
+1902 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l -n
+1909 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l -h
+1911 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l -h
+1918 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n -c
+1920 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n -c
+1927 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n -l
+1929 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n -l
+1936 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n -h
+1938 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n -h
+1945 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h -c
+1947 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h -c
+1954 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h -l
+1956 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h -l
+1963 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h -n
+1965 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h -n
+1972 - Fail for s21_grep.c s21_grep.h Makefile -c -v -l -n
+1974 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -l -n
+1981 - Fail for s21_grep.c s21_grep.h Makefile -c -v -l -h
+1983 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -l -h
+1990 - Fail for s21_grep.c s21_grep.h Makefile -c -v -l -o
+1992 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -l -o
+1999 - Fail for s21_grep.c s21_grep.h Makefile -c -v -n -l
+2001 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -n -l
+2008 - Fail for s21_grep.c s21_grep.h Makefile -c -v -n -h
+2010 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -n -h
+2017 - Fail for s21_grep.c s21_grep.h Makefile -c -v -n -o
+2019 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -n -o
+2026 - Fail for s21_grep.c s21_grep.h Makefile -c -v -h -l
+2028 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -h -l
+2035 - Fail for s21_grep.c s21_grep.h Makefile -c -v -h -n
+2037 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -h -n
+2044 - Fail for s21_grep.c s21_grep.h Makefile -c -v -h -o
+2046 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -h -o
+2053 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o -l
+2055 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o -l
+2062 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o -n
+2064 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o -n
+2071 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o -h
+2073 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o -h
+2080 - Fail for s21_grep.c s21_grep.h Makefile -c -l -v -n
+2082 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -v -n
+2089 - Fail for s21_grep.c s21_grep.h Makefile -c -l -v -h
+2091 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -v -h
+2098 - Fail for s21_grep.c s21_grep.h Makefile -c -l -v -o
+2100 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -v -o
+2107 - Fail for s21_grep.c s21_grep.h Makefile -c -l -n -v
+2109 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -n -v
+2116 - Fail for s21_grep.c s21_grep.h Makefile -c -l -n -h
+2118 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -n -h
+2125 - Fail for s21_grep.c s21_grep.h Makefile -c -l -n -o
+2127 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -n -o
+2134 - Fail for s21_grep.c s21_grep.h Makefile -c -l -h -v
+2136 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -h -v
+2143 - Fail for s21_grep.c s21_grep.h Makefile -c -l -h -n
+2145 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -h -n
+2152 - Fail for s21_grep.c s21_grep.h Makefile -c -l -h -o
+2154 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -h -o
+2161 - Fail for s21_grep.c s21_grep.h Makefile -c -l -o -v
+2163 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -o -v
+2170 - Fail for s21_grep.c s21_grep.h Makefile -c -l -o -n
+2172 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -o -n
+2179 - Fail for s21_grep.c s21_grep.h Makefile -c -l -o -h
+2181 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -o -h
+2188 - Fail for s21_grep.c s21_grep.h Makefile -c -n -v -l
+2190 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -v -l
+2197 - Fail for s21_grep.c s21_grep.h Makefile -c -n -v -h
+2199 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -v -h
+2206 - Fail for s21_grep.c s21_grep.h Makefile -c -n -v -o
+2208 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -v -o
+2215 - Fail for s21_grep.c s21_grep.h Makefile -c -n -l -v
+2217 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -l -v
+2224 - Fail for s21_grep.c s21_grep.h Makefile -c -n -l -h
+2226 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -l -h
+2233 - Fail for s21_grep.c s21_grep.h Makefile -c -n -l -o
+2235 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -l -o
+2242 - Fail for s21_grep.c s21_grep.h Makefile -c -n -h -v
+2244 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -h -v
+2251 - Fail for s21_grep.c s21_grep.h Makefile -c -n -h -l
+2253 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -h -l
+2260 - Fail for s21_grep.c s21_grep.h Makefile -c -n -h -o
+2262 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -h -o
+2269 - Fail for s21_grep.c s21_grep.h Makefile -c -n -o -v
+2271 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -o -v
+2278 - Fail for s21_grep.c s21_grep.h Makefile -c -n -o -l
+2280 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -o -l
+2287 - Fail for s21_grep.c s21_grep.h Makefile -c -n -o -h
+2289 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -o -h
+2296 - Fail for s21_grep.c s21_grep.h Makefile -c -h -v -l
+2298 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -v -l
+2305 - Fail for s21_grep.c s21_grep.h Makefile -c -h -v -n
+2307 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -v -n
+2314 - Fail for s21_grep.c s21_grep.h Makefile -c -h -v -o
+2316 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -v -o
+2323 - Fail for s21_grep.c s21_grep.h Makefile -c -h -l -v
+2325 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -l -v
+2332 - Fail for s21_grep.c s21_grep.h Makefile -c -h -l -n
+2334 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -l -n
+2341 - Fail for s21_grep.c s21_grep.h Makefile -c -h -l -o
+2343 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -l -o
+2350 - Fail for s21_grep.c s21_grep.h Makefile -c -h -n -v
+2352 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -n -v
+2359 - Fail for s21_grep.c s21_grep.h Makefile -c -h -n -l
+2361 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -n -l
+2368 - Fail for s21_grep.c s21_grep.h Makefile -c -h -n -o
+2370 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -n -o
+2377 - Fail for s21_grep.c s21_grep.h Makefile -c -h -o -v
+2379 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -o -v
+2386 - Fail for s21_grep.c s21_grep.h Makefile -c -h -o -l
+2388 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -o -l
+2395 - Fail for s21_grep.c s21_grep.h Makefile -c -h -o -n
+2397 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -o -n
+2404 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v -l
+2406 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v -l
+2413 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v -n
+2415 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v -n
+2422 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v -h
+2424 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v -h
+2431 - Fail for s21_grep.c s21_grep.h Makefile -c -o -l -v
+2433 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -l -v
+2440 - Fail for s21_grep.c s21_grep.h Makefile -c -o -l -n
+2442 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -l -n
+2449 - Fail for s21_grep.c s21_grep.h Makefile -c -o -l -h
+2451 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -l -h
+2458 - Fail for s21_grep.c s21_grep.h Makefile -c -o -n -v
+2460 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -n -v
+2467 - Fail for s21_grep.c s21_grep.h Makefile -c -o -n -l
+2469 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -n -l
+2476 - Fail for s21_grep.c s21_grep.h Makefile -c -o -n -h
+2478 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -n -h
+2485 - Fail for s21_grep.c s21_grep.h Makefile -c -o -h -v
+2487 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -h -v
+2494 - Fail for s21_grep.c s21_grep.h Makefile -c -o -h -l
+2496 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -h -l
+2503 - Fail for s21_grep.c s21_grep.h Makefile -c -o -h -n
+2505 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -h -n
+2512 - Fail for s21_grep.c s21_grep.h Makefile -l -v -c -n
+2514 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -c -n
+2521 - Fail for s21_grep.c s21_grep.h Makefile -l -v -c -h
+2523 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -c -h
+2530 - Fail for s21_grep.c s21_grep.h Makefile -l -v -c -o
+2532 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -c -o
+2539 - Fail for s21_grep.c s21_grep.h Makefile -l -v -n -c
+2541 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -n -c
+2548 - Fail for s21_grep.c s21_grep.h Makefile -l -v -n -h
+2550 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -n -h
+2557 - Fail for s21_grep.c s21_grep.h Makefile -l -v -n -o
+2559 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -n -o
+2566 - Fail for s21_grep.c s21_grep.h Makefile -l -v -h -c
+2568 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -h -c
+2575 - Fail for s21_grep.c s21_grep.h Makefile -l -v -h -n
+2577 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -h -n
+2584 - Fail for s21_grep.c s21_grep.h Makefile -l -v -h -o
+2586 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -h -o
+2593 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o -c
+2595 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o -c
+2602 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o -n
+2604 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o -n
+2611 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o -h
+2613 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o -h
+2620 - Fail for s21_grep.c s21_grep.h Makefile -l -c -v -n
+2622 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -v -n
+2629 - Fail for s21_grep.c s21_grep.h Makefile -l -c -v -h
+2631 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -v -h
+2638 - Fail for s21_grep.c s21_grep.h Makefile -l -c -v -o
+2640 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -v -o
+2647 - Fail for s21_grep.c s21_grep.h Makefile -l -c -n -v
+2649 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -n -v
+2656 - Fail for s21_grep.c s21_grep.h Makefile -l -c -n -h
+2658 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -n -h
+2665 - Fail for s21_grep.c s21_grep.h Makefile -l -c -n -o
+2667 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -n -o
+2674 - Fail for s21_grep.c s21_grep.h Makefile -l -c -h -v
+2676 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -h -v
+2683 - Fail for s21_grep.c s21_grep.h Makefile -l -c -h -n
+2685 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -h -n
+2692 - Fail for s21_grep.c s21_grep.h Makefile -l -c -h -o
+2694 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -h -o
+2701 - Fail for s21_grep.c s21_grep.h Makefile -l -c -o -v
+2703 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -o -v
+2710 - Fail for s21_grep.c s21_grep.h Makefile -l -c -o -n
+2712 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -o -n
+2719 - Fail for s21_grep.c s21_grep.h Makefile -l -c -o -h
+2721 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -o -h
+2728 - Fail for s21_grep.c s21_grep.h Makefile -l -n -v -c
+2730 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -v -c
+2737 - Fail for s21_grep.c s21_grep.h Makefile -l -n -v -h
+2739 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -v -h
+2746 - Fail for s21_grep.c s21_grep.h Makefile -l -n -v -o
+2748 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -v -o
+2755 - Fail for s21_grep.c s21_grep.h Makefile -l -n -c -v
+2757 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -c -v
+2764 - Fail for s21_grep.c s21_grep.h Makefile -l -n -c -h
+2766 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -c -h
+2773 - Fail for s21_grep.c s21_grep.h Makefile -l -n -c -o
+2775 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -c -o
+2782 - Fail for s21_grep.c s21_grep.h Makefile -l -n -h -v
+2784 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -h -v
+2791 - Fail for s21_grep.c s21_grep.h Makefile -l -n -h -c
+2793 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -h -c
+2800 - Fail for s21_grep.c s21_grep.h Makefile -l -n -h -o
+2802 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -h -o
+2809 - Fail for s21_grep.c s21_grep.h Makefile -l -n -o -v
+2811 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -o -v
+2818 - Fail for s21_grep.c s21_grep.h Makefile -l -n -o -c
+2820 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -o -c
+2827 - Fail for s21_grep.c s21_grep.h Makefile -l -n -o -h
+2829 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -o -h
+2836 - Fail for s21_grep.c s21_grep.h Makefile -l -h -v -c
+2838 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -v -c
+2845 - Fail for s21_grep.c s21_grep.h Makefile -l -h -v -n
+2847 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -v -n
+2854 - Fail for s21_grep.c s21_grep.h Makefile -l -h -v -o
+2856 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -v -o
+2863 - Fail for s21_grep.c s21_grep.h Makefile -l -h -c -v
+2865 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -c -v
+2872 - Fail for s21_grep.c s21_grep.h Makefile -l -h -c -n
+2874 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -c -n
+2881 - Fail for s21_grep.c s21_grep.h Makefile -l -h -c -o
+2883 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -c -o
+2890 - Fail for s21_grep.c s21_grep.h Makefile -l -h -n -v
+2892 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -n -v
+2899 - Fail for s21_grep.c s21_grep.h Makefile -l -h -n -c
+2901 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -n -c
+2908 - Fail for s21_grep.c s21_grep.h Makefile -l -h -n -o
+2910 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -n -o
+2917 - Fail for s21_grep.c s21_grep.h Makefile -l -h -o -v
+2919 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -o -v
+2926 - Fail for s21_grep.c s21_grep.h Makefile -l -h -o -c
+2928 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -o -c
+2935 - Fail for s21_grep.c s21_grep.h Makefile -l -h -o -n
+2937 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -o -n
+2944 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v -c
+2946 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v -c
+2953 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v -n
+2955 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v -n
+2962 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v -h
+2964 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v -h
+2971 - Fail for s21_grep.c s21_grep.h Makefile -l -o -c -v
+2973 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -c -v
+2980 - Fail for s21_grep.c s21_grep.h Makefile -l -o -c -n
+2982 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -c -n
+2989 - Fail for s21_grep.c s21_grep.h Makefile -l -o -c -h
+2991 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -c -h
+2998 - Fail for s21_grep.c s21_grep.h Makefile -l -o -n -v
+3000 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -n -v
+3007 - Fail for s21_grep.c s21_grep.h Makefile -l -o -n -c
+3009 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -n -c
+3016 - Fail for s21_grep.c s21_grep.h Makefile -l -o -n -h
+3018 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -n -h
+3025 - Fail for s21_grep.c s21_grep.h Makefile -l -o -h -v
+3027 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -h -v
+3034 - Fail for s21_grep.c s21_grep.h Makefile -l -o -h -c
+3036 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -h -c
+3043 - Fail for s21_grep.c s21_grep.h Makefile -l -o -h -n
+3045 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -h -n
+3052 - Fail for s21_grep.c s21_grep.h Makefile -n -v -c -l
+3054 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -c -l
+3061 - Fail for s21_grep.c s21_grep.h Makefile -n -v -c -h
+3063 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -c -h
+3070 - Fail for s21_grep.c s21_grep.h Makefile -n -v -c -o
+3072 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -c -o
+3079 - Fail for s21_grep.c s21_grep.h Makefile -n -v -l -c
+3081 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -l -c
+3088 - Fail for s21_grep.c s21_grep.h Makefile -n -v -l -h
+3090 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -l -h
+3097 - Fail for s21_grep.c s21_grep.h Makefile -n -v -l -o
+3099 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -l -o
+3106 - Fail for s21_grep.c s21_grep.h Makefile -n -v -h -c
+3108 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -h -c
+3115 - Fail for s21_grep.c s21_grep.h Makefile -n -v -h -l
+3117 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -h -l
+3124 - Fail for s21_grep.c s21_grep.h Makefile -n -v -h -o
+3126 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -h -o
+3133 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o -c
+3135 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o -c
+3142 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o -l
+3144 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o -l
+3151 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o -h
+3153 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o -h
+3160 - Fail for s21_grep.c s21_grep.h Makefile -n -c -v -l
+3162 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -v -l
+3169 - Fail for s21_grep.c s21_grep.h Makefile -n -c -v -h
+3171 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -v -h
+3178 - Fail for s21_grep.c s21_grep.h Makefile -n -c -v -o
+3180 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -v -o
+3187 - Fail for s21_grep.c s21_grep.h Makefile -n -c -l -v
+3189 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -l -v
+3196 - Fail for s21_grep.c s21_grep.h Makefile -n -c -l -h
+3198 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -l -h
+3205 - Fail for s21_grep.c s21_grep.h Makefile -n -c -l -o
+3207 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -l -o
+3214 - Fail for s21_grep.c s21_grep.h Makefile -n -c -h -v
+3216 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -h -v
+3223 - Fail for s21_grep.c s21_grep.h Makefile -n -c -h -l
+3225 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -h -l
+3232 - Fail for s21_grep.c s21_grep.h Makefile -n -c -h -o
+3234 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -h -o
+3241 - Fail for s21_grep.c s21_grep.h Makefile -n -c -o -v
+3243 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -o -v
+3250 - Fail for s21_grep.c s21_grep.h Makefile -n -c -o -l
+3252 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -o -l
+3259 - Fail for s21_grep.c s21_grep.h Makefile -n -c -o -h
+3261 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -o -h
+3268 - Fail for s21_grep.c s21_grep.h Makefile -n -l -v -c
+3270 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -v -c
+3277 - Fail for s21_grep.c s21_grep.h Makefile -n -l -v -h
+3279 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -v -h
+3286 - Fail for s21_grep.c s21_grep.h Makefile -n -l -v -o
+3288 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -v -o
+3295 - Fail for s21_grep.c s21_grep.h Makefile -n -l -c -v
+3297 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -c -v
+3304 - Fail for s21_grep.c s21_grep.h Makefile -n -l -c -h
+3306 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -c -h
+3313 - Fail for s21_grep.c s21_grep.h Makefile -n -l -c -o
+3315 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -c -o
+3322 - Fail for s21_grep.c s21_grep.h Makefile -n -l -h -v
+3324 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -h -v
+3331 - Fail for s21_grep.c s21_grep.h Makefile -n -l -h -c
+3333 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -h -c
+3340 - Fail for s21_grep.c s21_grep.h Makefile -n -l -h -o
+3342 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -h -o
+3349 - Fail for s21_grep.c s21_grep.h Makefile -n -l -o -v
+3351 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -o -v
+3358 - Fail for s21_grep.c s21_grep.h Makefile -n -l -o -c
+3360 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -o -c
+3367 - Fail for s21_grep.c s21_grep.h Makefile -n -l -o -h
+3369 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -o -h
+3376 - Fail for s21_grep.c s21_grep.h Makefile -n -h -v -c
+3378 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -v -c
+3385 - Fail for s21_grep.c s21_grep.h Makefile -n -h -v -l
+3387 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -v -l
+3394 - Fail for s21_grep.c s21_grep.h Makefile -n -h -v -o
+3396 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -v -o
+3403 - Fail for s21_grep.c s21_grep.h Makefile -n -h -c -v
+3405 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -c -v
+3412 - Fail for s21_grep.c s21_grep.h Makefile -n -h -c -l
+3414 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -c -l
+3421 - Fail for s21_grep.c s21_grep.h Makefile -n -h -c -o
+3423 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -c -o
+3430 - Fail for s21_grep.c s21_grep.h Makefile -n -h -l -v
+3432 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -l -v
+3439 - Fail for s21_grep.c s21_grep.h Makefile -n -h -l -c
+3441 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -l -c
+3448 - Fail for s21_grep.c s21_grep.h Makefile -n -h -l -o
+3450 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -l -o
+3457 - Fail for s21_grep.c s21_grep.h Makefile -n -h -o -v
+3459 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -o -v
+3466 - Fail for s21_grep.c s21_grep.h Makefile -n -h -o -c
+3468 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -o -c
+3475 - Fail for s21_grep.c s21_grep.h Makefile -n -h -o -l
+3477 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -o -l
+3484 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v -c
+3486 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v -c
+3493 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v -l
+3495 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v -l
+3502 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v -h
+3504 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v -h
+3511 - Fail for s21_grep.c s21_grep.h Makefile -n -o -c -v
+3513 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -c -v
+3520 - Fail for s21_grep.c s21_grep.h Makefile -n -o -c -l
+3522 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -c -l
+3529 - Fail for s21_grep.c s21_grep.h Makefile -n -o -c -h
+3531 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -c -h
+3538 - Fail for s21_grep.c s21_grep.h Makefile -n -o -l -v
+3540 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -l -v
+3547 - Fail for s21_grep.c s21_grep.h Makefile -n -o -l -c
+3549 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -l -c
+3556 - Fail for s21_grep.c s21_grep.h Makefile -n -o -l -h
+3558 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -l -h
+3565 - Fail for s21_grep.c s21_grep.h Makefile -n -o -h -v
+3567 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -h -v
+3574 - Fail for s21_grep.c s21_grep.h Makefile -n -o -h -c
+3576 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -h -c
+3583 - Fail for s21_grep.c s21_grep.h Makefile -n -o -h -l
+3585 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -h -l
+3592 - Fail for s21_grep.c s21_grep.h Makefile -h -v -c -l
+3594 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -c -l
+3601 - Fail for s21_grep.c s21_grep.h Makefile -h -v -c -n
+3603 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -c -n
+3610 - Fail for s21_grep.c s21_grep.h Makefile -h -v -c -o
+3612 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -c -o
+3619 - Fail for s21_grep.c s21_grep.h Makefile -h -v -l -c
+3621 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -l -c
+3628 - Fail for s21_grep.c s21_grep.h Makefile -h -v -l -n
+3630 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -l -n
+3637 - Fail for s21_grep.c s21_grep.h Makefile -h -v -l -o
+3639 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -l -o
+3646 - Fail for s21_grep.c s21_grep.h Makefile -h -v -n -c
+3648 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -n -c
+3655 - Fail for s21_grep.c s21_grep.h Makefile -h -v -n -l
+3657 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -n -l
+3664 - Fail for s21_grep.c s21_grep.h Makefile -h -v -n -o
+3666 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -n -o
+3673 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o -c
+3675 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o -c
+3682 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o -l
+3684 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o -l
+3691 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o -n
+3693 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o -n
+3700 - Fail for s21_grep.c s21_grep.h Makefile -h -c -v -l
+3702 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -v -l
+3709 - Fail for s21_grep.c s21_grep.h Makefile -h -c -v -n
+3711 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -v -n
+3718 - Fail for s21_grep.c s21_grep.h Makefile -h -c -v -o
+3720 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -v -o
+3727 - Fail for s21_grep.c s21_grep.h Makefile -h -c -l -v
+3729 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -l -v
+3736 - Fail for s21_grep.c s21_grep.h Makefile -h -c -l -n
+3738 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -l -n
+3745 - Fail for s21_grep.c s21_grep.h Makefile -h -c -l -o
+3747 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -l -o
+3754 - Fail for s21_grep.c s21_grep.h Makefile -h -c -n -v
+3756 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -n -v
+3763 - Fail for s21_grep.c s21_grep.h Makefile -h -c -n -l
+3765 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -n -l
+3772 - Fail for s21_grep.c s21_grep.h Makefile -h -c -n -o
+3774 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -n -o
+3781 - Fail for s21_grep.c s21_grep.h Makefile -h -c -o -v
+3783 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -o -v
+3790 - Fail for s21_grep.c s21_grep.h Makefile -h -c -o -l
+3792 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -o -l
+3799 - Fail for s21_grep.c s21_grep.h Makefile -h -c -o -n
+3801 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -o -n
+3808 - Fail for s21_grep.c s21_grep.h Makefile -h -l -v -c
+3810 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -v -c
+3817 - Fail for s21_grep.c s21_grep.h Makefile -h -l -v -n
+3819 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -v -n
+3826 - Fail for s21_grep.c s21_grep.h Makefile -h -l -v -o
+3828 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -v -o
+3835 - Fail for s21_grep.c s21_grep.h Makefile -h -l -c -v
+3837 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -c -v
+3844 - Fail for s21_grep.c s21_grep.h Makefile -h -l -c -n
+3846 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -c -n
+3853 - Fail for s21_grep.c s21_grep.h Makefile -h -l -c -o
+3855 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -c -o
+3862 - Fail for s21_grep.c s21_grep.h Makefile -h -l -n -v
+3864 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -n -v
+3871 - Fail for s21_grep.c s21_grep.h Makefile -h -l -n -c
+3873 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -n -c
+3880 - Fail for s21_grep.c s21_grep.h Makefile -h -l -n -o
+3882 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -n -o
+3889 - Fail for s21_grep.c s21_grep.h Makefile -h -l -o -v
+3891 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -o -v
+3898 - Fail for s21_grep.c s21_grep.h Makefile -h -l -o -c
+3900 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -o -c
+3907 - Fail for s21_grep.c s21_grep.h Makefile -h -l -o -n
+3909 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -o -n
+3916 - Fail for s21_grep.c s21_grep.h Makefile -h -n -v -c
+3918 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -v -c
+3925 - Fail for s21_grep.c s21_grep.h Makefile -h -n -v -l
+3927 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -v -l
+3934 - Fail for s21_grep.c s21_grep.h Makefile -h -n -v -o
+3936 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -v -o
+3943 - Fail for s21_grep.c s21_grep.h Makefile -h -n -c -v
+3945 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -c -v
+3952 - Fail for s21_grep.c s21_grep.h Makefile -h -n -c -l
+3954 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -c -l
+3961 - Fail for s21_grep.c s21_grep.h Makefile -h -n -c -o
+3963 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -c -o
+3970 - Fail for s21_grep.c s21_grep.h Makefile -h -n -l -v
+3972 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -l -v
+3979 - Fail for s21_grep.c s21_grep.h Makefile -h -n -l -c
+3981 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -l -c
+3988 - Fail for s21_grep.c s21_grep.h Makefile -h -n -l -o
+3990 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -l -o
+3997 - Fail for s21_grep.c s21_grep.h Makefile -h -n -o -v
+3999 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -o -v
+4006 - Fail for s21_grep.c s21_grep.h Makefile -h -n -o -c
+4008 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -o -c
+4015 - Fail for s21_grep.c s21_grep.h Makefile -h -n -o -l
+4017 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -o -l
+4024 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v -c
+4026 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v -c
+4033 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v -l
+4035 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v -l
+4042 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v -n
+4044 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v -n
+4051 - Fail for s21_grep.c s21_grep.h Makefile -h -o -c -v
+4053 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -c -v
+4060 - Fail for s21_grep.c s21_grep.h Makefile -h -o -c -l
+4062 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -c -l
+4069 - Fail for s21_grep.c s21_grep.h Makefile -h -o -c -n
+4071 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -c -n
+4078 - Fail for s21_grep.c s21_grep.h Makefile -h -o -l -v
+4080 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -l -v
+4087 - Fail for s21_grep.c s21_grep.h Makefile -h -o -l -c
+4089 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -l -c
+4096 - Fail for s21_grep.c s21_grep.h Makefile -h -o -l -n
+4098 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -l -n
+4105 - Fail for s21_grep.c s21_grep.h Makefile -h -o -n -v
+4107 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -n -v
+4114 - Fail for s21_grep.c s21_grep.h Makefile -h -o -n -c
+4116 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -n -c
+4123 - Fail for s21_grep.c s21_grep.h Makefile -h -o -n -l
+4125 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -n -l
+4132 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c -l
+4134 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c -l
+4141 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c -n
+4143 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c -n
+4150 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c -h
+4152 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c -h
+4159 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l -c
+4161 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l -c
+4168 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l -n
+4170 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l -n
+4177 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l -h
+4179 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l -h
+4186 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n -c
+4188 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n -c
+4195 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n -l
+4197 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n -l
+4204 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n -h
+4206 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n -h
+4213 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h -c
+4215 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h -c
+4222 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h -l
+4224 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h -l
+4231 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h -n
+4233 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h -n
+4240 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v -l
+4242 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v -l
+4249 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v -n
+4251 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v -n
+4258 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v -h
+4260 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v -h
+4267 - Fail for s21_grep.c s21_grep.h Makefile -o -c -l -v
+4269 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -l -v
+4276 - Fail for s21_grep.c s21_grep.h Makefile -o -c -l -n
+4278 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -l -n
+4285 - Fail for s21_grep.c s21_grep.h Makefile -o -c -l -h
+4287 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -l -h
+4294 - Fail for s21_grep.c s21_grep.h Makefile -o -c -n -v
+4296 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -n -v
+4303 - Fail for s21_grep.c s21_grep.h Makefile -o -c -n -l
+4305 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -n -l
+4312 - Fail for s21_grep.c s21_grep.h Makefile -o -c -n -h
+4314 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -n -h
+4321 - Fail for s21_grep.c s21_grep.h Makefile -o -c -h -v
+4323 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -h -v
+4330 - Fail for s21_grep.c s21_grep.h Makefile -o -c -h -l
+4332 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -h -l
+4339 - Fail for s21_grep.c s21_grep.h Makefile -o -c -h -n
+4341 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -h -n
+4348 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v -c
+4350 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v -c
+4357 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v -n
+4359 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v -n
+4366 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v -h
+4368 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v -h
+4375 - Fail for s21_grep.c s21_grep.h Makefile -o -l -c -v
+4377 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -c -v
+4384 - Fail for s21_grep.c s21_grep.h Makefile -o -l -c -n
+4386 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -c -n
+4393 - Fail for s21_grep.c s21_grep.h Makefile -o -l -c -h
+4395 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -c -h
+4402 - Fail for s21_grep.c s21_grep.h Makefile -o -l -n -v
+4404 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -n -v
+4411 - Fail for s21_grep.c s21_grep.h Makefile -o -l -n -c
+4413 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -n -c
+4420 - Fail for s21_grep.c s21_grep.h Makefile -o -l -n -h
+4422 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -n -h
+4429 - Fail for s21_grep.c s21_grep.h Makefile -o -l -h -v
+4431 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -h -v
+4438 - Fail for s21_grep.c s21_grep.h Makefile -o -l -h -c
+4440 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -h -c
+4447 - Fail for s21_grep.c s21_grep.h Makefile -o -l -h -n
+4449 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -h -n
+4456 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v -c
+4458 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v -c
+4465 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v -l
+4467 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v -l
+4474 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v -h
+4476 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v -h
+4483 - Fail for s21_grep.c s21_grep.h Makefile -o -n -c -v
+4485 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -c -v
+4492 - Fail for s21_grep.c s21_grep.h Makefile -o -n -c -l
+4494 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -c -l
+4501 - Fail for s21_grep.c s21_grep.h Makefile -o -n -c -h
+4503 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -c -h
+4510 - Fail for s21_grep.c s21_grep.h Makefile -o -n -l -v
+4512 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -l -v
+4519 - Fail for s21_grep.c s21_grep.h Makefile -o -n -l -c
+4521 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -l -c
+4528 - Fail for s21_grep.c s21_grep.h Makefile -o -n -l -h
+4530 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -l -h
+4537 - Fail for s21_grep.c s21_grep.h Makefile -o -n -h -v
+4539 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -h -v
+4546 - Fail for s21_grep.c s21_grep.h Makefile -o -n -h -c
+4548 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -h -c
+4555 - Fail for s21_grep.c s21_grep.h Makefile -o -n -h -l
+4557 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -h -l
+4564 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v -c
+4566 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v -c
+4573 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v -l
+4575 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v -l
+4582 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v -n
+4584 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v -n
+4591 - Fail for s21_grep.c s21_grep.h Makefile -o -h -c -v
+4593 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -c -v
+4600 - Fail for s21_grep.c s21_grep.h Makefile -o -h -c -l
+4602 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -c -l
+4609 - Fail for s21_grep.c s21_grep.h Makefile -o -h -c -n
+4611 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -c -n
+4618 - Fail for s21_grep.c s21_grep.h Makefile -o -h -l -v
+4620 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -l -v
+4627 - Fail for s21_grep.c s21_grep.h Makefile -o -h -l -c
+4629 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -l -c
+4636 - Fail for s21_grep.c s21_grep.h Makefile -o -h -l -n
+4638 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -l -n
+4645 - Fail for s21_grep.c s21_grep.h Makefile -o -h -n -v
+4647 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -n -v
+4654 - Fail for s21_grep.c s21_grep.h Makefile -o -h -n -c
+4656 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -n -c
+4663 - Fail for s21_grep.c s21_grep.h Makefile -o -h -n -l
+4665 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -n -l
+
+#######################
+AUTOTESTS
+#######################
+
+=======================
+DOUBLE PARAMETER
+=======================
+
+4672 - Fail for s21_grep.c s21_grep.h Makefile -vc
+4674 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vc
+4681 - Fail for s21_grep.c s21_grep.h Makefile -vl
+4683 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vl
+4690 - Fail for s21_grep.c s21_grep.h Makefile -vn
+4692 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vn
+4699 - Fail for s21_grep.c s21_grep.h Makefile -vh
+4701 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vh
+4708 - Fail for s21_grep.c s21_grep.h Makefile -vo
+4710 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vo
+4717 - Fail for s21_grep.c s21_grep.h Makefile -cv
+4719 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cv
+4726 - Fail for s21_grep.c s21_grep.h Makefile -cl
+4728 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cl
+4735 - Fail for s21_grep.c s21_grep.h Makefile -cn
+4737 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cn
+4744 - Fail for s21_grep.c s21_grep.h Makefile -ch
+4746 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ch
+4753 - Fail for s21_grep.c s21_grep.h Makefile -co
+4755 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -co
+4762 - Fail for s21_grep.c s21_grep.h Makefile -lv
+4764 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lv
+4771 - Fail for s21_grep.c s21_grep.h Makefile -lc
+4773 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lc
+4780 - Fail for s21_grep.c s21_grep.h Makefile -ln
+4782 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ln
+4789 - Fail for s21_grep.c s21_grep.h Makefile -lh
+4791 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lh
+4798 - Fail for s21_grep.c s21_grep.h Makefile -lo
+4800 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lo
+4807 - Fail for s21_grep.c s21_grep.h Makefile -nv
+4809 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nv
+4816 - Fail for s21_grep.c s21_grep.h Makefile -nc
+4818 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nc
+4825 - Fail for s21_grep.c s21_grep.h Makefile -nl
+4827 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nl
+4834 - Fail for s21_grep.c s21_grep.h Makefile -nh
+4836 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nh
+4842 - Fail s test_files/test_0_grep.txt -no
+4843 - Fail for s21_grep.c s21_grep.h Makefile -no
+4845 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -no
+4847 - Fail -e regex -e ^print s21_grep.c -no -f test_files/test_ptrn_grep.txt
+4852 - Fail for s21_grep.c s21_grep.h Makefile -hv
+4854 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hv
+4861 - Fail for s21_grep.c s21_grep.h Makefile -hc
+4863 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hc
+4870 - Fail for s21_grep.c s21_grep.h Makefile -hl
+4872 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hl
+4879 - Fail for s21_grep.c s21_grep.h Makefile -hn
+4881 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hn
+4888 - Fail for s21_grep.c s21_grep.h Makefile -ho
+4890 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ho
+4897 - Fail for s21_grep.c s21_grep.h Makefile -ov
+4899 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ov
+4906 - Fail for s21_grep.c s21_grep.h Makefile -oc
+4908 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -oc
+4915 - Fail for s21_grep.c s21_grep.h Makefile -ol
+4917 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ol
+4923 - Fail s test_files/test_0_grep.txt -on
+4924 - Fail for s21_grep.c s21_grep.h Makefile -on
+4926 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -on
+4928 - Fail -e regex -e ^print s21_grep.c -on -f test_files/test_ptrn_grep.txt
+4933 - Fail for s21_grep.c s21_grep.h Makefile -oh
+4935 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -oh
+
+#######################
+AUTOTESTS
+#######################
+
+=======================
+TRIPLE PARAMETER
+=======================
+
+4942 - Fail for s21_grep.c s21_grep.h Makefile -vcl
+4944 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vcl
+4951 - Fail for s21_grep.c s21_grep.h Makefile -vcn
+4953 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vcn
+4960 - Fail for s21_grep.c s21_grep.h Makefile -vch
+4962 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vch
+4969 - Fail for s21_grep.c s21_grep.h Makefile -vco
+4971 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vco
+4978 - Fail for s21_grep.c s21_grep.h Makefile -vlc
+4980 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vlc
+4987 - Fail for s21_grep.c s21_grep.h Makefile -vln
+4989 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vln
+4996 - Fail for s21_grep.c s21_grep.h Makefile -vlh
+4998 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vlh
+5005 - Fail for s21_grep.c s21_grep.h Makefile -vlo
+5007 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vlo
+5014 - Fail for s21_grep.c s21_grep.h Makefile -vnc
+5016 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vnc
+5023 - Fail for s21_grep.c s21_grep.h Makefile -vnl
+5025 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vnl
+5032 - Fail for s21_grep.c s21_grep.h Makefile -vnh
+5034 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vnh
+5041 - Fail for s21_grep.c s21_grep.h Makefile -vno
+5043 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vno
+5050 - Fail for s21_grep.c s21_grep.h Makefile -vhc
+5052 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vhc
+5059 - Fail for s21_grep.c s21_grep.h Makefile -vhl
+5061 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vhl
+5068 - Fail for s21_grep.c s21_grep.h Makefile -vhn
+5070 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vhn
+5077 - Fail for s21_grep.c s21_grep.h Makefile -vho
+5079 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vho
+5086 - Fail for s21_grep.c s21_grep.h Makefile -voc
+5088 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -voc
+5095 - Fail for s21_grep.c s21_grep.h Makefile -vol
+5097 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vol
+5104 - Fail for s21_grep.c s21_grep.h Makefile -von
+5106 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -von
+5113 - Fail for s21_grep.c s21_grep.h Makefile -voh
+5115 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -voh
+5122 - Fail for s21_grep.c s21_grep.h Makefile -cvl
+5124 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cvl
+5131 - Fail for s21_grep.c s21_grep.h Makefile -cvn
+5133 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cvn
+5140 - Fail for s21_grep.c s21_grep.h Makefile -cvh
+5142 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cvh
+5149 - Fail for s21_grep.c s21_grep.h Makefile -cvo
+5151 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cvo
+5158 - Fail for s21_grep.c s21_grep.h Makefile -clv
+5160 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -clv
+5167 - Fail for s21_grep.c s21_grep.h Makefile -cln
+5169 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cln
+5176 - Fail for s21_grep.c s21_grep.h Makefile -clh
+5178 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -clh
+5185 - Fail for s21_grep.c s21_grep.h Makefile -clo
+5187 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -clo
+5194 - Fail for s21_grep.c s21_grep.h Makefile -cnv
+5196 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cnv
+5203 - Fail for s21_grep.c s21_grep.h Makefile -cnl
+5205 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cnl
+5212 - Fail for s21_grep.c s21_grep.h Makefile -cnh
+5214 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cnh
+5221 - Fail for s21_grep.c s21_grep.h Makefile -cno
+5223 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cno
+5230 - Fail for s21_grep.c s21_grep.h Makefile -chv
+5232 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -chv
+5239 - Fail for s21_grep.c s21_grep.h Makefile -chl
+5241 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -chl
+5248 - Fail for s21_grep.c s21_grep.h Makefile -chn
+5250 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -chn
+5257 - Fail for s21_grep.c s21_grep.h Makefile -cho
+5259 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cho
+5266 - Fail for s21_grep.c s21_grep.h Makefile -cov
+5268 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cov
+5275 - Fail for s21_grep.c s21_grep.h Makefile -col
+5277 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -col
+5284 - Fail for s21_grep.c s21_grep.h Makefile -con
+5286 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -con
+5293 - Fail for s21_grep.c s21_grep.h Makefile -coh
+5295 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -coh
+5302 - Fail for s21_grep.c s21_grep.h Makefile -lvc
+5304 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lvc
+5311 - Fail for s21_grep.c s21_grep.h Makefile -lvn
+5313 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lvn
+5320 - Fail for s21_grep.c s21_grep.h Makefile -lvh
+5322 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lvh
+5329 - Fail for s21_grep.c s21_grep.h Makefile -lvo
+5331 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lvo
+5338 - Fail for s21_grep.c s21_grep.h Makefile -lcv
+5340 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lcv
+5347 - Fail for s21_grep.c s21_grep.h Makefile -lcn
+5349 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lcn
+5356 - Fail for s21_grep.c s21_grep.h Makefile -lch
+5358 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lch
+5365 - Fail for s21_grep.c s21_grep.h Makefile -lco
+5367 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lco
+5374 - Fail for s21_grep.c s21_grep.h Makefile -lnv
+5376 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lnv
+5383 - Fail for s21_grep.c s21_grep.h Makefile -lnc
+5385 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lnc
+5392 - Fail for s21_grep.c s21_grep.h Makefile -lnh
+5394 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lnh
+5401 - Fail for s21_grep.c s21_grep.h Makefile -lno
+5403 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lno
+5410 - Fail for s21_grep.c s21_grep.h Makefile -lhv
+5412 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lhv
+5419 - Fail for s21_grep.c s21_grep.h Makefile -lhc
+5421 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lhc
+5428 - Fail for s21_grep.c s21_grep.h Makefile -lhn
+5430 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lhn
+5437 - Fail for s21_grep.c s21_grep.h Makefile -lho
+5439 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lho
+5446 - Fail for s21_grep.c s21_grep.h Makefile -lov
+5448 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lov
+5455 - Fail for s21_grep.c s21_grep.h Makefile -loc
+5457 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -loc
+5464 - Fail for s21_grep.c s21_grep.h Makefile -lon
+5466 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lon
+5473 - Fail for s21_grep.c s21_grep.h Makefile -loh
+5475 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -loh
+5482 - Fail for s21_grep.c s21_grep.h Makefile -nvc
+5484 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nvc
+5491 - Fail for s21_grep.c s21_grep.h Makefile -nvl
+5493 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nvl
+5500 - Fail for s21_grep.c s21_grep.h Makefile -nvh
+5502 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nvh
+5509 - Fail for s21_grep.c s21_grep.h Makefile -nvo
+5511 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nvo
+5518 - Fail for s21_grep.c s21_grep.h Makefile -ncv
+5520 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ncv
+5527 - Fail for s21_grep.c s21_grep.h Makefile -ncl
+5529 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ncl
+5536 - Fail for s21_grep.c s21_grep.h Makefile -nch
+5538 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nch
+5545 - Fail for s21_grep.c s21_grep.h Makefile -nco
+5547 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nco
+5554 - Fail for s21_grep.c s21_grep.h Makefile -nlv
+5556 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nlv
+5563 - Fail for s21_grep.c s21_grep.h Makefile -nlc
+5565 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nlc
+5572 - Fail for s21_grep.c s21_grep.h Makefile -nlh
+5574 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nlh
+5581 - Fail for s21_grep.c s21_grep.h Makefile -nlo
+5583 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nlo
+5590 - Fail for s21_grep.c s21_grep.h Makefile -nhv
+5592 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nhv
+5599 - Fail for s21_grep.c s21_grep.h Makefile -nhc
+5601 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nhc
+5608 - Fail for s21_grep.c s21_grep.h Makefile -nhl
+5610 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nhl
+5616 - Fail s test_files/test_0_grep.txt -nho
+5617 - Fail for s21_grep.c s21_grep.h Makefile -nho
+5619 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nho
+5621 - Fail -e regex -e ^print s21_grep.c -nho -f test_files/test_ptrn_grep.txt
+5626 - Fail for s21_grep.c s21_grep.h Makefile -nov
+5628 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nov
+5635 - Fail for s21_grep.c s21_grep.h Makefile -noc
+5637 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -noc
+5644 - Fail for s21_grep.c s21_grep.h Makefile -nol
+5646 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nol
+5652 - Fail s test_files/test_0_grep.txt -noh
+5653 - Fail for s21_grep.c s21_grep.h Makefile -noh
+5655 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -noh
+5657 - Fail -e regex -e ^print s21_grep.c -noh -f test_files/test_ptrn_grep.txt
+5662 - Fail for s21_grep.c s21_grep.h Makefile -hvc
+5664 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hvc
+5671 - Fail for s21_grep.c s21_grep.h Makefile -hvl
+5673 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hvl
+5680 - Fail for s21_grep.c s21_grep.h Makefile -hvn
+5682 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hvn
+5689 - Fail for s21_grep.c s21_grep.h Makefile -hvo
+5691 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hvo
+5698 - Fail for s21_grep.c s21_grep.h Makefile -hcv
+5700 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hcv
+5707 - Fail for s21_grep.c s21_grep.h Makefile -hcl
+5709 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hcl
+5716 - Fail for s21_grep.c s21_grep.h Makefile -hcn
+5718 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hcn
+5725 - Fail for s21_grep.c s21_grep.h Makefile -hco
+5727 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hco
+5734 - Fail for s21_grep.c s21_grep.h Makefile -hlv
+5736 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hlv
+5743 - Fail for s21_grep.c s21_grep.h Makefile -hlc
+5745 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hlc
+5752 - Fail for s21_grep.c s21_grep.h Makefile -hln
+5754 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hln
+5761 - Fail for s21_grep.c s21_grep.h Makefile -hlo
+5763 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hlo
+5770 - Fail for s21_grep.c s21_grep.h Makefile -hnv
+5772 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hnv
+5779 - Fail for s21_grep.c s21_grep.h Makefile -hnc
+5781 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hnc
+5788 - Fail for s21_grep.c s21_grep.h Makefile -hnl
+5790 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hnl
+5796 - Fail s test_files/test_0_grep.txt -hno
+5797 - Fail for s21_grep.c s21_grep.h Makefile -hno
+5799 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hno
+5801 - Fail -e regex -e ^print s21_grep.c -hno -f test_files/test_ptrn_grep.txt
+5806 - Fail for s21_grep.c s21_grep.h Makefile -hov
+5808 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hov
+5815 - Fail for s21_grep.c s21_grep.h Makefile -hoc
+5817 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hoc
+5824 - Fail for s21_grep.c s21_grep.h Makefile -hol
+5826 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hol
+5832 - Fail s test_files/test_0_grep.txt -hon
+5833 - Fail for s21_grep.c s21_grep.h Makefile -hon
+5835 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hon
+5837 - Fail -e regex -e ^print s21_grep.c -hon -f test_files/test_ptrn_grep.txt
+5842 - Fail for s21_grep.c s21_grep.h Makefile -ovc
+5844 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovc
+5851 - Fail for s21_grep.c s21_grep.h Makefile -ovl
+5853 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovl
+5860 - Fail for s21_grep.c s21_grep.h Makefile -ovn
+5862 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovn
+5869 - Fail for s21_grep.c s21_grep.h Makefile -ovh
+5871 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovh
+5878 - Fail for s21_grep.c s21_grep.h Makefile -ocv
+5880 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ocv
+5887 - Fail for s21_grep.c s21_grep.h Makefile -ocl
+5889 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ocl
+5896 - Fail for s21_grep.c s21_grep.h Makefile -ocn
+5898 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ocn
+5905 - Fail for s21_grep.c s21_grep.h Makefile -och
+5907 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -och
+5914 - Fail for s21_grep.c s21_grep.h Makefile -olv
+5916 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -olv
+5923 - Fail for s21_grep.c s21_grep.h Makefile -olc
+5925 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -olc
+5932 - Fail for s21_grep.c s21_grep.h Makefile -oln
+5934 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -oln
+5941 - Fail for s21_grep.c s21_grep.h Makefile -olh
+5943 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -olh
+5950 - Fail for s21_grep.c s21_grep.h Makefile -onv
+5952 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -onv
+5959 - Fail for s21_grep.c s21_grep.h Makefile -onc
+5961 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -onc
+5968 - Fail for s21_grep.c s21_grep.h Makefile -onl
+5970 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -onl
+5976 - Fail s test_files/test_0_grep.txt -onh
+5977 - Fail for s21_grep.c s21_grep.h Makefile -onh
+5979 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -onh
+5981 - Fail -e regex -e ^print s21_grep.c -onh -f test_files/test_ptrn_grep.txt
+5986 - Fail for s21_grep.c s21_grep.h Makefile -ohv
+5988 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ohv
+5995 - Fail for s21_grep.c s21_grep.h Makefile -ohc
+5997 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ohc
+6004 - Fail for s21_grep.c s21_grep.h Makefile -ohl
+6006 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ohl
+6012 - Fail s test_files/test_0_grep.txt -ohn
+6013 - Fail for s21_grep.c s21_grep.h Makefile -ohn
+6015 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ohn
+6017 - Fail -e regex -e ^print s21_grep.c -ohn -f test_files/test_ptrn_grep.txt
+
+FAILED: 1368
+SUCCESSFUL: 4652
+ALL: 6020
+

@@ -1,0 +1,3 @@
+/Users/hester/Documents/Clion/grep/cmake-build-debug/CMakeFiles/grep.dir
+/Users/hester/Documents/Clion/grep/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hester/Documents/Clion/grep/cmake-build-debug/CMakeFiles/rebuild_cache.dir

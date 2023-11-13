@@ -1,0 +1,1854 @@
+^^^^^^^^^^^^^^^^^^^^^^^
+TESTS WITH NORMAL FLAGS
+^^^^^^^^^^^^^^^^^^^^^^^
+
+#######################
+MANUAL TESTS
+#######################
+
+16 - Fail -noe ) test_files/test_5_grep.txt
+20 - Fail -noe ing -e as -e the -e not -e is test_files/test_6_grep.txt
+26 - Fail -f test_files/test_3_grep.txt test_files/test_5_grep.txt
+
+#######################
+AUTOTESTS
+#######################
+
+=======================
+1 PARAMETER
+=======================
+
+
+=======================
+2 PARAMETERS
+=======================
+
+117 - Fail s test_files/test_0_grep.txt -v -o
+118 - Fail for s21_grep.c s21_grep.h Makefile -v -o
+119 - Fail for s21_grep.c -v -o
+120 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o
+121 - Fail -e for -e ^int s21_grep.c -v -o
+122 - Fail -e regex -e ^print s21_grep.c -v -o -f test_files/test_ptrn_grep.txt
+123 - Fail -e while -e void s21_grep.c Makefile -v -o -f test_files/test_ptrn_grep.txt
+124 - Fail -e intel -e int -v -o test_files/test_7_grep.txt
+125 - Fail -e int -e intel -v -o test_files/test_7_grep.txt
+252 - Fail s test_files/test_0_grep.txt -n -o
+257 - Fail -e regex -e ^print s21_grep.c -n -o -f test_files/test_ptrn_grep.txt
+306 - Fail s test_files/test_0_grep.txt -o -v
+307 - Fail for s21_grep.c s21_grep.h Makefile -o -v
+308 - Fail for s21_grep.c -o -v
+309 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v
+310 - Fail -e for -e ^int s21_grep.c -o -v
+311 - Fail -e regex -e ^print s21_grep.c -o -v -f test_files/test_ptrn_grep.txt
+312 - Fail -e while -e void s21_grep.c Makefile -o -v -f test_files/test_ptrn_grep.txt
+313 - Fail -e intel -e int -o -v test_files/test_7_grep.txt
+314 - Fail -e int -e intel -o -v test_files/test_7_grep.txt
+333 - Fail s test_files/test_0_grep.txt -o -n
+338 - Fail -e regex -e ^print s21_grep.c -o -n -f test_files/test_ptrn_grep.txt
+
+=======================
+3 PARAMETERS
+=======================
+
+378 - Fail s test_files/test_0_grep.txt -v -c -o
+379 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o
+380 - Fail for s21_grep.c -v -c -o
+381 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o
+382 - Fail -e for -e ^int s21_grep.c -v -c -o
+383 - Fail -e regex -e ^print s21_grep.c -v -c -o -f test_files/test_ptrn_grep.txt
+384 - Fail -e while -e void s21_grep.c Makefile -v -c -o -f test_files/test_ptrn_grep.txt
+385 - Fail -e intel -e int -v -c -o test_files/test_7_grep.txt
+386 - Fail -e int -e intel -v -c -o test_files/test_7_grep.txt
+414 - Fail s test_files/test_0_grep.txt -v -l -o
+415 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o
+416 - Fail for s21_grep.c -v -l -o
+417 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o
+418 - Fail -e for -e ^int s21_grep.c -v -l -o
+419 - Fail -e regex -e ^print s21_grep.c -v -l -o -f test_files/test_ptrn_grep.txt
+420 - Fail -e while -e void s21_grep.c Makefile -v -l -o -f test_files/test_ptrn_grep.txt
+421 - Fail -e intel -e int -v -l -o test_files/test_7_grep.txt
+422 - Fail -e int -e intel -v -l -o test_files/test_7_grep.txt
+450 - Fail s test_files/test_0_grep.txt -v -n -o
+451 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o
+452 - Fail for s21_grep.c -v -n -o
+453 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o
+454 - Fail -e for -e ^int s21_grep.c -v -n -o
+455 - Fail -e regex -e ^print s21_grep.c -v -n -o -f test_files/test_ptrn_grep.txt
+456 - Fail -e while -e void s21_grep.c Makefile -v -n -o -f test_files/test_ptrn_grep.txt
+457 - Fail -e intel -e int -v -n -o test_files/test_7_grep.txt
+458 - Fail -e int -e intel -v -n -o test_files/test_7_grep.txt
+486 - Fail s test_files/test_0_grep.txt -v -h -o
+487 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o
+488 - Fail for s21_grep.c -v -h -o
+489 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o
+490 - Fail -e for -e ^int s21_grep.c -v -h -o
+491 - Fail -e regex -e ^print s21_grep.c -v -h -o -f test_files/test_ptrn_grep.txt
+492 - Fail -e while -e void s21_grep.c Makefile -v -h -o -f test_files/test_ptrn_grep.txt
+493 - Fail -e intel -e int -v -h -o test_files/test_7_grep.txt
+494 - Fail -e int -e intel -v -h -o test_files/test_7_grep.txt
+495 - Fail s test_files/test_0_grep.txt -v -o -c
+496 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c
+497 - Fail for s21_grep.c -v -o -c
+498 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c
+499 - Fail -e for -e ^int s21_grep.c -v -o -c
+500 - Fail -e regex -e ^print s21_grep.c -v -o -c -f test_files/test_ptrn_grep.txt
+501 - Fail -e while -e void s21_grep.c Makefile -v -o -c -f test_files/test_ptrn_grep.txt
+502 - Fail -e intel -e int -v -o -c test_files/test_7_grep.txt
+503 - Fail -e int -e intel -v -o -c test_files/test_7_grep.txt
+504 - Fail s test_files/test_0_grep.txt -v -o -l
+505 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l
+506 - Fail for s21_grep.c -v -o -l
+507 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l
+508 - Fail -e for -e ^int s21_grep.c -v -o -l
+509 - Fail -e regex -e ^print s21_grep.c -v -o -l -f test_files/test_ptrn_grep.txt
+510 - Fail -e while -e void s21_grep.c Makefile -v -o -l -f test_files/test_ptrn_grep.txt
+511 - Fail -e intel -e int -v -o -l test_files/test_7_grep.txt
+512 - Fail -e int -e intel -v -o -l test_files/test_7_grep.txt
+513 - Fail s test_files/test_0_grep.txt -v -o -n
+514 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n
+515 - Fail for s21_grep.c -v -o -n
+516 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n
+517 - Fail -e for -e ^int s21_grep.c -v -o -n
+518 - Fail -e regex -e ^print s21_grep.c -v -o -n -f test_files/test_ptrn_grep.txt
+519 - Fail -e while -e void s21_grep.c Makefile -v -o -n -f test_files/test_ptrn_grep.txt
+520 - Fail -e intel -e int -v -o -n test_files/test_7_grep.txt
+521 - Fail -e int -e intel -v -o -n test_files/test_7_grep.txt
+522 - Fail s test_files/test_0_grep.txt -v -o -h
+523 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h
+524 - Fail for s21_grep.c -v -o -h
+525 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h
+526 - Fail -e for -e ^int s21_grep.c -v -o -h
+527 - Fail -e regex -e ^print s21_grep.c -v -o -h -f test_files/test_ptrn_grep.txt
+528 - Fail -e while -e void s21_grep.c Makefile -v -o -h -f test_files/test_ptrn_grep.txt
+529 - Fail -e intel -e int -v -o -h test_files/test_7_grep.txt
+530 - Fail -e int -e intel -v -o -h test_files/test_7_grep.txt
+558 - Fail s test_files/test_0_grep.txt -c -v -o
+559 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o
+560 - Fail for s21_grep.c -c -v -o
+561 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o
+562 - Fail -e for -e ^int s21_grep.c -c -v -o
+563 - Fail -e regex -e ^print s21_grep.c -c -v -o -f test_files/test_ptrn_grep.txt
+564 - Fail -e while -e void s21_grep.c Makefile -c -v -o -f test_files/test_ptrn_grep.txt
+565 - Fail -e intel -e int -c -v -o test_files/test_7_grep.txt
+566 - Fail -e int -e intel -c -v -o test_files/test_7_grep.txt
+675 - Fail s test_files/test_0_grep.txt -c -o -v
+676 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v
+677 - Fail for s21_grep.c -c -o -v
+678 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v
+679 - Fail -e for -e ^int s21_grep.c -c -o -v
+680 - Fail -e regex -e ^print s21_grep.c -c -o -v -f test_files/test_ptrn_grep.txt
+681 - Fail -e while -e void s21_grep.c Makefile -c -o -v -f test_files/test_ptrn_grep.txt
+682 - Fail -e intel -e int -c -o -v test_files/test_7_grep.txt
+683 - Fail -e int -e intel -c -o -v test_files/test_7_grep.txt
+738 - Fail s test_files/test_0_grep.txt -l -v -o
+739 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o
+740 - Fail for s21_grep.c -l -v -o
+741 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o
+742 - Fail -e for -e ^int s21_grep.c -l -v -o
+743 - Fail -e regex -e ^print s21_grep.c -l -v -o -f test_files/test_ptrn_grep.txt
+744 - Fail -e while -e void s21_grep.c Makefile -l -v -o -f test_files/test_ptrn_grep.txt
+745 - Fail -e intel -e int -l -v -o test_files/test_7_grep.txt
+746 - Fail -e int -e intel -l -v -o test_files/test_7_grep.txt
+855 - Fail s test_files/test_0_grep.txt -l -o -v
+856 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v
+857 - Fail for s21_grep.c -l -o -v
+858 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v
+859 - Fail -e for -e ^int s21_grep.c -l -o -v
+860 - Fail -e regex -e ^print s21_grep.c -l -o -v -f test_files/test_ptrn_grep.txt
+861 - Fail -e while -e void s21_grep.c Makefile -l -o -v -f test_files/test_ptrn_grep.txt
+862 - Fail -e intel -e int -l -o -v test_files/test_7_grep.txt
+863 - Fail -e int -e intel -l -o -v test_files/test_7_grep.txt
+918 - Fail s test_files/test_0_grep.txt -n -v -o
+919 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o
+920 - Fail for s21_grep.c -n -v -o
+921 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o
+922 - Fail -e for -e ^int s21_grep.c -n -v -o
+923 - Fail -e regex -e ^print s21_grep.c -n -v -o -f test_files/test_ptrn_grep.txt
+924 - Fail -e while -e void s21_grep.c Makefile -n -v -o -f test_files/test_ptrn_grep.txt
+925 - Fail -e intel -e int -n -v -o test_files/test_7_grep.txt
+926 - Fail -e int -e intel -n -v -o test_files/test_7_grep.txt
+1026 - Fail s test_files/test_0_grep.txt -n -h -o
+1031 - Fail -e regex -e ^print s21_grep.c -n -h -o -f test_files/test_ptrn_grep.txt
+1035 - Fail s test_files/test_0_grep.txt -n -o -v
+1036 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v
+1037 - Fail for s21_grep.c -n -o -v
+1038 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v
+1039 - Fail -e for -e ^int s21_grep.c -n -o -v
+1040 - Fail -e regex -e ^print s21_grep.c -n -o -v -f test_files/test_ptrn_grep.txt
+1041 - Fail -e while -e void s21_grep.c Makefile -n -o -v -f test_files/test_ptrn_grep.txt
+1042 - Fail -e intel -e int -n -o -v test_files/test_7_grep.txt
+1043 - Fail -e int -e intel -n -o -v test_files/test_7_grep.txt
+1062 - Fail s test_files/test_0_grep.txt -n -o -h
+1067 - Fail -e regex -e ^print s21_grep.c -n -o -h -f test_files/test_ptrn_grep.txt
+1098 - Fail s test_files/test_0_grep.txt -h -v -o
+1099 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o
+1100 - Fail for s21_grep.c -h -v -o
+1101 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o
+1102 - Fail -e for -e ^int s21_grep.c -h -v -o
+1103 - Fail -e regex -e ^print s21_grep.c -h -v -o -f test_files/test_ptrn_grep.txt
+1104 - Fail -e while -e void s21_grep.c Makefile -h -v -o -f test_files/test_ptrn_grep.txt
+1105 - Fail -e intel -e int -h -v -o test_files/test_7_grep.txt
+1106 - Fail -e int -e intel -h -v -o test_files/test_7_grep.txt
+1206 - Fail s test_files/test_0_grep.txt -h -n -o
+1211 - Fail -e regex -e ^print s21_grep.c -h -n -o -f test_files/test_ptrn_grep.txt
+1215 - Fail s test_files/test_0_grep.txt -h -o -v
+1216 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v
+1217 - Fail for s21_grep.c -h -o -v
+1218 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v
+1219 - Fail -e for -e ^int s21_grep.c -h -o -v
+1220 - Fail -e regex -e ^print s21_grep.c -h -o -v -f test_files/test_ptrn_grep.txt
+1221 - Fail -e while -e void s21_grep.c Makefile -h -o -v -f test_files/test_ptrn_grep.txt
+1222 - Fail -e intel -e int -h -o -v test_files/test_7_grep.txt
+1223 - Fail -e int -e intel -h -o -v test_files/test_7_grep.txt
+1242 - Fail s test_files/test_0_grep.txt -h -o -n
+1247 - Fail -e regex -e ^print s21_grep.c -h -o -n -f test_files/test_ptrn_grep.txt
+1251 - Fail s test_files/test_0_grep.txt -o -v -c
+1252 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c
+1253 - Fail for s21_grep.c -o -v -c
+1254 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c
+1255 - Fail -e for -e ^int s21_grep.c -o -v -c
+1256 - Fail -e regex -e ^print s21_grep.c -o -v -c -f test_files/test_ptrn_grep.txt
+1257 - Fail -e while -e void s21_grep.c Makefile -o -v -c -f test_files/test_ptrn_grep.txt
+1258 - Fail -e intel -e int -o -v -c test_files/test_7_grep.txt
+1259 - Fail -e int -e intel -o -v -c test_files/test_7_grep.txt
+1260 - Fail s test_files/test_0_grep.txt -o -v -l
+1261 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l
+1262 - Fail for s21_grep.c -o -v -l
+1263 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l
+1264 - Fail -e for -e ^int s21_grep.c -o -v -l
+1265 - Fail -e regex -e ^print s21_grep.c -o -v -l -f test_files/test_ptrn_grep.txt
+1266 - Fail -e while -e void s21_grep.c Makefile -o -v -l -f test_files/test_ptrn_grep.txt
+1267 - Fail -e intel -e int -o -v -l test_files/test_7_grep.txt
+1268 - Fail -e int -e intel -o -v -l test_files/test_7_grep.txt
+1269 - Fail s test_files/test_0_grep.txt -o -v -n
+1270 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n
+1271 - Fail for s21_grep.c -o -v -n
+1272 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n
+1273 - Fail -e for -e ^int s21_grep.c -o -v -n
+1274 - Fail -e regex -e ^print s21_grep.c -o -v -n -f test_files/test_ptrn_grep.txt
+1275 - Fail -e while -e void s21_grep.c Makefile -o -v -n -f test_files/test_ptrn_grep.txt
+1276 - Fail -e intel -e int -o -v -n test_files/test_7_grep.txt
+1277 - Fail -e int -e intel -o -v -n test_files/test_7_grep.txt
+1278 - Fail s test_files/test_0_grep.txt -o -v -h
+1279 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h
+1280 - Fail for s21_grep.c -o -v -h
+1281 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h
+1282 - Fail -e for -e ^int s21_grep.c -o -v -h
+1283 - Fail -e regex -e ^print s21_grep.c -o -v -h -f test_files/test_ptrn_grep.txt
+1284 - Fail -e while -e void s21_grep.c Makefile -o -v -h -f test_files/test_ptrn_grep.txt
+1285 - Fail -e intel -e int -o -v -h test_files/test_7_grep.txt
+1286 - Fail -e int -e intel -o -v -h test_files/test_7_grep.txt
+1287 - Fail s test_files/test_0_grep.txt -o -c -v
+1288 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v
+1289 - Fail for s21_grep.c -o -c -v
+1290 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v
+1291 - Fail -e for -e ^int s21_grep.c -o -c -v
+1292 - Fail -e regex -e ^print s21_grep.c -o -c -v -f test_files/test_ptrn_grep.txt
+1293 - Fail -e while -e void s21_grep.c Makefile -o -c -v -f test_files/test_ptrn_grep.txt
+1294 - Fail -e intel -e int -o -c -v test_files/test_7_grep.txt
+1295 - Fail -e int -e intel -o -c -v test_files/test_7_grep.txt
+1323 - Fail s test_files/test_0_grep.txt -o -l -v
+1324 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v
+1325 - Fail for s21_grep.c -o -l -v
+1326 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v
+1327 - Fail -e for -e ^int s21_grep.c -o -l -v
+1328 - Fail -e regex -e ^print s21_grep.c -o -l -v -f test_files/test_ptrn_grep.txt
+1329 - Fail -e while -e void s21_grep.c Makefile -o -l -v -f test_files/test_ptrn_grep.txt
+1330 - Fail -e intel -e int -o -l -v test_files/test_7_grep.txt
+1331 - Fail -e int -e intel -o -l -v test_files/test_7_grep.txt
+1359 - Fail s test_files/test_0_grep.txt -o -n -v
+1360 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v
+1361 - Fail for s21_grep.c -o -n -v
+1362 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v
+1363 - Fail -e for -e ^int s21_grep.c -o -n -v
+1364 - Fail -e regex -e ^print s21_grep.c -o -n -v -f test_files/test_ptrn_grep.txt
+1365 - Fail -e while -e void s21_grep.c Makefile -o -n -v -f test_files/test_ptrn_grep.txt
+1366 - Fail -e intel -e int -o -n -v test_files/test_7_grep.txt
+1367 - Fail -e int -e intel -o -n -v test_files/test_7_grep.txt
+1386 - Fail s test_files/test_0_grep.txt -o -n -h
+1391 - Fail -e regex -e ^print s21_grep.c -o -n -h -f test_files/test_ptrn_grep.txt
+1395 - Fail s test_files/test_0_grep.txt -o -h -v
+1396 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v
+1397 - Fail for s21_grep.c -o -h -v
+1398 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v
+1399 - Fail -e for -e ^int s21_grep.c -o -h -v
+1400 - Fail -e regex -e ^print s21_grep.c -o -h -v -f test_files/test_ptrn_grep.txt
+1401 - Fail -e while -e void s21_grep.c Makefile -o -h -v -f test_files/test_ptrn_grep.txt
+1402 - Fail -e intel -e int -o -h -v test_files/test_7_grep.txt
+1403 - Fail -e int -e intel -o -h -v test_files/test_7_grep.txt
+1422 - Fail s test_files/test_0_grep.txt -o -h -n
+1427 - Fail -e regex -e ^print s21_grep.c -o -h -n -f test_files/test_ptrn_grep.txt
+
+=======================
+4 PARAMETERS
+=======================
+
+1449 - Fail s test_files/test_0_grep.txt -v -c -l -o
+1450 - Fail for s21_grep.c s21_grep.h Makefile -v -c -l -o
+1451 - Fail for s21_grep.c -v -c -l -o
+1452 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -l -o
+1453 - Fail -e for -e ^int s21_grep.c -v -c -l -o
+1454 - Fail -e regex -e ^print s21_grep.c -v -c -l -o -f test_files/test_ptrn_grep.txt
+1455 - Fail -e while -e void s21_grep.c Makefile -v -c -l -o -f test_files/test_ptrn_grep.txt
+1456 - Fail -e intel -e int -v -c -l -o test_files/test_7_grep.txt
+1457 - Fail -e int -e intel -v -c -l -o test_files/test_7_grep.txt
+1476 - Fail s test_files/test_0_grep.txt -v -c -n -o
+1477 - Fail for s21_grep.c s21_grep.h Makefile -v -c -n -o
+1478 - Fail for s21_grep.c -v -c -n -o
+1479 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -n -o
+1480 - Fail -e for -e ^int s21_grep.c -v -c -n -o
+1481 - Fail -e regex -e ^print s21_grep.c -v -c -n -o -f test_files/test_ptrn_grep.txt
+1482 - Fail -e while -e void s21_grep.c Makefile -v -c -n -o -f test_files/test_ptrn_grep.txt
+1483 - Fail -e intel -e int -v -c -n -o test_files/test_7_grep.txt
+1484 - Fail -e int -e intel -v -c -n -o test_files/test_7_grep.txt
+1503 - Fail s test_files/test_0_grep.txt -v -c -h -o
+1504 - Fail for s21_grep.c s21_grep.h Makefile -v -c -h -o
+1505 - Fail for s21_grep.c -v -c -h -o
+1506 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -h -o
+1507 - Fail -e for -e ^int s21_grep.c -v -c -h -o
+1508 - Fail -e regex -e ^print s21_grep.c -v -c -h -o -f test_files/test_ptrn_grep.txt
+1509 - Fail -e while -e void s21_grep.c Makefile -v -c -h -o -f test_files/test_ptrn_grep.txt
+1510 - Fail -e intel -e int -v -c -h -o test_files/test_7_grep.txt
+1511 - Fail -e int -e intel -v -c -h -o test_files/test_7_grep.txt
+1512 - Fail s test_files/test_0_grep.txt -v -c -o -l
+1513 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o -l
+1514 - Fail for s21_grep.c -v -c -o -l
+1515 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o -l
+1516 - Fail -e for -e ^int s21_grep.c -v -c -o -l
+1517 - Fail -e regex -e ^print s21_grep.c -v -c -o -l -f test_files/test_ptrn_grep.txt
+1518 - Fail -e while -e void s21_grep.c Makefile -v -c -o -l -f test_files/test_ptrn_grep.txt
+1519 - Fail -e intel -e int -v -c -o -l test_files/test_7_grep.txt
+1520 - Fail -e int -e intel -v -c -o -l test_files/test_7_grep.txt
+1521 - Fail s test_files/test_0_grep.txt -v -c -o -n
+1522 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o -n
+1523 - Fail for s21_grep.c -v -c -o -n
+1524 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o -n
+1525 - Fail -e for -e ^int s21_grep.c -v -c -o -n
+1526 - Fail -e regex -e ^print s21_grep.c -v -c -o -n -f test_files/test_ptrn_grep.txt
+1527 - Fail -e while -e void s21_grep.c Makefile -v -c -o -n -f test_files/test_ptrn_grep.txt
+1528 - Fail -e intel -e int -v -c -o -n test_files/test_7_grep.txt
+1529 - Fail -e int -e intel -v -c -o -n test_files/test_7_grep.txt
+1530 - Fail s test_files/test_0_grep.txt -v -c -o -h
+1531 - Fail for s21_grep.c s21_grep.h Makefile -v -c -o -h
+1532 - Fail for s21_grep.c -v -c -o -h
+1533 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -c -o -h
+1534 - Fail -e for -e ^int s21_grep.c -v -c -o -h
+1535 - Fail -e regex -e ^print s21_grep.c -v -c -o -h -f test_files/test_ptrn_grep.txt
+1536 - Fail -e while -e void s21_grep.c Makefile -v -c -o -h -f test_files/test_ptrn_grep.txt
+1537 - Fail -e intel -e int -v -c -o -h test_files/test_7_grep.txt
+1538 - Fail -e int -e intel -v -c -o -h test_files/test_7_grep.txt
+1557 - Fail s test_files/test_0_grep.txt -v -l -c -o
+1558 - Fail for s21_grep.c s21_grep.h Makefile -v -l -c -o
+1559 - Fail for s21_grep.c -v -l -c -o
+1560 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -c -o
+1561 - Fail -e for -e ^int s21_grep.c -v -l -c -o
+1562 - Fail -e regex -e ^print s21_grep.c -v -l -c -o -f test_files/test_ptrn_grep.txt
+1563 - Fail -e while -e void s21_grep.c Makefile -v -l -c -o -f test_files/test_ptrn_grep.txt
+1564 - Fail -e intel -e int -v -l -c -o test_files/test_7_grep.txt
+1565 - Fail -e int -e intel -v -l -c -o test_files/test_7_grep.txt
+1584 - Fail s test_files/test_0_grep.txt -v -l -n -o
+1585 - Fail for s21_grep.c s21_grep.h Makefile -v -l -n -o
+1586 - Fail for s21_grep.c -v -l -n -o
+1587 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -n -o
+1588 - Fail -e for -e ^int s21_grep.c -v -l -n -o
+1589 - Fail -e regex -e ^print s21_grep.c -v -l -n -o -f test_files/test_ptrn_grep.txt
+1590 - Fail -e while -e void s21_grep.c Makefile -v -l -n -o -f test_files/test_ptrn_grep.txt
+1591 - Fail -e intel -e int -v -l -n -o test_files/test_7_grep.txt
+1592 - Fail -e int -e intel -v -l -n -o test_files/test_7_grep.txt
+1611 - Fail s test_files/test_0_grep.txt -v -l -h -o
+1612 - Fail for s21_grep.c s21_grep.h Makefile -v -l -h -o
+1613 - Fail for s21_grep.c -v -l -h -o
+1614 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -h -o
+1615 - Fail -e for -e ^int s21_grep.c -v -l -h -o
+1616 - Fail -e regex -e ^print s21_grep.c -v -l -h -o -f test_files/test_ptrn_grep.txt
+1617 - Fail -e while -e void s21_grep.c Makefile -v -l -h -o -f test_files/test_ptrn_grep.txt
+1618 - Fail -e intel -e int -v -l -h -o test_files/test_7_grep.txt
+1619 - Fail -e int -e intel -v -l -h -o test_files/test_7_grep.txt
+1620 - Fail s test_files/test_0_grep.txt -v -l -o -c
+1621 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o -c
+1622 - Fail for s21_grep.c -v -l -o -c
+1623 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o -c
+1624 - Fail -e for -e ^int s21_grep.c -v -l -o -c
+1625 - Fail -e regex -e ^print s21_grep.c -v -l -o -c -f test_files/test_ptrn_grep.txt
+1626 - Fail -e while -e void s21_grep.c Makefile -v -l -o -c -f test_files/test_ptrn_grep.txt
+1627 - Fail -e intel -e int -v -l -o -c test_files/test_7_grep.txt
+1628 - Fail -e int -e intel -v -l -o -c test_files/test_7_grep.txt
+1629 - Fail s test_files/test_0_grep.txt -v -l -o -n
+1630 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o -n
+1631 - Fail for s21_grep.c -v -l -o -n
+1632 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o -n
+1633 - Fail -e for -e ^int s21_grep.c -v -l -o -n
+1634 - Fail -e regex -e ^print s21_grep.c -v -l -o -n -f test_files/test_ptrn_grep.txt
+1635 - Fail -e while -e void s21_grep.c Makefile -v -l -o -n -f test_files/test_ptrn_grep.txt
+1636 - Fail -e intel -e int -v -l -o -n test_files/test_7_grep.txt
+1637 - Fail -e int -e intel -v -l -o -n test_files/test_7_grep.txt
+1638 - Fail s test_files/test_0_grep.txt -v -l -o -h
+1639 - Fail for s21_grep.c s21_grep.h Makefile -v -l -o -h
+1640 - Fail for s21_grep.c -v -l -o -h
+1641 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -l -o -h
+1642 - Fail -e for -e ^int s21_grep.c -v -l -o -h
+1643 - Fail -e regex -e ^print s21_grep.c -v -l -o -h -f test_files/test_ptrn_grep.txt
+1644 - Fail -e while -e void s21_grep.c Makefile -v -l -o -h -f test_files/test_ptrn_grep.txt
+1645 - Fail -e intel -e int -v -l -o -h test_files/test_7_grep.txt
+1646 - Fail -e int -e intel -v -l -o -h test_files/test_7_grep.txt
+1665 - Fail s test_files/test_0_grep.txt -v -n -c -o
+1666 - Fail for s21_grep.c s21_grep.h Makefile -v -n -c -o
+1667 - Fail for s21_grep.c -v -n -c -o
+1668 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -c -o
+1669 - Fail -e for -e ^int s21_grep.c -v -n -c -o
+1670 - Fail -e regex -e ^print s21_grep.c -v -n -c -o -f test_files/test_ptrn_grep.txt
+1671 - Fail -e while -e void s21_grep.c Makefile -v -n -c -o -f test_files/test_ptrn_grep.txt
+1672 - Fail -e intel -e int -v -n -c -o test_files/test_7_grep.txt
+1673 - Fail -e int -e intel -v -n -c -o test_files/test_7_grep.txt
+1692 - Fail s test_files/test_0_grep.txt -v -n -l -o
+1693 - Fail for s21_grep.c s21_grep.h Makefile -v -n -l -o
+1694 - Fail for s21_grep.c -v -n -l -o
+1695 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -l -o
+1696 - Fail -e for -e ^int s21_grep.c -v -n -l -o
+1697 - Fail -e regex -e ^print s21_grep.c -v -n -l -o -f test_files/test_ptrn_grep.txt
+1698 - Fail -e while -e void s21_grep.c Makefile -v -n -l -o -f test_files/test_ptrn_grep.txt
+1699 - Fail -e intel -e int -v -n -l -o test_files/test_7_grep.txt
+1700 - Fail -e int -e intel -v -n -l -o test_files/test_7_grep.txt
+1719 - Fail s test_files/test_0_grep.txt -v -n -h -o
+1720 - Fail for s21_grep.c s21_grep.h Makefile -v -n -h -o
+1721 - Fail for s21_grep.c -v -n -h -o
+1722 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -h -o
+1723 - Fail -e for -e ^int s21_grep.c -v -n -h -o
+1724 - Fail -e regex -e ^print s21_grep.c -v -n -h -o -f test_files/test_ptrn_grep.txt
+1725 - Fail -e while -e void s21_grep.c Makefile -v -n -h -o -f test_files/test_ptrn_grep.txt
+1726 - Fail -e intel -e int -v -n -h -o test_files/test_7_grep.txt
+1727 - Fail -e int -e intel -v -n -h -o test_files/test_7_grep.txt
+1728 - Fail s test_files/test_0_grep.txt -v -n -o -c
+1729 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o -c
+1730 - Fail for s21_grep.c -v -n -o -c
+1731 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o -c
+1732 - Fail -e for -e ^int s21_grep.c -v -n -o -c
+1733 - Fail -e regex -e ^print s21_grep.c -v -n -o -c -f test_files/test_ptrn_grep.txt
+1734 - Fail -e while -e void s21_grep.c Makefile -v -n -o -c -f test_files/test_ptrn_grep.txt
+1735 - Fail -e intel -e int -v -n -o -c test_files/test_7_grep.txt
+1736 - Fail -e int -e intel -v -n -o -c test_files/test_7_grep.txt
+1737 - Fail s test_files/test_0_grep.txt -v -n -o -l
+1738 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o -l
+1739 - Fail for s21_grep.c -v -n -o -l
+1740 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o -l
+1741 - Fail -e for -e ^int s21_grep.c -v -n -o -l
+1742 - Fail -e regex -e ^print s21_grep.c -v -n -o -l -f test_files/test_ptrn_grep.txt
+1743 - Fail -e while -e void s21_grep.c Makefile -v -n -o -l -f test_files/test_ptrn_grep.txt
+1744 - Fail -e intel -e int -v -n -o -l test_files/test_7_grep.txt
+1745 - Fail -e int -e intel -v -n -o -l test_files/test_7_grep.txt
+1746 - Fail s test_files/test_0_grep.txt -v -n -o -h
+1747 - Fail for s21_grep.c s21_grep.h Makefile -v -n -o -h
+1748 - Fail for s21_grep.c -v -n -o -h
+1749 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -n -o -h
+1750 - Fail -e for -e ^int s21_grep.c -v -n -o -h
+1751 - Fail -e regex -e ^print s21_grep.c -v -n -o -h -f test_files/test_ptrn_grep.txt
+1752 - Fail -e while -e void s21_grep.c Makefile -v -n -o -h -f test_files/test_ptrn_grep.txt
+1753 - Fail -e intel -e int -v -n -o -h test_files/test_7_grep.txt
+1754 - Fail -e int -e intel -v -n -o -h test_files/test_7_grep.txt
+1773 - Fail s test_files/test_0_grep.txt -v -h -c -o
+1774 - Fail for s21_grep.c s21_grep.h Makefile -v -h -c -o
+1775 - Fail for s21_grep.c -v -h -c -o
+1776 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -c -o
+1777 - Fail -e for -e ^int s21_grep.c -v -h -c -o
+1778 - Fail -e regex -e ^print s21_grep.c -v -h -c -o -f test_files/test_ptrn_grep.txt
+1779 - Fail -e while -e void s21_grep.c Makefile -v -h -c -o -f test_files/test_ptrn_grep.txt
+1780 - Fail -e intel -e int -v -h -c -o test_files/test_7_grep.txt
+1781 - Fail -e int -e intel -v -h -c -o test_files/test_7_grep.txt
+1800 - Fail s test_files/test_0_grep.txt -v -h -l -o
+1801 - Fail for s21_grep.c s21_grep.h Makefile -v -h -l -o
+1802 - Fail for s21_grep.c -v -h -l -o
+1803 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -l -o
+1804 - Fail -e for -e ^int s21_grep.c -v -h -l -o
+1805 - Fail -e regex -e ^print s21_grep.c -v -h -l -o -f test_files/test_ptrn_grep.txt
+1806 - Fail -e while -e void s21_grep.c Makefile -v -h -l -o -f test_files/test_ptrn_grep.txt
+1807 - Fail -e intel -e int -v -h -l -o test_files/test_7_grep.txt
+1808 - Fail -e int -e intel -v -h -l -o test_files/test_7_grep.txt
+1827 - Fail s test_files/test_0_grep.txt -v -h -n -o
+1828 - Fail for s21_grep.c s21_grep.h Makefile -v -h -n -o
+1829 - Fail for s21_grep.c -v -h -n -o
+1830 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -n -o
+1831 - Fail -e for -e ^int s21_grep.c -v -h -n -o
+1832 - Fail -e regex -e ^print s21_grep.c -v -h -n -o -f test_files/test_ptrn_grep.txt
+1833 - Fail -e while -e void s21_grep.c Makefile -v -h -n -o -f test_files/test_ptrn_grep.txt
+1834 - Fail -e intel -e int -v -h -n -o test_files/test_7_grep.txt
+1835 - Fail -e int -e intel -v -h -n -o test_files/test_7_grep.txt
+1836 - Fail s test_files/test_0_grep.txt -v -h -o -c
+1837 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o -c
+1838 - Fail for s21_grep.c -v -h -o -c
+1839 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o -c
+1840 - Fail -e for -e ^int s21_grep.c -v -h -o -c
+1841 - Fail -e regex -e ^print s21_grep.c -v -h -o -c -f test_files/test_ptrn_grep.txt
+1842 - Fail -e while -e void s21_grep.c Makefile -v -h -o -c -f test_files/test_ptrn_grep.txt
+1843 - Fail -e intel -e int -v -h -o -c test_files/test_7_grep.txt
+1844 - Fail -e int -e intel -v -h -o -c test_files/test_7_grep.txt
+1845 - Fail s test_files/test_0_grep.txt -v -h -o -l
+1846 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o -l
+1847 - Fail for s21_grep.c -v -h -o -l
+1848 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o -l
+1849 - Fail -e for -e ^int s21_grep.c -v -h -o -l
+1850 - Fail -e regex -e ^print s21_grep.c -v -h -o -l -f test_files/test_ptrn_grep.txt
+1851 - Fail -e while -e void s21_grep.c Makefile -v -h -o -l -f test_files/test_ptrn_grep.txt
+1852 - Fail -e intel -e int -v -h -o -l test_files/test_7_grep.txt
+1853 - Fail -e int -e intel -v -h -o -l test_files/test_7_grep.txt
+1854 - Fail s test_files/test_0_grep.txt -v -h -o -n
+1855 - Fail for s21_grep.c s21_grep.h Makefile -v -h -o -n
+1856 - Fail for s21_grep.c -v -h -o -n
+1857 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -h -o -n
+1858 - Fail -e for -e ^int s21_grep.c -v -h -o -n
+1859 - Fail -e regex -e ^print s21_grep.c -v -h -o -n -f test_files/test_ptrn_grep.txt
+1860 - Fail -e while -e void s21_grep.c Makefile -v -h -o -n -f test_files/test_ptrn_grep.txt
+1861 - Fail -e intel -e int -v -h -o -n test_files/test_7_grep.txt
+1862 - Fail -e int -e intel -v -h -o -n test_files/test_7_grep.txt
+1863 - Fail s test_files/test_0_grep.txt -v -o -c -l
+1864 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c -l
+1865 - Fail for s21_grep.c -v -o -c -l
+1866 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c -l
+1867 - Fail -e for -e ^int s21_grep.c -v -o -c -l
+1868 - Fail -e regex -e ^print s21_grep.c -v -o -c -l -f test_files/test_ptrn_grep.txt
+1869 - Fail -e while -e void s21_grep.c Makefile -v -o -c -l -f test_files/test_ptrn_grep.txt
+1870 - Fail -e intel -e int -v -o -c -l test_files/test_7_grep.txt
+1871 - Fail -e int -e intel -v -o -c -l test_files/test_7_grep.txt
+1872 - Fail s test_files/test_0_grep.txt -v -o -c -n
+1873 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c -n
+1874 - Fail for s21_grep.c -v -o -c -n
+1875 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c -n
+1876 - Fail -e for -e ^int s21_grep.c -v -o -c -n
+1877 - Fail -e regex -e ^print s21_grep.c -v -o -c -n -f test_files/test_ptrn_grep.txt
+1878 - Fail -e while -e void s21_grep.c Makefile -v -o -c -n -f test_files/test_ptrn_grep.txt
+1879 - Fail -e intel -e int -v -o -c -n test_files/test_7_grep.txt
+1880 - Fail -e int -e intel -v -o -c -n test_files/test_7_grep.txt
+1881 - Fail s test_files/test_0_grep.txt -v -o -c -h
+1882 - Fail for s21_grep.c s21_grep.h Makefile -v -o -c -h
+1883 - Fail for s21_grep.c -v -o -c -h
+1884 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -c -h
+1885 - Fail -e for -e ^int s21_grep.c -v -o -c -h
+1886 - Fail -e regex -e ^print s21_grep.c -v -o -c -h -f test_files/test_ptrn_grep.txt
+1887 - Fail -e while -e void s21_grep.c Makefile -v -o -c -h -f test_files/test_ptrn_grep.txt
+1888 - Fail -e intel -e int -v -o -c -h test_files/test_7_grep.txt
+1889 - Fail -e int -e intel -v -o -c -h test_files/test_7_grep.txt
+1890 - Fail s test_files/test_0_grep.txt -v -o -l -c
+1891 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l -c
+1892 - Fail for s21_grep.c -v -o -l -c
+1893 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l -c
+1894 - Fail -e for -e ^int s21_grep.c -v -o -l -c
+1895 - Fail -e regex -e ^print s21_grep.c -v -o -l -c -f test_files/test_ptrn_grep.txt
+1896 - Fail -e while -e void s21_grep.c Makefile -v -o -l -c -f test_files/test_ptrn_grep.txt
+1897 - Fail -e intel -e int -v -o -l -c test_files/test_7_grep.txt
+1898 - Fail -e int -e intel -v -o -l -c test_files/test_7_grep.txt
+1899 - Fail s test_files/test_0_grep.txt -v -o -l -n
+1900 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l -n
+1901 - Fail for s21_grep.c -v -o -l -n
+1902 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l -n
+1903 - Fail -e for -e ^int s21_grep.c -v -o -l -n
+1904 - Fail -e regex -e ^print s21_grep.c -v -o -l -n -f test_files/test_ptrn_grep.txt
+1905 - Fail -e while -e void s21_grep.c Makefile -v -o -l -n -f test_files/test_ptrn_grep.txt
+1906 - Fail -e intel -e int -v -o -l -n test_files/test_7_grep.txt
+1907 - Fail -e int -e intel -v -o -l -n test_files/test_7_grep.txt
+1908 - Fail s test_files/test_0_grep.txt -v -o -l -h
+1909 - Fail for s21_grep.c s21_grep.h Makefile -v -o -l -h
+1910 - Fail for s21_grep.c -v -o -l -h
+1911 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -l -h
+1912 - Fail -e for -e ^int s21_grep.c -v -o -l -h
+1913 - Fail -e regex -e ^print s21_grep.c -v -o -l -h -f test_files/test_ptrn_grep.txt
+1914 - Fail -e while -e void s21_grep.c Makefile -v -o -l -h -f test_files/test_ptrn_grep.txt
+1915 - Fail -e intel -e int -v -o -l -h test_files/test_7_grep.txt
+1916 - Fail -e int -e intel -v -o -l -h test_files/test_7_grep.txt
+1917 - Fail s test_files/test_0_grep.txt -v -o -n -c
+1918 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n -c
+1919 - Fail for s21_grep.c -v -o -n -c
+1920 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n -c
+1921 - Fail -e for -e ^int s21_grep.c -v -o -n -c
+1922 - Fail -e regex -e ^print s21_grep.c -v -o -n -c -f test_files/test_ptrn_grep.txt
+1923 - Fail -e while -e void s21_grep.c Makefile -v -o -n -c -f test_files/test_ptrn_grep.txt
+1924 - Fail -e intel -e int -v -o -n -c test_files/test_7_grep.txt
+1925 - Fail -e int -e intel -v -o -n -c test_files/test_7_grep.txt
+1926 - Fail s test_files/test_0_grep.txt -v -o -n -l
+1927 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n -l
+1928 - Fail for s21_grep.c -v -o -n -l
+1929 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n -l
+1930 - Fail -e for -e ^int s21_grep.c -v -o -n -l
+1931 - Fail -e regex -e ^print s21_grep.c -v -o -n -l -f test_files/test_ptrn_grep.txt
+1932 - Fail -e while -e void s21_grep.c Makefile -v -o -n -l -f test_files/test_ptrn_grep.txt
+1933 - Fail -e intel -e int -v -o -n -l test_files/test_7_grep.txt
+1934 - Fail -e int -e intel -v -o -n -l test_files/test_7_grep.txt
+1935 - Fail s test_files/test_0_grep.txt -v -o -n -h
+1936 - Fail for s21_grep.c s21_grep.h Makefile -v -o -n -h
+1937 - Fail for s21_grep.c -v -o -n -h
+1938 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -n -h
+1939 - Fail -e for -e ^int s21_grep.c -v -o -n -h
+1940 - Fail -e regex -e ^print s21_grep.c -v -o -n -h -f test_files/test_ptrn_grep.txt
+1941 - Fail -e while -e void s21_grep.c Makefile -v -o -n -h -f test_files/test_ptrn_grep.txt
+1942 - Fail -e intel -e int -v -o -n -h test_files/test_7_grep.txt
+1943 - Fail -e int -e intel -v -o -n -h test_files/test_7_grep.txt
+1944 - Fail s test_files/test_0_grep.txt -v -o -h -c
+1945 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h -c
+1946 - Fail for s21_grep.c -v -o -h -c
+1947 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h -c
+1948 - Fail -e for -e ^int s21_grep.c -v -o -h -c
+1949 - Fail -e regex -e ^print s21_grep.c -v -o -h -c -f test_files/test_ptrn_grep.txt
+1950 - Fail -e while -e void s21_grep.c Makefile -v -o -h -c -f test_files/test_ptrn_grep.txt
+1951 - Fail -e intel -e int -v -o -h -c test_files/test_7_grep.txt
+1952 - Fail -e int -e intel -v -o -h -c test_files/test_7_grep.txt
+1953 - Fail s test_files/test_0_grep.txt -v -o -h -l
+1954 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h -l
+1955 - Fail for s21_grep.c -v -o -h -l
+1956 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h -l
+1957 - Fail -e for -e ^int s21_grep.c -v -o -h -l
+1958 - Fail -e regex -e ^print s21_grep.c -v -o -h -l -f test_files/test_ptrn_grep.txt
+1959 - Fail -e while -e void s21_grep.c Makefile -v -o -h -l -f test_files/test_ptrn_grep.txt
+1960 - Fail -e intel -e int -v -o -h -l test_files/test_7_grep.txt
+1961 - Fail -e int -e intel -v -o -h -l test_files/test_7_grep.txt
+1962 - Fail s test_files/test_0_grep.txt -v -o -h -n
+1963 - Fail for s21_grep.c s21_grep.h Makefile -v -o -h -n
+1964 - Fail for s21_grep.c -v -o -h -n
+1965 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -v -o -h -n
+1966 - Fail -e for -e ^int s21_grep.c -v -o -h -n
+1967 - Fail -e regex -e ^print s21_grep.c -v -o -h -n -f test_files/test_ptrn_grep.txt
+1968 - Fail -e while -e void s21_grep.c Makefile -v -o -h -n -f test_files/test_ptrn_grep.txt
+1969 - Fail -e intel -e int -v -o -h -n test_files/test_7_grep.txt
+1970 - Fail -e int -e intel -v -o -h -n test_files/test_7_grep.txt
+1989 - Fail s test_files/test_0_grep.txt -c -v -l -o
+1990 - Fail for s21_grep.c s21_grep.h Makefile -c -v -l -o
+1991 - Fail for s21_grep.c -c -v -l -o
+1992 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -l -o
+1993 - Fail -e for -e ^int s21_grep.c -c -v -l -o
+1994 - Fail -e regex -e ^print s21_grep.c -c -v -l -o -f test_files/test_ptrn_grep.txt
+1995 - Fail -e while -e void s21_grep.c Makefile -c -v -l -o -f test_files/test_ptrn_grep.txt
+1996 - Fail -e intel -e int -c -v -l -o test_files/test_7_grep.txt
+1997 - Fail -e int -e intel -c -v -l -o test_files/test_7_grep.txt
+2016 - Fail s test_files/test_0_grep.txt -c -v -n -o
+2017 - Fail for s21_grep.c s21_grep.h Makefile -c -v -n -o
+2018 - Fail for s21_grep.c -c -v -n -o
+2019 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -n -o
+2020 - Fail -e for -e ^int s21_grep.c -c -v -n -o
+2021 - Fail -e regex -e ^print s21_grep.c -c -v -n -o -f test_files/test_ptrn_grep.txt
+2022 - Fail -e while -e void s21_grep.c Makefile -c -v -n -o -f test_files/test_ptrn_grep.txt
+2023 - Fail -e intel -e int -c -v -n -o test_files/test_7_grep.txt
+2024 - Fail -e int -e intel -c -v -n -o test_files/test_7_grep.txt
+2043 - Fail s test_files/test_0_grep.txt -c -v -h -o
+2044 - Fail for s21_grep.c s21_grep.h Makefile -c -v -h -o
+2045 - Fail for s21_grep.c -c -v -h -o
+2046 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -h -o
+2047 - Fail -e for -e ^int s21_grep.c -c -v -h -o
+2048 - Fail -e regex -e ^print s21_grep.c -c -v -h -o -f test_files/test_ptrn_grep.txt
+2049 - Fail -e while -e void s21_grep.c Makefile -c -v -h -o -f test_files/test_ptrn_grep.txt
+2050 - Fail -e intel -e int -c -v -h -o test_files/test_7_grep.txt
+2051 - Fail -e int -e intel -c -v -h -o test_files/test_7_grep.txt
+2052 - Fail s test_files/test_0_grep.txt -c -v -o -l
+2053 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o -l
+2054 - Fail for s21_grep.c -c -v -o -l
+2055 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o -l
+2056 - Fail -e for -e ^int s21_grep.c -c -v -o -l
+2057 - Fail -e regex -e ^print s21_grep.c -c -v -o -l -f test_files/test_ptrn_grep.txt
+2058 - Fail -e while -e void s21_grep.c Makefile -c -v -o -l -f test_files/test_ptrn_grep.txt
+2059 - Fail -e intel -e int -c -v -o -l test_files/test_7_grep.txt
+2060 - Fail -e int -e intel -c -v -o -l test_files/test_7_grep.txt
+2061 - Fail s test_files/test_0_grep.txt -c -v -o -n
+2062 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o -n
+2063 - Fail for s21_grep.c -c -v -o -n
+2064 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o -n
+2065 - Fail -e for -e ^int s21_grep.c -c -v -o -n
+2066 - Fail -e regex -e ^print s21_grep.c -c -v -o -n -f test_files/test_ptrn_grep.txt
+2067 - Fail -e while -e void s21_grep.c Makefile -c -v -o -n -f test_files/test_ptrn_grep.txt
+2068 - Fail -e intel -e int -c -v -o -n test_files/test_7_grep.txt
+2069 - Fail -e int -e intel -c -v -o -n test_files/test_7_grep.txt
+2070 - Fail s test_files/test_0_grep.txt -c -v -o -h
+2071 - Fail for s21_grep.c s21_grep.h Makefile -c -v -o -h
+2072 - Fail for s21_grep.c -c -v -o -h
+2073 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -v -o -h
+2074 - Fail -e for -e ^int s21_grep.c -c -v -o -h
+2075 - Fail -e regex -e ^print s21_grep.c -c -v -o -h -f test_files/test_ptrn_grep.txt
+2076 - Fail -e while -e void s21_grep.c Makefile -c -v -o -h -f test_files/test_ptrn_grep.txt
+2077 - Fail -e intel -e int -c -v -o -h test_files/test_7_grep.txt
+2078 - Fail -e int -e intel -c -v -o -h test_files/test_7_grep.txt
+2097 - Fail s test_files/test_0_grep.txt -c -l -v -o
+2098 - Fail for s21_grep.c s21_grep.h Makefile -c -l -v -o
+2099 - Fail for s21_grep.c -c -l -v -o
+2100 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -v -o
+2101 - Fail -e for -e ^int s21_grep.c -c -l -v -o
+2102 - Fail -e regex -e ^print s21_grep.c -c -l -v -o -f test_files/test_ptrn_grep.txt
+2103 - Fail -e while -e void s21_grep.c Makefile -c -l -v -o -f test_files/test_ptrn_grep.txt
+2104 - Fail -e intel -e int -c -l -v -o test_files/test_7_grep.txt
+2105 - Fail -e int -e intel -c -l -v -o test_files/test_7_grep.txt
+2160 - Fail s test_files/test_0_grep.txt -c -l -o -v
+2161 - Fail for s21_grep.c s21_grep.h Makefile -c -l -o -v
+2162 - Fail for s21_grep.c -c -l -o -v
+2163 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -l -o -v
+2164 - Fail -e for -e ^int s21_grep.c -c -l -o -v
+2165 - Fail -e regex -e ^print s21_grep.c -c -l -o -v -f test_files/test_ptrn_grep.txt
+2166 - Fail -e while -e void s21_grep.c Makefile -c -l -o -v -f test_files/test_ptrn_grep.txt
+2167 - Fail -e intel -e int -c -l -o -v test_files/test_7_grep.txt
+2168 - Fail -e int -e intel -c -l -o -v test_files/test_7_grep.txt
+2205 - Fail s test_files/test_0_grep.txt -c -n -v -o
+2206 - Fail for s21_grep.c s21_grep.h Makefile -c -n -v -o
+2207 - Fail for s21_grep.c -c -n -v -o
+2208 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -v -o
+2209 - Fail -e for -e ^int s21_grep.c -c -n -v -o
+2210 - Fail -e regex -e ^print s21_grep.c -c -n -v -o -f test_files/test_ptrn_grep.txt
+2211 - Fail -e while -e void s21_grep.c Makefile -c -n -v -o -f test_files/test_ptrn_grep.txt
+2212 - Fail -e intel -e int -c -n -v -o test_files/test_7_grep.txt
+2213 - Fail -e int -e intel -c -n -v -o test_files/test_7_grep.txt
+2268 - Fail s test_files/test_0_grep.txt -c -n -o -v
+2269 - Fail for s21_grep.c s21_grep.h Makefile -c -n -o -v
+2270 - Fail for s21_grep.c -c -n -o -v
+2271 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -n -o -v
+2272 - Fail -e for -e ^int s21_grep.c -c -n -o -v
+2273 - Fail -e regex -e ^print s21_grep.c -c -n -o -v -f test_files/test_ptrn_grep.txt
+2274 - Fail -e while -e void s21_grep.c Makefile -c -n -o -v -f test_files/test_ptrn_grep.txt
+2275 - Fail -e intel -e int -c -n -o -v test_files/test_7_grep.txt
+2276 - Fail -e int -e intel -c -n -o -v test_files/test_7_grep.txt
+2313 - Fail s test_files/test_0_grep.txt -c -h -v -o
+2314 - Fail for s21_grep.c s21_grep.h Makefile -c -h -v -o
+2315 - Fail for s21_grep.c -c -h -v -o
+2316 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -v -o
+2317 - Fail -e for -e ^int s21_grep.c -c -h -v -o
+2318 - Fail -e regex -e ^print s21_grep.c -c -h -v -o -f test_files/test_ptrn_grep.txt
+2319 - Fail -e while -e void s21_grep.c Makefile -c -h -v -o -f test_files/test_ptrn_grep.txt
+2320 - Fail -e intel -e int -c -h -v -o test_files/test_7_grep.txt
+2321 - Fail -e int -e intel -c -h -v -o test_files/test_7_grep.txt
+2376 - Fail s test_files/test_0_grep.txt -c -h -o -v
+2377 - Fail for s21_grep.c s21_grep.h Makefile -c -h -o -v
+2378 - Fail for s21_grep.c -c -h -o -v
+2379 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -h -o -v
+2380 - Fail -e for -e ^int s21_grep.c -c -h -o -v
+2381 - Fail -e regex -e ^print s21_grep.c -c -h -o -v -f test_files/test_ptrn_grep.txt
+2382 - Fail -e while -e void s21_grep.c Makefile -c -h -o -v -f test_files/test_ptrn_grep.txt
+2383 - Fail -e intel -e int -c -h -o -v test_files/test_7_grep.txt
+2384 - Fail -e int -e intel -c -h -o -v test_files/test_7_grep.txt
+2403 - Fail s test_files/test_0_grep.txt -c -o -v -l
+2404 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v -l
+2405 - Fail for s21_grep.c -c -o -v -l
+2406 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v -l
+2407 - Fail -e for -e ^int s21_grep.c -c -o -v -l
+2408 - Fail -e regex -e ^print s21_grep.c -c -o -v -l -f test_files/test_ptrn_grep.txt
+2409 - Fail -e while -e void s21_grep.c Makefile -c -o -v -l -f test_files/test_ptrn_grep.txt
+2410 - Fail -e intel -e int -c -o -v -l test_files/test_7_grep.txt
+2411 - Fail -e int -e intel -c -o -v -l test_files/test_7_grep.txt
+2412 - Fail s test_files/test_0_grep.txt -c -o -v -n
+2413 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v -n
+2414 - Fail for s21_grep.c -c -o -v -n
+2415 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v -n
+2416 - Fail -e for -e ^int s21_grep.c -c -o -v -n
+2417 - Fail -e regex -e ^print s21_grep.c -c -o -v -n -f test_files/test_ptrn_grep.txt
+2418 - Fail -e while -e void s21_grep.c Makefile -c -o -v -n -f test_files/test_ptrn_grep.txt
+2419 - Fail -e intel -e int -c -o -v -n test_files/test_7_grep.txt
+2420 - Fail -e int -e intel -c -o -v -n test_files/test_7_grep.txt
+2421 - Fail s test_files/test_0_grep.txt -c -o -v -h
+2422 - Fail for s21_grep.c s21_grep.h Makefile -c -o -v -h
+2423 - Fail for s21_grep.c -c -o -v -h
+2424 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -v -h
+2425 - Fail -e for -e ^int s21_grep.c -c -o -v -h
+2426 - Fail -e regex -e ^print s21_grep.c -c -o -v -h -f test_files/test_ptrn_grep.txt
+2427 - Fail -e while -e void s21_grep.c Makefile -c -o -v -h -f test_files/test_ptrn_grep.txt
+2428 - Fail -e intel -e int -c -o -v -h test_files/test_7_grep.txt
+2429 - Fail -e int -e intel -c -o -v -h test_files/test_7_grep.txt
+2430 - Fail s test_files/test_0_grep.txt -c -o -l -v
+2431 - Fail for s21_grep.c s21_grep.h Makefile -c -o -l -v
+2432 - Fail for s21_grep.c -c -o -l -v
+2433 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -l -v
+2434 - Fail -e for -e ^int s21_grep.c -c -o -l -v
+2435 - Fail -e regex -e ^print s21_grep.c -c -o -l -v -f test_files/test_ptrn_grep.txt
+2436 - Fail -e while -e void s21_grep.c Makefile -c -o -l -v -f test_files/test_ptrn_grep.txt
+2437 - Fail -e intel -e int -c -o -l -v test_files/test_7_grep.txt
+2438 - Fail -e int -e intel -c -o -l -v test_files/test_7_grep.txt
+2457 - Fail s test_files/test_0_grep.txt -c -o -n -v
+2458 - Fail for s21_grep.c s21_grep.h Makefile -c -o -n -v
+2459 - Fail for s21_grep.c -c -o -n -v
+2460 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -n -v
+2461 - Fail -e for -e ^int s21_grep.c -c -o -n -v
+2462 - Fail -e regex -e ^print s21_grep.c -c -o -n -v -f test_files/test_ptrn_grep.txt
+2463 - Fail -e while -e void s21_grep.c Makefile -c -o -n -v -f test_files/test_ptrn_grep.txt
+2464 - Fail -e intel -e int -c -o -n -v test_files/test_7_grep.txt
+2465 - Fail -e int -e intel -c -o -n -v test_files/test_7_grep.txt
+2484 - Fail s test_files/test_0_grep.txt -c -o -h -v
+2485 - Fail for s21_grep.c s21_grep.h Makefile -c -o -h -v
+2486 - Fail for s21_grep.c -c -o -h -v
+2487 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -c -o -h -v
+2488 - Fail -e for -e ^int s21_grep.c -c -o -h -v
+2489 - Fail -e regex -e ^print s21_grep.c -c -o -h -v -f test_files/test_ptrn_grep.txt
+2490 - Fail -e while -e void s21_grep.c Makefile -c -o -h -v -f test_files/test_ptrn_grep.txt
+2491 - Fail -e intel -e int -c -o -h -v test_files/test_7_grep.txt
+2492 - Fail -e int -e intel -c -o -h -v test_files/test_7_grep.txt
+2529 - Fail s test_files/test_0_grep.txt -l -v -c -o
+2530 - Fail for s21_grep.c s21_grep.h Makefile -l -v -c -o
+2531 - Fail for s21_grep.c -l -v -c -o
+2532 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -c -o
+2533 - Fail -e for -e ^int s21_grep.c -l -v -c -o
+2534 - Fail -e regex -e ^print s21_grep.c -l -v -c -o -f test_files/test_ptrn_grep.txt
+2535 - Fail -e while -e void s21_grep.c Makefile -l -v -c -o -f test_files/test_ptrn_grep.txt
+2536 - Fail -e intel -e int -l -v -c -o test_files/test_7_grep.txt
+2537 - Fail -e int -e intel -l -v -c -o test_files/test_7_grep.txt
+2556 - Fail s test_files/test_0_grep.txt -l -v -n -o
+2557 - Fail for s21_grep.c s21_grep.h Makefile -l -v -n -o
+2558 - Fail for s21_grep.c -l -v -n -o
+2559 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -n -o
+2560 - Fail -e for -e ^int s21_grep.c -l -v -n -o
+2561 - Fail -e regex -e ^print s21_grep.c -l -v -n -o -f test_files/test_ptrn_grep.txt
+2562 - Fail -e while -e void s21_grep.c Makefile -l -v -n -o -f test_files/test_ptrn_grep.txt
+2563 - Fail -e intel -e int -l -v -n -o test_files/test_7_grep.txt
+2564 - Fail -e int -e intel -l -v -n -o test_files/test_7_grep.txt
+2583 - Fail s test_files/test_0_grep.txt -l -v -h -o
+2584 - Fail for s21_grep.c s21_grep.h Makefile -l -v -h -o
+2585 - Fail for s21_grep.c -l -v -h -o
+2586 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -h -o
+2587 - Fail -e for -e ^int s21_grep.c -l -v -h -o
+2588 - Fail -e regex -e ^print s21_grep.c -l -v -h -o -f test_files/test_ptrn_grep.txt
+2589 - Fail -e while -e void s21_grep.c Makefile -l -v -h -o -f test_files/test_ptrn_grep.txt
+2590 - Fail -e intel -e int -l -v -h -o test_files/test_7_grep.txt
+2591 - Fail -e int -e intel -l -v -h -o test_files/test_7_grep.txt
+2592 - Fail s test_files/test_0_grep.txt -l -v -o -c
+2593 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o -c
+2594 - Fail for s21_grep.c -l -v -o -c
+2595 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o -c
+2596 - Fail -e for -e ^int s21_grep.c -l -v -o -c
+2597 - Fail -e regex -e ^print s21_grep.c -l -v -o -c -f test_files/test_ptrn_grep.txt
+2598 - Fail -e while -e void s21_grep.c Makefile -l -v -o -c -f test_files/test_ptrn_grep.txt
+2599 - Fail -e intel -e int -l -v -o -c test_files/test_7_grep.txt
+2600 - Fail -e int -e intel -l -v -o -c test_files/test_7_grep.txt
+2601 - Fail s test_files/test_0_grep.txt -l -v -o -n
+2602 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o -n
+2603 - Fail for s21_grep.c -l -v -o -n
+2604 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o -n
+2605 - Fail -e for -e ^int s21_grep.c -l -v -o -n
+2606 - Fail -e regex -e ^print s21_grep.c -l -v -o -n -f test_files/test_ptrn_grep.txt
+2607 - Fail -e while -e void s21_grep.c Makefile -l -v -o -n -f test_files/test_ptrn_grep.txt
+2608 - Fail -e intel -e int -l -v -o -n test_files/test_7_grep.txt
+2609 - Fail -e int -e intel -l -v -o -n test_files/test_7_grep.txt
+2610 - Fail s test_files/test_0_grep.txt -l -v -o -h
+2611 - Fail for s21_grep.c s21_grep.h Makefile -l -v -o -h
+2612 - Fail for s21_grep.c -l -v -o -h
+2613 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -v -o -h
+2614 - Fail -e for -e ^int s21_grep.c -l -v -o -h
+2615 - Fail -e regex -e ^print s21_grep.c -l -v -o -h -f test_files/test_ptrn_grep.txt
+2616 - Fail -e while -e void s21_grep.c Makefile -l -v -o -h -f test_files/test_ptrn_grep.txt
+2617 - Fail -e intel -e int -l -v -o -h test_files/test_7_grep.txt
+2618 - Fail -e int -e intel -l -v -o -h test_files/test_7_grep.txt
+2637 - Fail s test_files/test_0_grep.txt -l -c -v -o
+2638 - Fail for s21_grep.c s21_grep.h Makefile -l -c -v -o
+2639 - Fail for s21_grep.c -l -c -v -o
+2640 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -v -o
+2641 - Fail -e for -e ^int s21_grep.c -l -c -v -o
+2642 - Fail -e regex -e ^print s21_grep.c -l -c -v -o -f test_files/test_ptrn_grep.txt
+2643 - Fail -e while -e void s21_grep.c Makefile -l -c -v -o -f test_files/test_ptrn_grep.txt
+2644 - Fail -e intel -e int -l -c -v -o test_files/test_7_grep.txt
+2645 - Fail -e int -e intel -l -c -v -o test_files/test_7_grep.txt
+2700 - Fail s test_files/test_0_grep.txt -l -c -o -v
+2701 - Fail for s21_grep.c s21_grep.h Makefile -l -c -o -v
+2702 - Fail for s21_grep.c -l -c -o -v
+2703 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -c -o -v
+2704 - Fail -e for -e ^int s21_grep.c -l -c -o -v
+2705 - Fail -e regex -e ^print s21_grep.c -l -c -o -v -f test_files/test_ptrn_grep.txt
+2706 - Fail -e while -e void s21_grep.c Makefile -l -c -o -v -f test_files/test_ptrn_grep.txt
+2707 - Fail -e intel -e int -l -c -o -v test_files/test_7_grep.txt
+2708 - Fail -e int -e intel -l -c -o -v test_files/test_7_grep.txt
+2745 - Fail s test_files/test_0_grep.txt -l -n -v -o
+2746 - Fail for s21_grep.c s21_grep.h Makefile -l -n -v -o
+2747 - Fail for s21_grep.c -l -n -v -o
+2748 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -v -o
+2749 - Fail -e for -e ^int s21_grep.c -l -n -v -o
+2750 - Fail -e regex -e ^print s21_grep.c -l -n -v -o -f test_files/test_ptrn_grep.txt
+2751 - Fail -e while -e void s21_grep.c Makefile -l -n -v -o -f test_files/test_ptrn_grep.txt
+2752 - Fail -e intel -e int -l -n -v -o test_files/test_7_grep.txt
+2753 - Fail -e int -e intel -l -n -v -o test_files/test_7_grep.txt
+2808 - Fail s test_files/test_0_grep.txt -l -n -o -v
+2809 - Fail for s21_grep.c s21_grep.h Makefile -l -n -o -v
+2810 - Fail for s21_grep.c -l -n -o -v
+2811 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -n -o -v
+2812 - Fail -e for -e ^int s21_grep.c -l -n -o -v
+2813 - Fail -e regex -e ^print s21_grep.c -l -n -o -v -f test_files/test_ptrn_grep.txt
+2814 - Fail -e while -e void s21_grep.c Makefile -l -n -o -v -f test_files/test_ptrn_grep.txt
+2815 - Fail -e intel -e int -l -n -o -v test_files/test_7_grep.txt
+2816 - Fail -e int -e intel -l -n -o -v test_files/test_7_grep.txt
+2853 - Fail s test_files/test_0_grep.txt -l -h -v -o
+2854 - Fail for s21_grep.c s21_grep.h Makefile -l -h -v -o
+2855 - Fail for s21_grep.c -l -h -v -o
+2856 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -v -o
+2857 - Fail -e for -e ^int s21_grep.c -l -h -v -o
+2858 - Fail -e regex -e ^print s21_grep.c -l -h -v -o -f test_files/test_ptrn_grep.txt
+2859 - Fail -e while -e void s21_grep.c Makefile -l -h -v -o -f test_files/test_ptrn_grep.txt
+2860 - Fail -e intel -e int -l -h -v -o test_files/test_7_grep.txt
+2861 - Fail -e int -e intel -l -h -v -o test_files/test_7_grep.txt
+2916 - Fail s test_files/test_0_grep.txt -l -h -o -v
+2917 - Fail for s21_grep.c s21_grep.h Makefile -l -h -o -v
+2918 - Fail for s21_grep.c -l -h -o -v
+2919 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -h -o -v
+2920 - Fail -e for -e ^int s21_grep.c -l -h -o -v
+2921 - Fail -e regex -e ^print s21_grep.c -l -h -o -v -f test_files/test_ptrn_grep.txt
+2922 - Fail -e while -e void s21_grep.c Makefile -l -h -o -v -f test_files/test_ptrn_grep.txt
+2923 - Fail -e intel -e int -l -h -o -v test_files/test_7_grep.txt
+2924 - Fail -e int -e intel -l -h -o -v test_files/test_7_grep.txt
+2943 - Fail s test_files/test_0_grep.txt -l -o -v -c
+2944 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v -c
+2945 - Fail for s21_grep.c -l -o -v -c
+2946 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v -c
+2947 - Fail -e for -e ^int s21_grep.c -l -o -v -c
+2948 - Fail -e regex -e ^print s21_grep.c -l -o -v -c -f test_files/test_ptrn_grep.txt
+2949 - Fail -e while -e void s21_grep.c Makefile -l -o -v -c -f test_files/test_ptrn_grep.txt
+2950 - Fail -e intel -e int -l -o -v -c test_files/test_7_grep.txt
+2951 - Fail -e int -e intel -l -o -v -c test_files/test_7_grep.txt
+2952 - Fail s test_files/test_0_grep.txt -l -o -v -n
+2953 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v -n
+2954 - Fail for s21_grep.c -l -o -v -n
+2955 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v -n
+2956 - Fail -e for -e ^int s21_grep.c -l -o -v -n
+2957 - Fail -e regex -e ^print s21_grep.c -l -o -v -n -f test_files/test_ptrn_grep.txt
+2958 - Fail -e while -e void s21_grep.c Makefile -l -o -v -n -f test_files/test_ptrn_grep.txt
+2959 - Fail -e intel -e int -l -o -v -n test_files/test_7_grep.txt
+2960 - Fail -e int -e intel -l -o -v -n test_files/test_7_grep.txt
+2961 - Fail s test_files/test_0_grep.txt -l -o -v -h
+2962 - Fail for s21_grep.c s21_grep.h Makefile -l -o -v -h
+2963 - Fail for s21_grep.c -l -o -v -h
+2964 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -v -h
+2965 - Fail -e for -e ^int s21_grep.c -l -o -v -h
+2966 - Fail -e regex -e ^print s21_grep.c -l -o -v -h -f test_files/test_ptrn_grep.txt
+2967 - Fail -e while -e void s21_grep.c Makefile -l -o -v -h -f test_files/test_ptrn_grep.txt
+2968 - Fail -e intel -e int -l -o -v -h test_files/test_7_grep.txt
+2969 - Fail -e int -e intel -l -o -v -h test_files/test_7_grep.txt
+2970 - Fail s test_files/test_0_grep.txt -l -o -c -v
+2971 - Fail for s21_grep.c s21_grep.h Makefile -l -o -c -v
+2972 - Fail for s21_grep.c -l -o -c -v
+2973 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -c -v
+2974 - Fail -e for -e ^int s21_grep.c -l -o -c -v
+2975 - Fail -e regex -e ^print s21_grep.c -l -o -c -v -f test_files/test_ptrn_grep.txt
+2976 - Fail -e while -e void s21_grep.c Makefile -l -o -c -v -f test_files/test_ptrn_grep.txt
+2977 - Fail -e intel -e int -l -o -c -v test_files/test_7_grep.txt
+2978 - Fail -e int -e intel -l -o -c -v test_files/test_7_grep.txt
+2997 - Fail s test_files/test_0_grep.txt -l -o -n -v
+2998 - Fail for s21_grep.c s21_grep.h Makefile -l -o -n -v
+2999 - Fail for s21_grep.c -l -o -n -v
+3000 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -n -v
+3001 - Fail -e for -e ^int s21_grep.c -l -o -n -v
+3002 - Fail -e regex -e ^print s21_grep.c -l -o -n -v -f test_files/test_ptrn_grep.txt
+3003 - Fail -e while -e void s21_grep.c Makefile -l -o -n -v -f test_files/test_ptrn_grep.txt
+3004 - Fail -e intel -e int -l -o -n -v test_files/test_7_grep.txt
+3005 - Fail -e int -e intel -l -o -n -v test_files/test_7_grep.txt
+3024 - Fail s test_files/test_0_grep.txt -l -o -h -v
+3025 - Fail for s21_grep.c s21_grep.h Makefile -l -o -h -v
+3026 - Fail for s21_grep.c -l -o -h -v
+3027 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -l -o -h -v
+3028 - Fail -e for -e ^int s21_grep.c -l -o -h -v
+3029 - Fail -e regex -e ^print s21_grep.c -l -o -h -v -f test_files/test_ptrn_grep.txt
+3030 - Fail -e while -e void s21_grep.c Makefile -l -o -h -v -f test_files/test_ptrn_grep.txt
+3031 - Fail -e intel -e int -l -o -h -v test_files/test_7_grep.txt
+3032 - Fail -e int -e intel -l -o -h -v test_files/test_7_grep.txt
+3069 - Fail s test_files/test_0_grep.txt -n -v -c -o
+3070 - Fail for s21_grep.c s21_grep.h Makefile -n -v -c -o
+3071 - Fail for s21_grep.c -n -v -c -o
+3072 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -c -o
+3073 - Fail -e for -e ^int s21_grep.c -n -v -c -o
+3074 - Fail -e regex -e ^print s21_grep.c -n -v -c -o -f test_files/test_ptrn_grep.txt
+3075 - Fail -e while -e void s21_grep.c Makefile -n -v -c -o -f test_files/test_ptrn_grep.txt
+3076 - Fail -e intel -e int -n -v -c -o test_files/test_7_grep.txt
+3077 - Fail -e int -e intel -n -v -c -o test_files/test_7_grep.txt
+3096 - Fail s test_files/test_0_grep.txt -n -v -l -o
+3097 - Fail for s21_grep.c s21_grep.h Makefile -n -v -l -o
+3098 - Fail for s21_grep.c -n -v -l -o
+3099 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -l -o
+3100 - Fail -e for -e ^int s21_grep.c -n -v -l -o
+3101 - Fail -e regex -e ^print s21_grep.c -n -v -l -o -f test_files/test_ptrn_grep.txt
+3102 - Fail -e while -e void s21_grep.c Makefile -n -v -l -o -f test_files/test_ptrn_grep.txt
+3103 - Fail -e intel -e int -n -v -l -o test_files/test_7_grep.txt
+3104 - Fail -e int -e intel -n -v -l -o test_files/test_7_grep.txt
+3123 - Fail s test_files/test_0_grep.txt -n -v -h -o
+3124 - Fail for s21_grep.c s21_grep.h Makefile -n -v -h -o
+3125 - Fail for s21_grep.c -n -v -h -o
+3126 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -h -o
+3127 - Fail -e for -e ^int s21_grep.c -n -v -h -o
+3128 - Fail -e regex -e ^print s21_grep.c -n -v -h -o -f test_files/test_ptrn_grep.txt
+3129 - Fail -e while -e void s21_grep.c Makefile -n -v -h -o -f test_files/test_ptrn_grep.txt
+3130 - Fail -e intel -e int -n -v -h -o test_files/test_7_grep.txt
+3131 - Fail -e int -e intel -n -v -h -o test_files/test_7_grep.txt
+3132 - Fail s test_files/test_0_grep.txt -n -v -o -c
+3133 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o -c
+3134 - Fail for s21_grep.c -n -v -o -c
+3135 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o -c
+3136 - Fail -e for -e ^int s21_grep.c -n -v -o -c
+3137 - Fail -e regex -e ^print s21_grep.c -n -v -o -c -f test_files/test_ptrn_grep.txt
+3138 - Fail -e while -e void s21_grep.c Makefile -n -v -o -c -f test_files/test_ptrn_grep.txt
+3139 - Fail -e intel -e int -n -v -o -c test_files/test_7_grep.txt
+3140 - Fail -e int -e intel -n -v -o -c test_files/test_7_grep.txt
+3141 - Fail s test_files/test_0_grep.txt -n -v -o -l
+3142 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o -l
+3143 - Fail for s21_grep.c -n -v -o -l
+3144 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o -l
+3145 - Fail -e for -e ^int s21_grep.c -n -v -o -l
+3146 - Fail -e regex -e ^print s21_grep.c -n -v -o -l -f test_files/test_ptrn_grep.txt
+3147 - Fail -e while -e void s21_grep.c Makefile -n -v -o -l -f test_files/test_ptrn_grep.txt
+3148 - Fail -e intel -e int -n -v -o -l test_files/test_7_grep.txt
+3149 - Fail -e int -e intel -n -v -o -l test_files/test_7_grep.txt
+3150 - Fail s test_files/test_0_grep.txt -n -v -o -h
+3151 - Fail for s21_grep.c s21_grep.h Makefile -n -v -o -h
+3152 - Fail for s21_grep.c -n -v -o -h
+3153 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -v -o -h
+3154 - Fail -e for -e ^int s21_grep.c -n -v -o -h
+3155 - Fail -e regex -e ^print s21_grep.c -n -v -o -h -f test_files/test_ptrn_grep.txt
+3156 - Fail -e while -e void s21_grep.c Makefile -n -v -o -h -f test_files/test_ptrn_grep.txt
+3157 - Fail -e intel -e int -n -v -o -h test_files/test_7_grep.txt
+3158 - Fail -e int -e intel -n -v -o -h test_files/test_7_grep.txt
+3177 - Fail s test_files/test_0_grep.txt -n -c -v -o
+3178 - Fail for s21_grep.c s21_grep.h Makefile -n -c -v -o
+3179 - Fail for s21_grep.c -n -c -v -o
+3180 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -v -o
+3181 - Fail -e for -e ^int s21_grep.c -n -c -v -o
+3182 - Fail -e regex -e ^print s21_grep.c -n -c -v -o -f test_files/test_ptrn_grep.txt
+3183 - Fail -e while -e void s21_grep.c Makefile -n -c -v -o -f test_files/test_ptrn_grep.txt
+3184 - Fail -e intel -e int -n -c -v -o test_files/test_7_grep.txt
+3185 - Fail -e int -e intel -n -c -v -o test_files/test_7_grep.txt
+3240 - Fail s test_files/test_0_grep.txt -n -c -o -v
+3241 - Fail for s21_grep.c s21_grep.h Makefile -n -c -o -v
+3242 - Fail for s21_grep.c -n -c -o -v
+3243 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -c -o -v
+3244 - Fail -e for -e ^int s21_grep.c -n -c -o -v
+3245 - Fail -e regex -e ^print s21_grep.c -n -c -o -v -f test_files/test_ptrn_grep.txt
+3246 - Fail -e while -e void s21_grep.c Makefile -n -c -o -v -f test_files/test_ptrn_grep.txt
+3247 - Fail -e intel -e int -n -c -o -v test_files/test_7_grep.txt
+3248 - Fail -e int -e intel -n -c -o -v test_files/test_7_grep.txt
+3285 - Fail s test_files/test_0_grep.txt -n -l -v -o
+3286 - Fail for s21_grep.c s21_grep.h Makefile -n -l -v -o
+3287 - Fail for s21_grep.c -n -l -v -o
+3288 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -v -o
+3289 - Fail -e for -e ^int s21_grep.c -n -l -v -o
+3290 - Fail -e regex -e ^print s21_grep.c -n -l -v -o -f test_files/test_ptrn_grep.txt
+3291 - Fail -e while -e void s21_grep.c Makefile -n -l -v -o -f test_files/test_ptrn_grep.txt
+3292 - Fail -e intel -e int -n -l -v -o test_files/test_7_grep.txt
+3293 - Fail -e int -e intel -n -l -v -o test_files/test_7_grep.txt
+3348 - Fail s test_files/test_0_grep.txt -n -l -o -v
+3349 - Fail for s21_grep.c s21_grep.h Makefile -n -l -o -v
+3350 - Fail for s21_grep.c -n -l -o -v
+3351 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -l -o -v
+3352 - Fail -e for -e ^int s21_grep.c -n -l -o -v
+3353 - Fail -e regex -e ^print s21_grep.c -n -l -o -v -f test_files/test_ptrn_grep.txt
+3354 - Fail -e while -e void s21_grep.c Makefile -n -l -o -v -f test_files/test_ptrn_grep.txt
+3355 - Fail -e intel -e int -n -l -o -v test_files/test_7_grep.txt
+3356 - Fail -e int -e intel -n -l -o -v test_files/test_7_grep.txt
+3393 - Fail s test_files/test_0_grep.txt -n -h -v -o
+3394 - Fail for s21_grep.c s21_grep.h Makefile -n -h -v -o
+3395 - Fail for s21_grep.c -n -h -v -o
+3396 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -v -o
+3397 - Fail -e for -e ^int s21_grep.c -n -h -v -o
+3398 - Fail -e regex -e ^print s21_grep.c -n -h -v -o -f test_files/test_ptrn_grep.txt
+3399 - Fail -e while -e void s21_grep.c Makefile -n -h -v -o -f test_files/test_ptrn_grep.txt
+3400 - Fail -e intel -e int -n -h -v -o test_files/test_7_grep.txt
+3401 - Fail -e int -e intel -n -h -v -o test_files/test_7_grep.txt
+3456 - Fail s test_files/test_0_grep.txt -n -h -o -v
+3457 - Fail for s21_grep.c s21_grep.h Makefile -n -h -o -v
+3458 - Fail for s21_grep.c -n -h -o -v
+3459 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -h -o -v
+3460 - Fail -e for -e ^int s21_grep.c -n -h -o -v
+3461 - Fail -e regex -e ^print s21_grep.c -n -h -o -v -f test_files/test_ptrn_grep.txt
+3462 - Fail -e while -e void s21_grep.c Makefile -n -h -o -v -f test_files/test_ptrn_grep.txt
+3463 - Fail -e intel -e int -n -h -o -v test_files/test_7_grep.txt
+3464 - Fail -e int -e intel -n -h -o -v test_files/test_7_grep.txt
+3483 - Fail s test_files/test_0_grep.txt -n -o -v -c
+3484 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v -c
+3485 - Fail for s21_grep.c -n -o -v -c
+3486 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v -c
+3487 - Fail -e for -e ^int s21_grep.c -n -o -v -c
+3488 - Fail -e regex -e ^print s21_grep.c -n -o -v -c -f test_files/test_ptrn_grep.txt
+3489 - Fail -e while -e void s21_grep.c Makefile -n -o -v -c -f test_files/test_ptrn_grep.txt
+3490 - Fail -e intel -e int -n -o -v -c test_files/test_7_grep.txt
+3491 - Fail -e int -e intel -n -o -v -c test_files/test_7_grep.txt
+3492 - Fail s test_files/test_0_grep.txt -n -o -v -l
+3493 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v -l
+3494 - Fail for s21_grep.c -n -o -v -l
+3495 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v -l
+3496 - Fail -e for -e ^int s21_grep.c -n -o -v -l
+3497 - Fail -e regex -e ^print s21_grep.c -n -o -v -l -f test_files/test_ptrn_grep.txt
+3498 - Fail -e while -e void s21_grep.c Makefile -n -o -v -l -f test_files/test_ptrn_grep.txt
+3499 - Fail -e intel -e int -n -o -v -l test_files/test_7_grep.txt
+3500 - Fail -e int -e intel -n -o -v -l test_files/test_7_grep.txt
+3501 - Fail s test_files/test_0_grep.txt -n -o -v -h
+3502 - Fail for s21_grep.c s21_grep.h Makefile -n -o -v -h
+3503 - Fail for s21_grep.c -n -o -v -h
+3504 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -v -h
+3505 - Fail -e for -e ^int s21_grep.c -n -o -v -h
+3506 - Fail -e regex -e ^print s21_grep.c -n -o -v -h -f test_files/test_ptrn_grep.txt
+3507 - Fail -e while -e void s21_grep.c Makefile -n -o -v -h -f test_files/test_ptrn_grep.txt
+3508 - Fail -e intel -e int -n -o -v -h test_files/test_7_grep.txt
+3509 - Fail -e int -e intel -n -o -v -h test_files/test_7_grep.txt
+3510 - Fail s test_files/test_0_grep.txt -n -o -c -v
+3511 - Fail for s21_grep.c s21_grep.h Makefile -n -o -c -v
+3512 - Fail for s21_grep.c -n -o -c -v
+3513 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -c -v
+3514 - Fail -e for -e ^int s21_grep.c -n -o -c -v
+3515 - Fail -e regex -e ^print s21_grep.c -n -o -c -v -f test_files/test_ptrn_grep.txt
+3516 - Fail -e while -e void s21_grep.c Makefile -n -o -c -v -f test_files/test_ptrn_grep.txt
+3517 - Fail -e intel -e int -n -o -c -v test_files/test_7_grep.txt
+3518 - Fail -e int -e intel -n -o -c -v test_files/test_7_grep.txt
+3537 - Fail s test_files/test_0_grep.txt -n -o -l -v
+3538 - Fail for s21_grep.c s21_grep.h Makefile -n -o -l -v
+3539 - Fail for s21_grep.c -n -o -l -v
+3540 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -l -v
+3541 - Fail -e for -e ^int s21_grep.c -n -o -l -v
+3542 - Fail -e regex -e ^print s21_grep.c -n -o -l -v -f test_files/test_ptrn_grep.txt
+3543 - Fail -e while -e void s21_grep.c Makefile -n -o -l -v -f test_files/test_ptrn_grep.txt
+3544 - Fail -e intel -e int -n -o -l -v test_files/test_7_grep.txt
+3545 - Fail -e int -e intel -n -o -l -v test_files/test_7_grep.txt
+3564 - Fail s test_files/test_0_grep.txt -n -o -h -v
+3565 - Fail for s21_grep.c s21_grep.h Makefile -n -o -h -v
+3566 - Fail for s21_grep.c -n -o -h -v
+3567 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -n -o -h -v
+3568 - Fail -e for -e ^int s21_grep.c -n -o -h -v
+3569 - Fail -e regex -e ^print s21_grep.c -n -o -h -v -f test_files/test_ptrn_grep.txt
+3570 - Fail -e while -e void s21_grep.c Makefile -n -o -h -v -f test_files/test_ptrn_grep.txt
+3571 - Fail -e intel -e int -n -o -h -v test_files/test_7_grep.txt
+3572 - Fail -e int -e intel -n -o -h -v test_files/test_7_grep.txt
+3609 - Fail s test_files/test_0_grep.txt -h -v -c -o
+3610 - Fail for s21_grep.c s21_grep.h Makefile -h -v -c -o
+3611 - Fail for s21_grep.c -h -v -c -o
+3612 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -c -o
+3613 - Fail -e for -e ^int s21_grep.c -h -v -c -o
+3614 - Fail -e regex -e ^print s21_grep.c -h -v -c -o -f test_files/test_ptrn_grep.txt
+3615 - Fail -e while -e void s21_grep.c Makefile -h -v -c -o -f test_files/test_ptrn_grep.txt
+3616 - Fail -e intel -e int -h -v -c -o test_files/test_7_grep.txt
+3617 - Fail -e int -e intel -h -v -c -o test_files/test_7_grep.txt
+3636 - Fail s test_files/test_0_grep.txt -h -v -l -o
+3637 - Fail for s21_grep.c s21_grep.h Makefile -h -v -l -o
+3638 - Fail for s21_grep.c -h -v -l -o
+3639 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -l -o
+3640 - Fail -e for -e ^int s21_grep.c -h -v -l -o
+3641 - Fail -e regex -e ^print s21_grep.c -h -v -l -o -f test_files/test_ptrn_grep.txt
+3642 - Fail -e while -e void s21_grep.c Makefile -h -v -l -o -f test_files/test_ptrn_grep.txt
+3643 - Fail -e intel -e int -h -v -l -o test_files/test_7_grep.txt
+3644 - Fail -e int -e intel -h -v -l -o test_files/test_7_grep.txt
+3663 - Fail s test_files/test_0_grep.txt -h -v -n -o
+3664 - Fail for s21_grep.c s21_grep.h Makefile -h -v -n -o
+3665 - Fail for s21_grep.c -h -v -n -o
+3666 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -n -o
+3667 - Fail -e for -e ^int s21_grep.c -h -v -n -o
+3668 - Fail -e regex -e ^print s21_grep.c -h -v -n -o -f test_files/test_ptrn_grep.txt
+3669 - Fail -e while -e void s21_grep.c Makefile -h -v -n -o -f test_files/test_ptrn_grep.txt
+3670 - Fail -e intel -e int -h -v -n -o test_files/test_7_grep.txt
+3671 - Fail -e int -e intel -h -v -n -o test_files/test_7_grep.txt
+3672 - Fail s test_files/test_0_grep.txt -h -v -o -c
+3673 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o -c
+3674 - Fail for s21_grep.c -h -v -o -c
+3675 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o -c
+3676 - Fail -e for -e ^int s21_grep.c -h -v -o -c
+3677 - Fail -e regex -e ^print s21_grep.c -h -v -o -c -f test_files/test_ptrn_grep.txt
+3678 - Fail -e while -e void s21_grep.c Makefile -h -v -o -c -f test_files/test_ptrn_grep.txt
+3679 - Fail -e intel -e int -h -v -o -c test_files/test_7_grep.txt
+3680 - Fail -e int -e intel -h -v -o -c test_files/test_7_grep.txt
+3681 - Fail s test_files/test_0_grep.txt -h -v -o -l
+3682 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o -l
+3683 - Fail for s21_grep.c -h -v -o -l
+3684 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o -l
+3685 - Fail -e for -e ^int s21_grep.c -h -v -o -l
+3686 - Fail -e regex -e ^print s21_grep.c -h -v -o -l -f test_files/test_ptrn_grep.txt
+3687 - Fail -e while -e void s21_grep.c Makefile -h -v -o -l -f test_files/test_ptrn_grep.txt
+3688 - Fail -e intel -e int -h -v -o -l test_files/test_7_grep.txt
+3689 - Fail -e int -e intel -h -v -o -l test_files/test_7_grep.txt
+3690 - Fail s test_files/test_0_grep.txt -h -v -o -n
+3691 - Fail for s21_grep.c s21_grep.h Makefile -h -v -o -n
+3692 - Fail for s21_grep.c -h -v -o -n
+3693 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -v -o -n
+3694 - Fail -e for -e ^int s21_grep.c -h -v -o -n
+3695 - Fail -e regex -e ^print s21_grep.c -h -v -o -n -f test_files/test_ptrn_grep.txt
+3696 - Fail -e while -e void s21_grep.c Makefile -h -v -o -n -f test_files/test_ptrn_grep.txt
+3697 - Fail -e intel -e int -h -v -o -n test_files/test_7_grep.txt
+3698 - Fail -e int -e intel -h -v -o -n test_files/test_7_grep.txt
+3717 - Fail s test_files/test_0_grep.txt -h -c -v -o
+3718 - Fail for s21_grep.c s21_grep.h Makefile -h -c -v -o
+3719 - Fail for s21_grep.c -h -c -v -o
+3720 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -v -o
+3721 - Fail -e for -e ^int s21_grep.c -h -c -v -o
+3722 - Fail -e regex -e ^print s21_grep.c -h -c -v -o -f test_files/test_ptrn_grep.txt
+3723 - Fail -e while -e void s21_grep.c Makefile -h -c -v -o -f test_files/test_ptrn_grep.txt
+3724 - Fail -e intel -e int -h -c -v -o test_files/test_7_grep.txt
+3725 - Fail -e int -e intel -h -c -v -o test_files/test_7_grep.txt
+3780 - Fail s test_files/test_0_grep.txt -h -c -o -v
+3781 - Fail for s21_grep.c s21_grep.h Makefile -h -c -o -v
+3782 - Fail for s21_grep.c -h -c -o -v
+3783 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -c -o -v
+3784 - Fail -e for -e ^int s21_grep.c -h -c -o -v
+3785 - Fail -e regex -e ^print s21_grep.c -h -c -o -v -f test_files/test_ptrn_grep.txt
+3786 - Fail -e while -e void s21_grep.c Makefile -h -c -o -v -f test_files/test_ptrn_grep.txt
+3787 - Fail -e intel -e int -h -c -o -v test_files/test_7_grep.txt
+3788 - Fail -e int -e intel -h -c -o -v test_files/test_7_grep.txt
+3825 - Fail s test_files/test_0_grep.txt -h -l -v -o
+3826 - Fail for s21_grep.c s21_grep.h Makefile -h -l -v -o
+3827 - Fail for s21_grep.c -h -l -v -o
+3828 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -v -o
+3829 - Fail -e for -e ^int s21_grep.c -h -l -v -o
+3830 - Fail -e regex -e ^print s21_grep.c -h -l -v -o -f test_files/test_ptrn_grep.txt
+3831 - Fail -e while -e void s21_grep.c Makefile -h -l -v -o -f test_files/test_ptrn_grep.txt
+3832 - Fail -e intel -e int -h -l -v -o test_files/test_7_grep.txt
+3833 - Fail -e int -e intel -h -l -v -o test_files/test_7_grep.txt
+3888 - Fail s test_files/test_0_grep.txt -h -l -o -v
+3889 - Fail for s21_grep.c s21_grep.h Makefile -h -l -o -v
+3890 - Fail for s21_grep.c -h -l -o -v
+3891 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -l -o -v
+3892 - Fail -e for -e ^int s21_grep.c -h -l -o -v
+3893 - Fail -e regex -e ^print s21_grep.c -h -l -o -v -f test_files/test_ptrn_grep.txt
+3894 - Fail -e while -e void s21_grep.c Makefile -h -l -o -v -f test_files/test_ptrn_grep.txt
+3895 - Fail -e intel -e int -h -l -o -v test_files/test_7_grep.txt
+3896 - Fail -e int -e intel -h -l -o -v test_files/test_7_grep.txt
+3933 - Fail s test_files/test_0_grep.txt -h -n -v -o
+3934 - Fail for s21_grep.c s21_grep.h Makefile -h -n -v -o
+3935 - Fail for s21_grep.c -h -n -v -o
+3936 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -v -o
+3937 - Fail -e for -e ^int s21_grep.c -h -n -v -o
+3938 - Fail -e regex -e ^print s21_grep.c -h -n -v -o -f test_files/test_ptrn_grep.txt
+3939 - Fail -e while -e void s21_grep.c Makefile -h -n -v -o -f test_files/test_ptrn_grep.txt
+3940 - Fail -e intel -e int -h -n -v -o test_files/test_7_grep.txt
+3941 - Fail -e int -e intel -h -n -v -o test_files/test_7_grep.txt
+3996 - Fail s test_files/test_0_grep.txt -h -n -o -v
+3997 - Fail for s21_grep.c s21_grep.h Makefile -h -n -o -v
+3998 - Fail for s21_grep.c -h -n -o -v
+3999 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -n -o -v
+4000 - Fail -e for -e ^int s21_grep.c -h -n -o -v
+4001 - Fail -e regex -e ^print s21_grep.c -h -n -o -v -f test_files/test_ptrn_grep.txt
+4002 - Fail -e while -e void s21_grep.c Makefile -h -n -o -v -f test_files/test_ptrn_grep.txt
+4003 - Fail -e intel -e int -h -n -o -v test_files/test_7_grep.txt
+4004 - Fail -e int -e intel -h -n -o -v test_files/test_7_grep.txt
+4023 - Fail s test_files/test_0_grep.txt -h -o -v -c
+4024 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v -c
+4025 - Fail for s21_grep.c -h -o -v -c
+4026 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v -c
+4027 - Fail -e for -e ^int s21_grep.c -h -o -v -c
+4028 - Fail -e regex -e ^print s21_grep.c -h -o -v -c -f test_files/test_ptrn_grep.txt
+4029 - Fail -e while -e void s21_grep.c Makefile -h -o -v -c -f test_files/test_ptrn_grep.txt
+4030 - Fail -e intel -e int -h -o -v -c test_files/test_7_grep.txt
+4031 - Fail -e int -e intel -h -o -v -c test_files/test_7_grep.txt
+4032 - Fail s test_files/test_0_grep.txt -h -o -v -l
+4033 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v -l
+4034 - Fail for s21_grep.c -h -o -v -l
+4035 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v -l
+4036 - Fail -e for -e ^int s21_grep.c -h -o -v -l
+4037 - Fail -e regex -e ^print s21_grep.c -h -o -v -l -f test_files/test_ptrn_grep.txt
+4038 - Fail -e while -e void s21_grep.c Makefile -h -o -v -l -f test_files/test_ptrn_grep.txt
+4039 - Fail -e intel -e int -h -o -v -l test_files/test_7_grep.txt
+4040 - Fail -e int -e intel -h -o -v -l test_files/test_7_grep.txt
+4041 - Fail s test_files/test_0_grep.txt -h -o -v -n
+4042 - Fail for s21_grep.c s21_grep.h Makefile -h -o -v -n
+4043 - Fail for s21_grep.c -h -o -v -n
+4044 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -v -n
+4045 - Fail -e for -e ^int s21_grep.c -h -o -v -n
+4046 - Fail -e regex -e ^print s21_grep.c -h -o -v -n -f test_files/test_ptrn_grep.txt
+4047 - Fail -e while -e void s21_grep.c Makefile -h -o -v -n -f test_files/test_ptrn_grep.txt
+4048 - Fail -e intel -e int -h -o -v -n test_files/test_7_grep.txt
+4049 - Fail -e int -e intel -h -o -v -n test_files/test_7_grep.txt
+4050 - Fail s test_files/test_0_grep.txt -h -o -c -v
+4051 - Fail for s21_grep.c s21_grep.h Makefile -h -o -c -v
+4052 - Fail for s21_grep.c -h -o -c -v
+4053 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -c -v
+4054 - Fail -e for -e ^int s21_grep.c -h -o -c -v
+4055 - Fail -e regex -e ^print s21_grep.c -h -o -c -v -f test_files/test_ptrn_grep.txt
+4056 - Fail -e while -e void s21_grep.c Makefile -h -o -c -v -f test_files/test_ptrn_grep.txt
+4057 - Fail -e intel -e int -h -o -c -v test_files/test_7_grep.txt
+4058 - Fail -e int -e intel -h -o -c -v test_files/test_7_grep.txt
+4077 - Fail s test_files/test_0_grep.txt -h -o -l -v
+4078 - Fail for s21_grep.c s21_grep.h Makefile -h -o -l -v
+4079 - Fail for s21_grep.c -h -o -l -v
+4080 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -l -v
+4081 - Fail -e for -e ^int s21_grep.c -h -o -l -v
+4082 - Fail -e regex -e ^print s21_grep.c -h -o -l -v -f test_files/test_ptrn_grep.txt
+4083 - Fail -e while -e void s21_grep.c Makefile -h -o -l -v -f test_files/test_ptrn_grep.txt
+4084 - Fail -e intel -e int -h -o -l -v test_files/test_7_grep.txt
+4085 - Fail -e int -e intel -h -o -l -v test_files/test_7_grep.txt
+4104 - Fail s test_files/test_0_grep.txt -h -o -n -v
+4105 - Fail for s21_grep.c s21_grep.h Makefile -h -o -n -v
+4106 - Fail for s21_grep.c -h -o -n -v
+4107 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -h -o -n -v
+4108 - Fail -e for -e ^int s21_grep.c -h -o -n -v
+4109 - Fail -e regex -e ^print s21_grep.c -h -o -n -v -f test_files/test_ptrn_grep.txt
+4110 - Fail -e while -e void s21_grep.c Makefile -h -o -n -v -f test_files/test_ptrn_grep.txt
+4111 - Fail -e intel -e int -h -o -n -v test_files/test_7_grep.txt
+4112 - Fail -e int -e intel -h -o -n -v test_files/test_7_grep.txt
+4131 - Fail s test_files/test_0_grep.txt -o -v -c -l
+4132 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c -l
+4133 - Fail for s21_grep.c -o -v -c -l
+4134 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c -l
+4135 - Fail -e for -e ^int s21_grep.c -o -v -c -l
+4136 - Fail -e regex -e ^print s21_grep.c -o -v -c -l -f test_files/test_ptrn_grep.txt
+4137 - Fail -e while -e void s21_grep.c Makefile -o -v -c -l -f test_files/test_ptrn_grep.txt
+4138 - Fail -e intel -e int -o -v -c -l test_files/test_7_grep.txt
+4139 - Fail -e int -e intel -o -v -c -l test_files/test_7_grep.txt
+4140 - Fail s test_files/test_0_grep.txt -o -v -c -n
+4141 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c -n
+4142 - Fail for s21_grep.c -o -v -c -n
+4143 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c -n
+4144 - Fail -e for -e ^int s21_grep.c -o -v -c -n
+4145 - Fail -e regex -e ^print s21_grep.c -o -v -c -n -f test_files/test_ptrn_grep.txt
+4146 - Fail -e while -e void s21_grep.c Makefile -o -v -c -n -f test_files/test_ptrn_grep.txt
+4147 - Fail -e intel -e int -o -v -c -n test_files/test_7_grep.txt
+4148 - Fail -e int -e intel -o -v -c -n test_files/test_7_grep.txt
+4149 - Fail s test_files/test_0_grep.txt -o -v -c -h
+4150 - Fail for s21_grep.c s21_grep.h Makefile -o -v -c -h
+4151 - Fail for s21_grep.c -o -v -c -h
+4152 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -c -h
+4153 - Fail -e for -e ^int s21_grep.c -o -v -c -h
+4154 - Fail -e regex -e ^print s21_grep.c -o -v -c -h -f test_files/test_ptrn_grep.txt
+4155 - Fail -e while -e void s21_grep.c Makefile -o -v -c -h -f test_files/test_ptrn_grep.txt
+4156 - Fail -e intel -e int -o -v -c -h test_files/test_7_grep.txt
+4157 - Fail -e int -e intel -o -v -c -h test_files/test_7_grep.txt
+4158 - Fail s test_files/test_0_grep.txt -o -v -l -c
+4159 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l -c
+4160 - Fail for s21_grep.c -o -v -l -c
+4161 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l -c
+4162 - Fail -e for -e ^int s21_grep.c -o -v -l -c
+4163 - Fail -e regex -e ^print s21_grep.c -o -v -l -c -f test_files/test_ptrn_grep.txt
+4164 - Fail -e while -e void s21_grep.c Makefile -o -v -l -c -f test_files/test_ptrn_grep.txt
+4165 - Fail -e intel -e int -o -v -l -c test_files/test_7_grep.txt
+4166 - Fail -e int -e intel -o -v -l -c test_files/test_7_grep.txt
+4167 - Fail s test_files/test_0_grep.txt -o -v -l -n
+4168 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l -n
+4169 - Fail for s21_grep.c -o -v -l -n
+4170 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l -n
+4171 - Fail -e for -e ^int s21_grep.c -o -v -l -n
+4172 - Fail -e regex -e ^print s21_grep.c -o -v -l -n -f test_files/test_ptrn_grep.txt
+4173 - Fail -e while -e void s21_grep.c Makefile -o -v -l -n -f test_files/test_ptrn_grep.txt
+4174 - Fail -e intel -e int -o -v -l -n test_files/test_7_grep.txt
+4175 - Fail -e int -e intel -o -v -l -n test_files/test_7_grep.txt
+4176 - Fail s test_files/test_0_grep.txt -o -v -l -h
+4177 - Fail for s21_grep.c s21_grep.h Makefile -o -v -l -h
+4178 - Fail for s21_grep.c -o -v -l -h
+4179 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -l -h
+4180 - Fail -e for -e ^int s21_grep.c -o -v -l -h
+4181 - Fail -e regex -e ^print s21_grep.c -o -v -l -h -f test_files/test_ptrn_grep.txt
+4182 - Fail -e while -e void s21_grep.c Makefile -o -v -l -h -f test_files/test_ptrn_grep.txt
+4183 - Fail -e intel -e int -o -v -l -h test_files/test_7_grep.txt
+4184 - Fail -e int -e intel -o -v -l -h test_files/test_7_grep.txt
+4185 - Fail s test_files/test_0_grep.txt -o -v -n -c
+4186 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n -c
+4187 - Fail for s21_grep.c -o -v -n -c
+4188 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n -c
+4189 - Fail -e for -e ^int s21_grep.c -o -v -n -c
+4190 - Fail -e regex -e ^print s21_grep.c -o -v -n -c -f test_files/test_ptrn_grep.txt
+4191 - Fail -e while -e void s21_grep.c Makefile -o -v -n -c -f test_files/test_ptrn_grep.txt
+4192 - Fail -e intel -e int -o -v -n -c test_files/test_7_grep.txt
+4193 - Fail -e int -e intel -o -v -n -c test_files/test_7_grep.txt
+4194 - Fail s test_files/test_0_grep.txt -o -v -n -l
+4195 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n -l
+4196 - Fail for s21_grep.c -o -v -n -l
+4197 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n -l
+4198 - Fail -e for -e ^int s21_grep.c -o -v -n -l
+4199 - Fail -e regex -e ^print s21_grep.c -o -v -n -l -f test_files/test_ptrn_grep.txt
+4200 - Fail -e while -e void s21_grep.c Makefile -o -v -n -l -f test_files/test_ptrn_grep.txt
+4201 - Fail -e intel -e int -o -v -n -l test_files/test_7_grep.txt
+4202 - Fail -e int -e intel -o -v -n -l test_files/test_7_grep.txt
+4203 - Fail s test_files/test_0_grep.txt -o -v -n -h
+4204 - Fail for s21_grep.c s21_grep.h Makefile -o -v -n -h
+4205 - Fail for s21_grep.c -o -v -n -h
+4206 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -n -h
+4207 - Fail -e for -e ^int s21_grep.c -o -v -n -h
+4208 - Fail -e regex -e ^print s21_grep.c -o -v -n -h -f test_files/test_ptrn_grep.txt
+4209 - Fail -e while -e void s21_grep.c Makefile -o -v -n -h -f test_files/test_ptrn_grep.txt
+4210 - Fail -e intel -e int -o -v -n -h test_files/test_7_grep.txt
+4211 - Fail -e int -e intel -o -v -n -h test_files/test_7_grep.txt
+4212 - Fail s test_files/test_0_grep.txt -o -v -h -c
+4213 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h -c
+4214 - Fail for s21_grep.c -o -v -h -c
+4215 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h -c
+4216 - Fail -e for -e ^int s21_grep.c -o -v -h -c
+4217 - Fail -e regex -e ^print s21_grep.c -o -v -h -c -f test_files/test_ptrn_grep.txt
+4218 - Fail -e while -e void s21_grep.c Makefile -o -v -h -c -f test_files/test_ptrn_grep.txt
+4219 - Fail -e intel -e int -o -v -h -c test_files/test_7_grep.txt
+4220 - Fail -e int -e intel -o -v -h -c test_files/test_7_grep.txt
+4221 - Fail s test_files/test_0_grep.txt -o -v -h -l
+4222 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h -l
+4223 - Fail for s21_grep.c -o -v -h -l
+4224 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h -l
+4225 - Fail -e for -e ^int s21_grep.c -o -v -h -l
+4226 - Fail -e regex -e ^print s21_grep.c -o -v -h -l -f test_files/test_ptrn_grep.txt
+4227 - Fail -e while -e void s21_grep.c Makefile -o -v -h -l -f test_files/test_ptrn_grep.txt
+4228 - Fail -e intel -e int -o -v -h -l test_files/test_7_grep.txt
+4229 - Fail -e int -e intel -o -v -h -l test_files/test_7_grep.txt
+4230 - Fail s test_files/test_0_grep.txt -o -v -h -n
+4231 - Fail for s21_grep.c s21_grep.h Makefile -o -v -h -n
+4232 - Fail for s21_grep.c -o -v -h -n
+4233 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -v -h -n
+4234 - Fail -e for -e ^int s21_grep.c -o -v -h -n
+4235 - Fail -e regex -e ^print s21_grep.c -o -v -h -n -f test_files/test_ptrn_grep.txt
+4236 - Fail -e while -e void s21_grep.c Makefile -o -v -h -n -f test_files/test_ptrn_grep.txt
+4237 - Fail -e intel -e int -o -v -h -n test_files/test_7_grep.txt
+4238 - Fail -e int -e intel -o -v -h -n test_files/test_7_grep.txt
+4239 - Fail s test_files/test_0_grep.txt -o -c -v -l
+4240 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v -l
+4241 - Fail for s21_grep.c -o -c -v -l
+4242 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v -l
+4243 - Fail -e for -e ^int s21_grep.c -o -c -v -l
+4244 - Fail -e regex -e ^print s21_grep.c -o -c -v -l -f test_files/test_ptrn_grep.txt
+4245 - Fail -e while -e void s21_grep.c Makefile -o -c -v -l -f test_files/test_ptrn_grep.txt
+4246 - Fail -e intel -e int -o -c -v -l test_files/test_7_grep.txt
+4247 - Fail -e int -e intel -o -c -v -l test_files/test_7_grep.txt
+4248 - Fail s test_files/test_0_grep.txt -o -c -v -n
+4249 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v -n
+4250 - Fail for s21_grep.c -o -c -v -n
+4251 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v -n
+4252 - Fail -e for -e ^int s21_grep.c -o -c -v -n
+4253 - Fail -e regex -e ^print s21_grep.c -o -c -v -n -f test_files/test_ptrn_grep.txt
+4254 - Fail -e while -e void s21_grep.c Makefile -o -c -v -n -f test_files/test_ptrn_grep.txt
+4255 - Fail -e intel -e int -o -c -v -n test_files/test_7_grep.txt
+4256 - Fail -e int -e intel -o -c -v -n test_files/test_7_grep.txt
+4257 - Fail s test_files/test_0_grep.txt -o -c -v -h
+4258 - Fail for s21_grep.c s21_grep.h Makefile -o -c -v -h
+4259 - Fail for s21_grep.c -o -c -v -h
+4260 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -v -h
+4261 - Fail -e for -e ^int s21_grep.c -o -c -v -h
+4262 - Fail -e regex -e ^print s21_grep.c -o -c -v -h -f test_files/test_ptrn_grep.txt
+4263 - Fail -e while -e void s21_grep.c Makefile -o -c -v -h -f test_files/test_ptrn_grep.txt
+4264 - Fail -e intel -e int -o -c -v -h test_files/test_7_grep.txt
+4265 - Fail -e int -e intel -o -c -v -h test_files/test_7_grep.txt
+4266 - Fail s test_files/test_0_grep.txt -o -c -l -v
+4267 - Fail for s21_grep.c s21_grep.h Makefile -o -c -l -v
+4268 - Fail for s21_grep.c -o -c -l -v
+4269 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -l -v
+4270 - Fail -e for -e ^int s21_grep.c -o -c -l -v
+4271 - Fail -e regex -e ^print s21_grep.c -o -c -l -v -f test_files/test_ptrn_grep.txt
+4272 - Fail -e while -e void s21_grep.c Makefile -o -c -l -v -f test_files/test_ptrn_grep.txt
+4273 - Fail -e intel -e int -o -c -l -v test_files/test_7_grep.txt
+4274 - Fail -e int -e intel -o -c -l -v test_files/test_7_grep.txt
+4293 - Fail s test_files/test_0_grep.txt -o -c -n -v
+4294 - Fail for s21_grep.c s21_grep.h Makefile -o -c -n -v
+4295 - Fail for s21_grep.c -o -c -n -v
+4296 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -n -v
+4297 - Fail -e for -e ^int s21_grep.c -o -c -n -v
+4298 - Fail -e regex -e ^print s21_grep.c -o -c -n -v -f test_files/test_ptrn_grep.txt
+4299 - Fail -e while -e void s21_grep.c Makefile -o -c -n -v -f test_files/test_ptrn_grep.txt
+4300 - Fail -e intel -e int -o -c -n -v test_files/test_7_grep.txt
+4301 - Fail -e int -e intel -o -c -n -v test_files/test_7_grep.txt
+4320 - Fail s test_files/test_0_grep.txt -o -c -h -v
+4321 - Fail for s21_grep.c s21_grep.h Makefile -o -c -h -v
+4322 - Fail for s21_grep.c -o -c -h -v
+4323 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -c -h -v
+4324 - Fail -e for -e ^int s21_grep.c -o -c -h -v
+4325 - Fail -e regex -e ^print s21_grep.c -o -c -h -v -f test_files/test_ptrn_grep.txt
+4326 - Fail -e while -e void s21_grep.c Makefile -o -c -h -v -f test_files/test_ptrn_grep.txt
+4327 - Fail -e intel -e int -o -c -h -v test_files/test_7_grep.txt
+4328 - Fail -e int -e intel -o -c -h -v test_files/test_7_grep.txt
+4347 - Fail s test_files/test_0_grep.txt -o -l -v -c
+4348 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v -c
+4349 - Fail for s21_grep.c -o -l -v -c
+4350 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v -c
+4351 - Fail -e for -e ^int s21_grep.c -o -l -v -c
+4352 - Fail -e regex -e ^print s21_grep.c -o -l -v -c -f test_files/test_ptrn_grep.txt
+4353 - Fail -e while -e void s21_grep.c Makefile -o -l -v -c -f test_files/test_ptrn_grep.txt
+4354 - Fail -e intel -e int -o -l -v -c test_files/test_7_grep.txt
+4355 - Fail -e int -e intel -o -l -v -c test_files/test_7_grep.txt
+4356 - Fail s test_files/test_0_grep.txt -o -l -v -n
+4357 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v -n
+4358 - Fail for s21_grep.c -o -l -v -n
+4359 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v -n
+4360 - Fail -e for -e ^int s21_grep.c -o -l -v -n
+4361 - Fail -e regex -e ^print s21_grep.c -o -l -v -n -f test_files/test_ptrn_grep.txt
+4362 - Fail -e while -e void s21_grep.c Makefile -o -l -v -n -f test_files/test_ptrn_grep.txt
+4363 - Fail -e intel -e int -o -l -v -n test_files/test_7_grep.txt
+4364 - Fail -e int -e intel -o -l -v -n test_files/test_7_grep.txt
+4365 - Fail s test_files/test_0_grep.txt -o -l -v -h
+4366 - Fail for s21_grep.c s21_grep.h Makefile -o -l -v -h
+4367 - Fail for s21_grep.c -o -l -v -h
+4368 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -v -h
+4369 - Fail -e for -e ^int s21_grep.c -o -l -v -h
+4370 - Fail -e regex -e ^print s21_grep.c -o -l -v -h -f test_files/test_ptrn_grep.txt
+4371 - Fail -e while -e void s21_grep.c Makefile -o -l -v -h -f test_files/test_ptrn_grep.txt
+4372 - Fail -e intel -e int -o -l -v -h test_files/test_7_grep.txt
+4373 - Fail -e int -e intel -o -l -v -h test_files/test_7_grep.txt
+4374 - Fail s test_files/test_0_grep.txt -o -l -c -v
+4375 - Fail for s21_grep.c s21_grep.h Makefile -o -l -c -v
+4376 - Fail for s21_grep.c -o -l -c -v
+4377 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -c -v
+4378 - Fail -e for -e ^int s21_grep.c -o -l -c -v
+4379 - Fail -e regex -e ^print s21_grep.c -o -l -c -v -f test_files/test_ptrn_grep.txt
+4380 - Fail -e while -e void s21_grep.c Makefile -o -l -c -v -f test_files/test_ptrn_grep.txt
+4381 - Fail -e intel -e int -o -l -c -v test_files/test_7_grep.txt
+4382 - Fail -e int -e intel -o -l -c -v test_files/test_7_grep.txt
+4401 - Fail s test_files/test_0_grep.txt -o -l -n -v
+4402 - Fail for s21_grep.c s21_grep.h Makefile -o -l -n -v
+4403 - Fail for s21_grep.c -o -l -n -v
+4404 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -n -v
+4405 - Fail -e for -e ^int s21_grep.c -o -l -n -v
+4406 - Fail -e regex -e ^print s21_grep.c -o -l -n -v -f test_files/test_ptrn_grep.txt
+4407 - Fail -e while -e void s21_grep.c Makefile -o -l -n -v -f test_files/test_ptrn_grep.txt
+4408 - Fail -e intel -e int -o -l -n -v test_files/test_7_grep.txt
+4409 - Fail -e int -e intel -o -l -n -v test_files/test_7_grep.txt
+4428 - Fail s test_files/test_0_grep.txt -o -l -h -v
+4429 - Fail for s21_grep.c s21_grep.h Makefile -o -l -h -v
+4430 - Fail for s21_grep.c -o -l -h -v
+4431 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -l -h -v
+4432 - Fail -e for -e ^int s21_grep.c -o -l -h -v
+4433 - Fail -e regex -e ^print s21_grep.c -o -l -h -v -f test_files/test_ptrn_grep.txt
+4434 - Fail -e while -e void s21_grep.c Makefile -o -l -h -v -f test_files/test_ptrn_grep.txt
+4435 - Fail -e intel -e int -o -l -h -v test_files/test_7_grep.txt
+4436 - Fail -e int -e intel -o -l -h -v test_files/test_7_grep.txt
+4455 - Fail s test_files/test_0_grep.txt -o -n -v -c
+4456 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v -c
+4457 - Fail for s21_grep.c -o -n -v -c
+4458 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v -c
+4459 - Fail -e for -e ^int s21_grep.c -o -n -v -c
+4460 - Fail -e regex -e ^print s21_grep.c -o -n -v -c -f test_files/test_ptrn_grep.txt
+4461 - Fail -e while -e void s21_grep.c Makefile -o -n -v -c -f test_files/test_ptrn_grep.txt
+4462 - Fail -e intel -e int -o -n -v -c test_files/test_7_grep.txt
+4463 - Fail -e int -e intel -o -n -v -c test_files/test_7_grep.txt
+4464 - Fail s test_files/test_0_grep.txt -o -n -v -l
+4465 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v -l
+4466 - Fail for s21_grep.c -o -n -v -l
+4467 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v -l
+4468 - Fail -e for -e ^int s21_grep.c -o -n -v -l
+4469 - Fail -e regex -e ^print s21_grep.c -o -n -v -l -f test_files/test_ptrn_grep.txt
+4470 - Fail -e while -e void s21_grep.c Makefile -o -n -v -l -f test_files/test_ptrn_grep.txt
+4471 - Fail -e intel -e int -o -n -v -l test_files/test_7_grep.txt
+4472 - Fail -e int -e intel -o -n -v -l test_files/test_7_grep.txt
+4473 - Fail s test_files/test_0_grep.txt -o -n -v -h
+4474 - Fail for s21_grep.c s21_grep.h Makefile -o -n -v -h
+4475 - Fail for s21_grep.c -o -n -v -h
+4476 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -v -h
+4477 - Fail -e for -e ^int s21_grep.c -o -n -v -h
+4478 - Fail -e regex -e ^print s21_grep.c -o -n -v -h -f test_files/test_ptrn_grep.txt
+4479 - Fail -e while -e void s21_grep.c Makefile -o -n -v -h -f test_files/test_ptrn_grep.txt
+4480 - Fail -e intel -e int -o -n -v -h test_files/test_7_grep.txt
+4481 - Fail -e int -e intel -o -n -v -h test_files/test_7_grep.txt
+4482 - Fail s test_files/test_0_grep.txt -o -n -c -v
+4483 - Fail for s21_grep.c s21_grep.h Makefile -o -n -c -v
+4484 - Fail for s21_grep.c -o -n -c -v
+4485 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -c -v
+4486 - Fail -e for -e ^int s21_grep.c -o -n -c -v
+4487 - Fail -e regex -e ^print s21_grep.c -o -n -c -v -f test_files/test_ptrn_grep.txt
+4488 - Fail -e while -e void s21_grep.c Makefile -o -n -c -v -f test_files/test_ptrn_grep.txt
+4489 - Fail -e intel -e int -o -n -c -v test_files/test_7_grep.txt
+4490 - Fail -e int -e intel -o -n -c -v test_files/test_7_grep.txt
+4509 - Fail s test_files/test_0_grep.txt -o -n -l -v
+4510 - Fail for s21_grep.c s21_grep.h Makefile -o -n -l -v
+4511 - Fail for s21_grep.c -o -n -l -v
+4512 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -l -v
+4513 - Fail -e for -e ^int s21_grep.c -o -n -l -v
+4514 - Fail -e regex -e ^print s21_grep.c -o -n -l -v -f test_files/test_ptrn_grep.txt
+4515 - Fail -e while -e void s21_grep.c Makefile -o -n -l -v -f test_files/test_ptrn_grep.txt
+4516 - Fail -e intel -e int -o -n -l -v test_files/test_7_grep.txt
+4517 - Fail -e int -e intel -o -n -l -v test_files/test_7_grep.txt
+4536 - Fail s test_files/test_0_grep.txt -o -n -h -v
+4537 - Fail for s21_grep.c s21_grep.h Makefile -o -n -h -v
+4538 - Fail for s21_grep.c -o -n -h -v
+4539 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -n -h -v
+4540 - Fail -e for -e ^int s21_grep.c -o -n -h -v
+4541 - Fail -e regex -e ^print s21_grep.c -o -n -h -v -f test_files/test_ptrn_grep.txt
+4542 - Fail -e while -e void s21_grep.c Makefile -o -n -h -v -f test_files/test_ptrn_grep.txt
+4543 - Fail -e intel -e int -o -n -h -v test_files/test_7_grep.txt
+4544 - Fail -e int -e intel -o -n -h -v test_files/test_7_grep.txt
+4563 - Fail s test_files/test_0_grep.txt -o -h -v -c
+4564 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v -c
+4565 - Fail for s21_grep.c -o -h -v -c
+4566 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v -c
+4567 - Fail -e for -e ^int s21_grep.c -o -h -v -c
+4568 - Fail -e regex -e ^print s21_grep.c -o -h -v -c -f test_files/test_ptrn_grep.txt
+4569 - Fail -e while -e void s21_grep.c Makefile -o -h -v -c -f test_files/test_ptrn_grep.txt
+4570 - Fail -e intel -e int -o -h -v -c test_files/test_7_grep.txt
+4571 - Fail -e int -e intel -o -h -v -c test_files/test_7_grep.txt
+4572 - Fail s test_files/test_0_grep.txt -o -h -v -l
+4573 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v -l
+4574 - Fail for s21_grep.c -o -h -v -l
+4575 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v -l
+4576 - Fail -e for -e ^int s21_grep.c -o -h -v -l
+4577 - Fail -e regex -e ^print s21_grep.c -o -h -v -l -f test_files/test_ptrn_grep.txt
+4578 - Fail -e while -e void s21_grep.c Makefile -o -h -v -l -f test_files/test_ptrn_grep.txt
+4579 - Fail -e intel -e int -o -h -v -l test_files/test_7_grep.txt
+4580 - Fail -e int -e intel -o -h -v -l test_files/test_7_grep.txt
+4581 - Fail s test_files/test_0_grep.txt -o -h -v -n
+4582 - Fail for s21_grep.c s21_grep.h Makefile -o -h -v -n
+4583 - Fail for s21_grep.c -o -h -v -n
+4584 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -v -n
+4585 - Fail -e for -e ^int s21_grep.c -o -h -v -n
+4586 - Fail -e regex -e ^print s21_grep.c -o -h -v -n -f test_files/test_ptrn_grep.txt
+4587 - Fail -e while -e void s21_grep.c Makefile -o -h -v -n -f test_files/test_ptrn_grep.txt
+4588 - Fail -e intel -e int -o -h -v -n test_files/test_7_grep.txt
+4589 - Fail -e int -e intel -o -h -v -n test_files/test_7_grep.txt
+4590 - Fail s test_files/test_0_grep.txt -o -h -c -v
+4591 - Fail for s21_grep.c s21_grep.h Makefile -o -h -c -v
+4592 - Fail for s21_grep.c -o -h -c -v
+4593 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -c -v
+4594 - Fail -e for -e ^int s21_grep.c -o -h -c -v
+4595 - Fail -e regex -e ^print s21_grep.c -o -h -c -v -f test_files/test_ptrn_grep.txt
+4596 - Fail -e while -e void s21_grep.c Makefile -o -h -c -v -f test_files/test_ptrn_grep.txt
+4597 - Fail -e intel -e int -o -h -c -v test_files/test_7_grep.txt
+4598 - Fail -e int -e intel -o -h -c -v test_files/test_7_grep.txt
+4617 - Fail s test_files/test_0_grep.txt -o -h -l -v
+4618 - Fail for s21_grep.c s21_grep.h Makefile -o -h -l -v
+4619 - Fail for s21_grep.c -o -h -l -v
+4620 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -l -v
+4621 - Fail -e for -e ^int s21_grep.c -o -h -l -v
+4622 - Fail -e regex -e ^print s21_grep.c -o -h -l -v -f test_files/test_ptrn_grep.txt
+4623 - Fail -e while -e void s21_grep.c Makefile -o -h -l -v -f test_files/test_ptrn_grep.txt
+4624 - Fail -e intel -e int -o -h -l -v test_files/test_7_grep.txt
+4625 - Fail -e int -e intel -o -h -l -v test_files/test_7_grep.txt
+4644 - Fail s test_files/test_0_grep.txt -o -h -n -v
+4645 - Fail for s21_grep.c s21_grep.h Makefile -o -h -n -v
+4646 - Fail for s21_grep.c -o -h -n -v
+4647 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -o -h -n -v
+4648 - Fail -e for -e ^int s21_grep.c -o -h -n -v
+4649 - Fail -e regex -e ^print s21_grep.c -o -h -n -v -f test_files/test_ptrn_grep.txt
+4650 - Fail -e while -e void s21_grep.c Makefile -o -h -n -v -f test_files/test_ptrn_grep.txt
+4651 - Fail -e intel -e int -o -h -n -v test_files/test_7_grep.txt
+4652 - Fail -e int -e intel -o -h -n -v test_files/test_7_grep.txt
+
+#######################
+AUTOTESTS
+#######################
+
+=======================
+DOUBLE PARAMETER
+=======================
+
+4707 - Fail s test_files/test_0_grep.txt -vo
+4708 - Fail for s21_grep.c s21_grep.h Makefile -vo
+4709 - Fail for s21_grep.c -vo
+4710 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vo
+4711 - Fail -e for -e ^int s21_grep.c -vo
+4712 - Fail -e regex -e ^print s21_grep.c -vo -f test_files/test_ptrn_grep.txt
+4713 - Fail -e while -e void s21_grep.c Makefile -vo -f test_files/test_ptrn_grep.txt
+4714 - Fail -e intel -e int -vo test_files/test_7_grep.txt
+4715 - Fail -e int -e intel -vo test_files/test_7_grep.txt
+4842 - Fail s test_files/test_0_grep.txt -no
+4847 - Fail -e regex -e ^print s21_grep.c -no -f test_files/test_ptrn_grep.txt
+4896 - Fail s test_files/test_0_grep.txt -ov
+4897 - Fail for s21_grep.c s21_grep.h Makefile -ov
+4898 - Fail for s21_grep.c -ov
+4899 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ov
+4900 - Fail -e for -e ^int s21_grep.c -ov
+4901 - Fail -e regex -e ^print s21_grep.c -ov -f test_files/test_ptrn_grep.txt
+4902 - Fail -e while -e void s21_grep.c Makefile -ov -f test_files/test_ptrn_grep.txt
+4903 - Fail -e intel -e int -ov test_files/test_7_grep.txt
+4904 - Fail -e int -e intel -ov test_files/test_7_grep.txt
+4923 - Fail s test_files/test_0_grep.txt -on
+4928 - Fail -e regex -e ^print s21_grep.c -on -f test_files/test_ptrn_grep.txt
+
+#######################
+AUTOTESTS
+#######################
+
+=======================
+TRIPLE PARAMETER
+=======================
+
+4968 - Fail s test_files/test_0_grep.txt -vco
+4969 - Fail for s21_grep.c s21_grep.h Makefile -vco
+4970 - Fail for s21_grep.c -vco
+4971 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vco
+4972 - Fail -e for -e ^int s21_grep.c -vco
+4973 - Fail -e regex -e ^print s21_grep.c -vco -f test_files/test_ptrn_grep.txt
+4974 - Fail -e while -e void s21_grep.c Makefile -vco -f test_files/test_ptrn_grep.txt
+4975 - Fail -e intel -e int -vco test_files/test_7_grep.txt
+4976 - Fail -e int -e intel -vco test_files/test_7_grep.txt
+5004 - Fail s test_files/test_0_grep.txt -vlo
+5005 - Fail for s21_grep.c s21_grep.h Makefile -vlo
+5006 - Fail for s21_grep.c -vlo
+5007 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vlo
+5008 - Fail -e for -e ^int s21_grep.c -vlo
+5009 - Fail -e regex -e ^print s21_grep.c -vlo -f test_files/test_ptrn_grep.txt
+5010 - Fail -e while -e void s21_grep.c Makefile -vlo -f test_files/test_ptrn_grep.txt
+5011 - Fail -e intel -e int -vlo test_files/test_7_grep.txt
+5012 - Fail -e int -e intel -vlo test_files/test_7_grep.txt
+5040 - Fail s test_files/test_0_grep.txt -vno
+5041 - Fail for s21_grep.c s21_grep.h Makefile -vno
+5042 - Fail for s21_grep.c -vno
+5043 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vno
+5044 - Fail -e for -e ^int s21_grep.c -vno
+5045 - Fail -e regex -e ^print s21_grep.c -vno -f test_files/test_ptrn_grep.txt
+5046 - Fail -e while -e void s21_grep.c Makefile -vno -f test_files/test_ptrn_grep.txt
+5047 - Fail -e intel -e int -vno test_files/test_7_grep.txt
+5048 - Fail -e int -e intel -vno test_files/test_7_grep.txt
+5076 - Fail s test_files/test_0_grep.txt -vho
+5077 - Fail for s21_grep.c s21_grep.h Makefile -vho
+5078 - Fail for s21_grep.c -vho
+5079 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vho
+5080 - Fail -e for -e ^int s21_grep.c -vho
+5081 - Fail -e regex -e ^print s21_grep.c -vho -f test_files/test_ptrn_grep.txt
+5082 - Fail -e while -e void s21_grep.c Makefile -vho -f test_files/test_ptrn_grep.txt
+5083 - Fail -e intel -e int -vho test_files/test_7_grep.txt
+5084 - Fail -e int -e intel -vho test_files/test_7_grep.txt
+5085 - Fail s test_files/test_0_grep.txt -voc
+5086 - Fail for s21_grep.c s21_grep.h Makefile -voc
+5087 - Fail for s21_grep.c -voc
+5088 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -voc
+5089 - Fail -e for -e ^int s21_grep.c -voc
+5090 - Fail -e regex -e ^print s21_grep.c -voc -f test_files/test_ptrn_grep.txt
+5091 - Fail -e while -e void s21_grep.c Makefile -voc -f test_files/test_ptrn_grep.txt
+5092 - Fail -e intel -e int -voc test_files/test_7_grep.txt
+5093 - Fail -e int -e intel -voc test_files/test_7_grep.txt
+5094 - Fail s test_files/test_0_grep.txt -vol
+5095 - Fail for s21_grep.c s21_grep.h Makefile -vol
+5096 - Fail for s21_grep.c -vol
+5097 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -vol
+5098 - Fail -e for -e ^int s21_grep.c -vol
+5099 - Fail -e regex -e ^print s21_grep.c -vol -f test_files/test_ptrn_grep.txt
+5100 - Fail -e while -e void s21_grep.c Makefile -vol -f test_files/test_ptrn_grep.txt
+5101 - Fail -e intel -e int -vol test_files/test_7_grep.txt
+5102 - Fail -e int -e intel -vol test_files/test_7_grep.txt
+5103 - Fail s test_files/test_0_grep.txt -von
+5104 - Fail for s21_grep.c s21_grep.h Makefile -von
+5105 - Fail for s21_grep.c -von
+5106 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -von
+5107 - Fail -e for -e ^int s21_grep.c -von
+5108 - Fail -e regex -e ^print s21_grep.c -von -f test_files/test_ptrn_grep.txt
+5109 - Fail -e while -e void s21_grep.c Makefile -von -f test_files/test_ptrn_grep.txt
+5110 - Fail -e intel -e int -von test_files/test_7_grep.txt
+5111 - Fail -e int -e intel -von test_files/test_7_grep.txt
+5112 - Fail s test_files/test_0_grep.txt -voh
+5113 - Fail for s21_grep.c s21_grep.h Makefile -voh
+5114 - Fail for s21_grep.c -voh
+5115 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -voh
+5116 - Fail -e for -e ^int s21_grep.c -voh
+5117 - Fail -e regex -e ^print s21_grep.c -voh -f test_files/test_ptrn_grep.txt
+5118 - Fail -e while -e void s21_grep.c Makefile -voh -f test_files/test_ptrn_grep.txt
+5119 - Fail -e intel -e int -voh test_files/test_7_grep.txt
+5120 - Fail -e int -e intel -voh test_files/test_7_grep.txt
+5148 - Fail s test_files/test_0_grep.txt -cvo
+5149 - Fail for s21_grep.c s21_grep.h Makefile -cvo
+5150 - Fail for s21_grep.c -cvo
+5151 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cvo
+5152 - Fail -e for -e ^int s21_grep.c -cvo
+5153 - Fail -e regex -e ^print s21_grep.c -cvo -f test_files/test_ptrn_grep.txt
+5154 - Fail -e while -e void s21_grep.c Makefile -cvo -f test_files/test_ptrn_grep.txt
+5155 - Fail -e intel -e int -cvo test_files/test_7_grep.txt
+5156 - Fail -e int -e intel -cvo test_files/test_7_grep.txt
+5265 - Fail s test_files/test_0_grep.txt -cov
+5266 - Fail for s21_grep.c s21_grep.h Makefile -cov
+5267 - Fail for s21_grep.c -cov
+5268 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -cov
+5269 - Fail -e for -e ^int s21_grep.c -cov
+5270 - Fail -e regex -e ^print s21_grep.c -cov -f test_files/test_ptrn_grep.txt
+5271 - Fail -e while -e void s21_grep.c Makefile -cov -f test_files/test_ptrn_grep.txt
+5272 - Fail -e intel -e int -cov test_files/test_7_grep.txt
+5273 - Fail -e int -e intel -cov test_files/test_7_grep.txt
+5328 - Fail s test_files/test_0_grep.txt -lvo
+5329 - Fail for s21_grep.c s21_grep.h Makefile -lvo
+5330 - Fail for s21_grep.c -lvo
+5331 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lvo
+5332 - Fail -e for -e ^int s21_grep.c -lvo
+5333 - Fail -e regex -e ^print s21_grep.c -lvo -f test_files/test_ptrn_grep.txt
+5334 - Fail -e while -e void s21_grep.c Makefile -lvo -f test_files/test_ptrn_grep.txt
+5335 - Fail -e intel -e int -lvo test_files/test_7_grep.txt
+5336 - Fail -e int -e intel -lvo test_files/test_7_grep.txt
+5445 - Fail s test_files/test_0_grep.txt -lov
+5446 - Fail for s21_grep.c s21_grep.h Makefile -lov
+5447 - Fail for s21_grep.c -lov
+5448 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -lov
+5449 - Fail -e for -e ^int s21_grep.c -lov
+5450 - Fail -e regex -e ^print s21_grep.c -lov -f test_files/test_ptrn_grep.txt
+5451 - Fail -e while -e void s21_grep.c Makefile -lov -f test_files/test_ptrn_grep.txt
+5452 - Fail -e intel -e int -lov test_files/test_7_grep.txt
+5453 - Fail -e int -e intel -lov test_files/test_7_grep.txt
+5508 - Fail s test_files/test_0_grep.txt -nvo
+5509 - Fail for s21_grep.c s21_grep.h Makefile -nvo
+5510 - Fail for s21_grep.c -nvo
+5511 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nvo
+5512 - Fail -e for -e ^int s21_grep.c -nvo
+5513 - Fail -e regex -e ^print s21_grep.c -nvo -f test_files/test_ptrn_grep.txt
+5514 - Fail -e while -e void s21_grep.c Makefile -nvo -f test_files/test_ptrn_grep.txt
+5515 - Fail -e intel -e int -nvo test_files/test_7_grep.txt
+5516 - Fail -e int -e intel -nvo test_files/test_7_grep.txt
+5616 - Fail s test_files/test_0_grep.txt -nho
+5621 - Fail -e regex -e ^print s21_grep.c -nho -f test_files/test_ptrn_grep.txt
+5625 - Fail s test_files/test_0_grep.txt -nov
+5626 - Fail for s21_grep.c s21_grep.h Makefile -nov
+5627 - Fail for s21_grep.c -nov
+5628 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -nov
+5629 - Fail -e for -e ^int s21_grep.c -nov
+5630 - Fail -e regex -e ^print s21_grep.c -nov -f test_files/test_ptrn_grep.txt
+5631 - Fail -e while -e void s21_grep.c Makefile -nov -f test_files/test_ptrn_grep.txt
+5632 - Fail -e intel -e int -nov test_files/test_7_grep.txt
+5633 - Fail -e int -e intel -nov test_files/test_7_grep.txt
+5652 - Fail s test_files/test_0_grep.txt -noh
+5657 - Fail -e regex -e ^print s21_grep.c -noh -f test_files/test_ptrn_grep.txt
+5688 - Fail s test_files/test_0_grep.txt -hvo
+5689 - Fail for s21_grep.c s21_grep.h Makefile -hvo
+5690 - Fail for s21_grep.c -hvo
+5691 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hvo
+5692 - Fail -e for -e ^int s21_grep.c -hvo
+5693 - Fail -e regex -e ^print s21_grep.c -hvo -f test_files/test_ptrn_grep.txt
+5694 - Fail -e while -e void s21_grep.c Makefile -hvo -f test_files/test_ptrn_grep.txt
+5695 - Fail -e intel -e int -hvo test_files/test_7_grep.txt
+5696 - Fail -e int -e intel -hvo test_files/test_7_grep.txt
+5796 - Fail s test_files/test_0_grep.txt -hno
+5801 - Fail -e regex -e ^print s21_grep.c -hno -f test_files/test_ptrn_grep.txt
+5805 - Fail s test_files/test_0_grep.txt -hov
+5806 - Fail for s21_grep.c s21_grep.h Makefile -hov
+5807 - Fail for s21_grep.c -hov
+5808 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -hov
+5809 - Fail -e for -e ^int s21_grep.c -hov
+5810 - Fail -e regex -e ^print s21_grep.c -hov -f test_files/test_ptrn_grep.txt
+5811 - Fail -e while -e void s21_grep.c Makefile -hov -f test_files/test_ptrn_grep.txt
+5812 - Fail -e intel -e int -hov test_files/test_7_grep.txt
+5813 - Fail -e int -e intel -hov test_files/test_7_grep.txt
+5832 - Fail s test_files/test_0_grep.txt -hon
+5837 - Fail -e regex -e ^print s21_grep.c -hon -f test_files/test_ptrn_grep.txt
+5841 - Fail s test_files/test_0_grep.txt -ovc
+5842 - Fail for s21_grep.c s21_grep.h Makefile -ovc
+5843 - Fail for s21_grep.c -ovc
+5844 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovc
+5845 - Fail -e for -e ^int s21_grep.c -ovc
+5846 - Fail -e regex -e ^print s21_grep.c -ovc -f test_files/test_ptrn_grep.txt
+5847 - Fail -e while -e void s21_grep.c Makefile -ovc -f test_files/test_ptrn_grep.txt
+5848 - Fail -e intel -e int -ovc test_files/test_7_grep.txt
+5849 - Fail -e int -e intel -ovc test_files/test_7_grep.txt
+5850 - Fail s test_files/test_0_grep.txt -ovl
+5851 - Fail for s21_grep.c s21_grep.h Makefile -ovl
+5852 - Fail for s21_grep.c -ovl
+5853 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovl
+5854 - Fail -e for -e ^int s21_grep.c -ovl
+5855 - Fail -e regex -e ^print s21_grep.c -ovl -f test_files/test_ptrn_grep.txt
+5856 - Fail -e while -e void s21_grep.c Makefile -ovl -f test_files/test_ptrn_grep.txt
+5857 - Fail -e intel -e int -ovl test_files/test_7_grep.txt
+5858 - Fail -e int -e intel -ovl test_files/test_7_grep.txt
+5859 - Fail s test_files/test_0_grep.txt -ovn
+5860 - Fail for s21_grep.c s21_grep.h Makefile -ovn
+5861 - Fail for s21_grep.c -ovn
+5862 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovn
+5863 - Fail -e for -e ^int s21_grep.c -ovn
+5864 - Fail -e regex -e ^print s21_grep.c -ovn -f test_files/test_ptrn_grep.txt
+5865 - Fail -e while -e void s21_grep.c Makefile -ovn -f test_files/test_ptrn_grep.txt
+5866 - Fail -e intel -e int -ovn test_files/test_7_grep.txt
+5867 - Fail -e int -e intel -ovn test_files/test_7_grep.txt
+5868 - Fail s test_files/test_0_grep.txt -ovh
+5869 - Fail for s21_grep.c s21_grep.h Makefile -ovh
+5870 - Fail for s21_grep.c -ovh
+5871 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ovh
+5872 - Fail -e for -e ^int s21_grep.c -ovh
+5873 - Fail -e regex -e ^print s21_grep.c -ovh -f test_files/test_ptrn_grep.txt
+5874 - Fail -e while -e void s21_grep.c Makefile -ovh -f test_files/test_ptrn_grep.txt
+5875 - Fail -e intel -e int -ovh test_files/test_7_grep.txt
+5876 - Fail -e int -e intel -ovh test_files/test_7_grep.txt
+5877 - Fail s test_files/test_0_grep.txt -ocv
+5878 - Fail for s21_grep.c s21_grep.h Makefile -ocv
+5879 - Fail for s21_grep.c -ocv
+5880 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ocv
+5881 - Fail -e for -e ^int s21_grep.c -ocv
+5882 - Fail -e regex -e ^print s21_grep.c -ocv -f test_files/test_ptrn_grep.txt
+5883 - Fail -e while -e void s21_grep.c Makefile -ocv -f test_files/test_ptrn_grep.txt
+5884 - Fail -e intel -e int -ocv test_files/test_7_grep.txt
+5885 - Fail -e int -e intel -ocv test_files/test_7_grep.txt
+5913 - Fail s test_files/test_0_grep.txt -olv
+5914 - Fail for s21_grep.c s21_grep.h Makefile -olv
+5915 - Fail for s21_grep.c -olv
+5916 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -olv
+5917 - Fail -e for -e ^int s21_grep.c -olv
+5918 - Fail -e regex -e ^print s21_grep.c -olv -f test_files/test_ptrn_grep.txt
+5919 - Fail -e while -e void s21_grep.c Makefile -olv -f test_files/test_ptrn_grep.txt
+5920 - Fail -e intel -e int -olv test_files/test_7_grep.txt
+5921 - Fail -e int -e intel -olv test_files/test_7_grep.txt
+5949 - Fail s test_files/test_0_grep.txt -onv
+5950 - Fail for s21_grep.c s21_grep.h Makefile -onv
+5951 - Fail for s21_grep.c -onv
+5952 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -onv
+5953 - Fail -e for -e ^int s21_grep.c -onv
+5954 - Fail -e regex -e ^print s21_grep.c -onv -f test_files/test_ptrn_grep.txt
+5955 - Fail -e while -e void s21_grep.c Makefile -onv -f test_files/test_ptrn_grep.txt
+5956 - Fail -e intel -e int -onv test_files/test_7_grep.txt
+5957 - Fail -e int -e intel -onv test_files/test_7_grep.txt
+5976 - Fail s test_files/test_0_grep.txt -onh
+5981 - Fail -e regex -e ^print s21_grep.c -onh -f test_files/test_ptrn_grep.txt
+5985 - Fail s test_files/test_0_grep.txt -ohv
+5986 - Fail for s21_grep.c s21_grep.h Makefile -ohv
+5987 - Fail for s21_grep.c -ohv
+5988 - Fail -e for -e ^int s21_grep.c s21_grep.h Makefile -ohv
+5989 - Fail -e for -e ^int s21_grep.c -ohv
+5990 - Fail -e regex -e ^print s21_grep.c -ohv -f test_files/test_ptrn_grep.txt
+5991 - Fail -e while -e void s21_grep.c Makefile -ohv -f test_files/test_ptrn_grep.txt
+5992 - Fail -e intel -e int -ohv test_files/test_7_grep.txt
+5993 - Fail -e int -e intel -ohv test_files/test_7_grep.txt
+6012 - Fail s test_files/test_0_grep.txt -ohn
+6017 - Fail -e regex -e ^print s21_grep.c -ohn -f test_files/test_ptrn_grep.txt
+
+FAILED: 1799
+SUCCESSFUL: 4221
+ALL: 6020
+
